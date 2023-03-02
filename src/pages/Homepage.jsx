@@ -1,14 +1,15 @@
 import React from 'react';
-import { Navbar, Blogs, Footer } from "../component"
+import { Navbar, Blogs, Footer, Video } from "../component"
 
-const Homepage = ({blogs}) => {
+const Homepage = ({blogs, videos, firstblogs}) => {
    
 
 
   return (
     <div>
       <Navbar />
-      <Blogs blogs={blogs?blogs:""}/>       
+      <Blogs blogs={blogs?blogs:""} firstblogs={firstblogs?firstblogs:""}/> 
+      <Video videos={videos?videos:""}/>      
       <Footer />
     </div>
   )

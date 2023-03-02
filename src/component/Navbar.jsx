@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import{menu, close, logo} from '../assets';
+import { Link } from 'react-router-dom'
+import Quiz from './Quiz';
 
 const Navbar = () => {
     const [toggle,setToggle]=useState(false);
@@ -11,25 +13,27 @@ const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
-                    <img src={logo} alt="logo" className='sm:ml-10 ss:ml-10 md:ml-3 opacity-[55%] w-full h-[25px]' />
+                    <Link to={'/'}><img src={logo} alt="logo" className='sm:ml-10 ss:ml-10 md:ml-3 opacity-[55%] w-full h-[25px]' /></Link>
                 </div>
           
 
                 <div className='flex items-center'>
                     <ul className='hidden md:flex'>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Support</li>
-                        <li>Platform</li>
-                        <li>Pricing</li>
+                        <Link to={"/"}><li>Home</li></Link>
+                        <Link to={"/videos"}><li>Videos</li></Link>
+                       <Link to={"/podcasts"}><li>Podcast</li></Link>
+                        <Link to={"/*"}><li>About</li></Link>
+                        <Link to={"/*"}><li>Support</li></Link>
                     </ul>
                 </div>
 
 
 
                 <div className='hidden md:flex sm:mr-10 md:mr-10'>
-                    <button className='border-none bg-transparent text-black mr-4'>Login</button>
-                    <button className='px-8 py-3'>Sign Up</button>
+                    <Link to={"/animates"}><button className='border-none bg-transparent text-black mr-4 text-black mb-4 py-3 px-8'>Animation Stories</button></Link>
+                  <Link to={`/quizapp`}>  
+                  <button className='px-8 py-3'>Quiz</button>
+                  </Link>
 
                 </div>
 
@@ -41,14 +45,17 @@ const Navbar = () => {
 
         </div>
         <ul className={toggle?'absolute bg-white w-full px-8 md:hidden':'hidden'}>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Support</li>
-                        <li>Platform</li>
-                        <li>Pricing</li>
+                        <Link to={"/"}><li>Home</li></Link>
+                        <Link to={"/videos"}><li>Videos</li></Link>
+                        <Link to={"/podcasts"}><li>Podcast</li></Link>
+                        <Link to={"/*"}><li>About</li></Link>
+                        <Link to={"/*"}><li>Support</li></Link>
                         <div className='flex flex-col my-4'>
-                            <button className='bg-transparent text-black mb-4 py-3 px-8'>Login</button>
-                            <button className='px-8 py-3'>Sign Up</button>
+                            <Link to={"/animates"}><button className='bg-transparent text-black mb-4 py-3 px-8'>Animation Stories</button></Link>
+                            <Link to={`/quizapp`}>  
+                            <button className='px-8 py-3'>Quiz</button>
+                            </Link>
+
                         </div>
         </ul>
 
