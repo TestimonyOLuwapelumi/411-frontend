@@ -90,7 +90,8 @@ export default function App() {
         <div className="bg-white w-24 h-24 absolute animate-pulse rounded-full shadow-xl"></div>
 
         {/* <p class="text-bold w-200">411</p> */}
-        <img src={"../src/logo/Asset 1.png"} className="w-20 h-20" />
+        {/* <img src={"../src/logo/Asset 1.png"} className="w-20 h-20" /> */}
+        <img src="../src/logo/Asset 1.png" className="w-20 h-20" alt="" />
       </section>
     );
   if (blogError || videoError || firstblogError || podcastError || animateError) return <p>Error</p>;
