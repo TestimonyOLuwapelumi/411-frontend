@@ -93,6 +93,7 @@ export default function App() {
 
         {/* <p class="text-bold w-200">411</p> */}
         {/* <img src={"../src/logo/Asset 1.png"} className="w-20 h-20" /> */}
+
         <img src={myImage} className="w-20 h-20" alt="" />
       </section>
     );
