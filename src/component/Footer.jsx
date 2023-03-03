@@ -1,7 +1,7 @@
 import React from 'react';
 import {FaFacebook, FaGithub, FaInstagram, FaTwitter, FaTwitch, FaTiktok} from 'react-icons/fa';
 import { Link } from 'react-router-dom'
-import Animation from './Animation';
+import myImg from "../Asset 1.png"
 
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="mx-auto max-w-screen-xl text-center">
                     <a href="#" className="flex justify-center items-center text-2xl font-semibold text-white">
                         {/* <img src={"/src/logo/Asset 1.png"} alt="" width={80} height={80} /> */}
-                        <img src="/src/logo/Asset 1.png" alt="" width={80} height={80} />
+                        <img src={myImg} alt="" width={80} height={80} />
                     </a>
                     <p className="my-6 text-gray-500 dark:text-gray-400">THX411 is a  Media brand. </p>
                     <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" className="hover:underline"></a>. All Rights Reserved.</span>
