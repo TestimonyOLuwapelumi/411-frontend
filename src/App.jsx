@@ -82,6 +82,7 @@ export default function App() {
 
   if (blogLoading || videoLoading ||  firstblogLoading || podcastLoading || animateLoading)
     return (
+     
       <section className="bg-blue-900 relative place-items-center grid h-screen w-screen gap-4">
         <div className="bg-blue-500 w-48 h-48  absolute animate-ping rounded-full delay-5s shadow-xl"></div>
 
@@ -91,7 +92,7 @@ export default function App() {
 
         {/* <p class="text-bold w-200">411</p> */}
         {/* <img src={"../src/logo/Asset 1.png"} className="w-20 h-20" /> */}
-        <img src="../src/logo/Asset 1.png" className="w-20 h-20" alt="" />
+        <img src="./Asset 1.png" className="w-20 h-20" alt="" />
       </section>
     );
   if (blogError || videoError || firstblogError || podcastError || animateError) return <p>Error</p>;
@@ -124,6 +125,7 @@ export default function App() {
 
 
       </Routes>
+      
     </>
   );
 }
