@@ -52,6 +52,7 @@ import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
 import { AboutPage, Animatecontent, AnimatePage, BlogContentPage, FirstPage, Homepage, PodcastContentPage, PodcastPage, QuizApp, VideoContentPage, VideoPage } from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
+import myImage from "./Asset 1.png"
 
 export default function App() {
   const { loading: blogLoading, data: blogData, error: blogError } = useFetch(
@@ -92,7 +93,7 @@ export default function App() {
 
         {/* <p class="text-bold w-200">411</p> */}
         {/* <img src={"../src/logo/Asset 1.png"} className="w-20 h-20" /> */}
-        <img src="../src/Asset 1.png" className="w-20 h-20" alt="" />
+        <img src={myImage} className="w-20 h-20" alt="" />
       </section>
     );
   if (blogError || videoError || firstblogError || podcastError || animateError) return <p>Error</p>;
