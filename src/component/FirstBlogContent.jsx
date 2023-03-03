@@ -21,7 +21,7 @@ const FirstBlogContent = ({firstblogs}) => {
             </div> */}
             {firstblogs.data.map((firstblog)=>
         <Link to={`/firstblog/${firstblog.id}`}>
-            <div className="container px-5 py-24 mx-auto">
+            <div className="container px-5 py-24 mx-auto drop-shadow-md">
                 <div className="lg:w-4/5 mx-auto flex flex-wrap bg-slate-50 p-4 rounded-lg">
                     <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-34 object-cover object-center rounded" src={firstblog.attributes.firstblogImg.data.attributes.url} />
                     <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col sm:flex-col justify-center">

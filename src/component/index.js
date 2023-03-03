@@ -12,6 +12,8 @@ import Quiz from "./Quiz";
 import Firstblog from "./Firstblog";
 import Animate from "./Animate";
 import AnimateContent from "./AnimateContent";
+import About from "./About";
+import AboutContent from "./AboutContent";
 
 
 
@@ -32,5 +34,7 @@ export {
     Quiz,
     Firstblog,
     Animate,
-    AnimateContent
+    AnimateContent,
+    About,
+    AboutContent
 }

@@ -90,7 +90,7 @@ const Quiz = () => {
       return (
         <div>
           
-          <div className="app mb-36 mt-36 ml-36">
+          <div className="app ">
             {showScore ? (
               <div className="score-section">
                 You scored {score} out of {questions.length}
@@ -107,7 +107,7 @@ const Quiz = () => {
                 </div>
                 <div className="answer-section">
                   {questions[currentQuestion].answerOptions.map((answerOption) => (
-                    <button className='decoration-gray-900'
+                    <button className='decoration-gray-600 h-9'
                       onClick={() =>
                         handleAnswerButtonClick(answerOption.isCorrect)
                       }

@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import{menu, close, logo} from '../assets';
 import { Link } from 'react-router-dom'
-import Quiz from './Quiz';
 
 const Navbar = () => {
     const [toggle,setToggle]=useState(false);

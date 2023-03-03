@@ -1,3 +1,4 @@
+import AboutPage from "./AboutPage";
 import Animatecontent from "./Animatecontent";
 import AnimatePage from "./AnimatePage";
 import BlogContentPage from "./BlogContentPage";
@@ -19,5 +20,6 @@ export{
     QuizApp,
     FirstPage,
     AnimatePage,
-    Animatecontent
+    Animatecontent,
+    AboutPage
 }

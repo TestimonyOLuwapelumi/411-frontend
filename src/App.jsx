@@ -50,7 +50,7 @@
 
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import { Animatecontent, AnimatePage, BlogContentPage, FirstPage, Homepage, PodcastContentPage, PodcastPage, QuizApp, VideoContentPage, VideoPage } from "./pages";
+import { AboutPage, Animatecontent, AnimatePage, BlogContentPage, FirstPage, Homepage, PodcastContentPage, PodcastPage, QuizApp, VideoContentPage, VideoPage } from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 
 export default function App() {
@@ -90,7 +90,7 @@ export default function App() {
         <div className="bg-white w-24 h-24 absolute animate-pulse rounded-full shadow-xl"></div>
 
         {/* <p class="text-bold w-200">411</p> */}
-        <img src={"../public/vite.svg"} className="w-20 h-20" />
+        <img src={"../src/logo/Asset 1.png"} className="w-20 h-20" />
       </section>
     );
   if (blogError || videoError || firstblogError || podcastError || animateError) return <p>Error</p>;
@@ -114,6 +114,9 @@ export default function App() {
         {/* <AnimatePage/> */}
         <Route path="/animates/:id" element={<Animatecontent animates={animatetData?animatetData :""}/>} />
         {/* <Animatecontent/> */}
+        <Route path="/about" element={<AboutPage/>} />
+        
+
 
         
 
