@@ -50,38 +50,50 @@
 
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import { AboutPage, Animatecontent, AnimatePage, BlogContentPage, FirstPage, Homepage, PodcastContentPage, PodcastPage, QuizApp, VideoContentPage, VideoPage } from "./pages";
+import {  AnimatePage, BlogContentPage, FirstPage, Homepage,  Pod,  PodcastContent,  PodcastPage,  VideoContentPage, VideoPage } from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 import myImage from "./Asset 1.png"
+import { Animate, AnimateContent } from "./component";
 
 export default function App() {
   const { loading: blogLoading, data: blogData, error: blogError } = useFetch(
     "https://four11-admindashboard.onrender.com/api/blogs?populate=*",
+    // "http://localhost:1337/api/blogs?populate=*",
     {},
     []
   );
   const { loading: videoLoading, data: videoData, error: videoError } = useFetch(
     "https://four11-admindashboard.onrender.com/api/videos?populate=*",
+    // "http://localhost:1337/api/videos?populate=*",
     {},
     []
   );
   const { loading: firstblogLoading, data: firstblogData, error: firstblogError } = useFetch(
-    "https://four11-admindashboard.onrender.com/api/firstblogs?populate=*",
+    // "https://four11-admindashboard.onrender.com/api/firstblogs?populate=*",
+    "http://localhost:1337/api/firstblogs?populate=*",
     {},
     []
   );
   const { loading: podcastLoading, data: podcastData, error: podcastError } = useFetch(
     "https://four11-admindashboard.onrender.com/api/podcasts?populate=*",
+    // "http://localhost:1337/api/podcasts?populate=*",
     {},
     []
   );
   const { loading: animateLoading, data: animatetData, error: animateError } = useFetch(
     "https://four11-admindashboard.onrender.com/api/animates?populate=*",
+    // "http://localhost:1337/api/animates?populate=*",
+    {},
+    []
+  );
+  const { loading: firstpodcastLoading, data: firstpodcastData, error: firstpodcastError } = useFetch(
+    "https://four11-admindashboard.onrender.com/api/animates?populate=*",
+    // "http://localhost:1337/api/firstpodcasts?populate=*",
     {},
     []
   );
 
-  if (blogLoading || videoLoading ||  firstblogLoading || podcastLoading || animateLoading)
+  if (blogLoading || videoLoading ||  firstblogLoading || podcastLoading || animateLoading || firstpodcastLoading)
     return (
      
       <section className="bg-blue-900 relative place-items-center grid h-screen w-screen gap-4">
@@ -97,28 +109,34 @@ export default function App() {
         <img src={myImage} className="w-20 h-20" alt="" />
       </section>
     );
-  if (blogError || videoError || firstblogError || podcastError || animateError) return <p>Error</p>;
+  if (blogError || videoError || firstblogError || podcastError || animateError || firstpodcastError) return <p>Error</p>;
       console.log(blogData);
   return (
     <>
       <Routes>
-        <Route path="/" element={<Homepage blogs={blogData ? blogData : ""}  videos={videoData ? videoData : ""}  firstblogs={firstblogData ? firstblogData : ""}/>} />
+        <Route path="/" element={<Homepage blogs={blogData ? blogData : ""}  videos={videoData ? videoData : ""}  firstblogs={firstblogData ? firstblogData : ""} podcasts={podcastData?podcastData : ""}/>} />
         <Route path="/blog/:id" element={<BlogContentPage blogs={blogData ? blogData : ""}/>} />
         <Route path="/videos" element={<VideoContentPage videos={videoData ? videoData : ""} />} />
         <Route path="/videos/:id" element={<VideoPage videos={videoData ? videoData : ""} />} />
-        <Route path="/podcasts" element={<PodcastContentPage podcasts={podcastData ? podcastData : ""}/>} />
-        <Route path="/podcasts/:id" element={<PodcastPage podcasts={podcastData ? podcastData : ""}/>} />
         {/* <PodcastPage/> */}
-        <Route path="/quizapp" element={<QuizApp/>} />
         {/* <QuizApp/> */}
         <Route path="/*" element={<NotFoundpage/>} />
         <Route path="/firstblog/:id" element={<FirstPage  firstblogs={firstblogData ? firstblogData : ""}/>} />
         {/* <FirstPage/> */}
         <Route path="/animates" element={<AnimatePage animates={animatetData?animatetData :""}/>} />
         {/* <AnimatePage/> */}
-        <Route path="/animates/:id" element={<Animatecontent animates={animatetData?animatetData :""}/>} />
+        {/* <AnimatePage */}
+        {/* <Animate/> */}
+        <Route path="/animates/:id" element={<AnimateContent animates={animatetData?animatetData :""}/>} />
         {/* <Animatecontent/> */}
-        <Route path="/about" element={<AboutPage/>} />
+      {/* <AnimateContent/> */}
+      <Route path="/podcasts" element={<PodcastPage podcasts={podcastData?podcastData : ""} firstpodcasts={firstpodcastData?firstpodcastData:""}/>}/>
+      {/* <PodcastPage/> */}
+      {/* <Pod podcasts={podcastData?podcastData : ""}/> */}
+      <Route path="/pod" element={<Pod podcasts={podcastData?podcastData : ""}/>}/>
+      <Route path="/podcasts/:id" element={<PodcastContent podcasts={podcastData?podcastData : ""}/>} />
+      {/* <PodcastContent/> */}
+
         
 
 

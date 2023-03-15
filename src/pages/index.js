@@ -1,12 +1,12 @@
-import AboutPage from "./AboutPage";
+
 import Animatecontent from "./Animatecontent";
 import AnimatePage from "./AnimatePage";
 import BlogContentPage from "./BlogContentPage";
 import FirstPage from "./FirstPage";
 import Homepage from "./Homepage";
-import PodcastContentPage from "./PodcastContentPage";
+import Pod from "./Pod";
+import PodcastContent from "./PodcastContent";
 import PodcastPage from "./PodcastPage";
-import QuizApp from "./QuizApp";
 import VideoContentPage from "./VideoContentPage";
 import VideoPage from "./VideoPage";
 
@@ -15,11 +15,11 @@ export{
     BlogContentPage,
     VideoContentPage,
     VideoPage,
-    PodcastContentPage,
-    PodcastPage,
-    QuizApp,
     FirstPage,
     AnimatePage,
     Animatecontent,
-    AboutPage
+    PodcastPage,
+    Pod,
+    PodcastContent
+
 }

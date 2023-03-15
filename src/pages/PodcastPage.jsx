@@ -1,12 +1,15 @@
 import React from 'react'
-import { Footer, Navbar, PodcastContent } from '../component'
+import { Footer, Navbar, Podcast } from '../component'
 
-const PodcastPage = ({podcasts}) => {
+const PodcastPage = ({podcasts, firstpodcasts}) => {
+    console.log(podcasts);
+    console.log(firstpodcasts);
   return (
     <>
-      <Navbar/>
-      <PodcastContent podcasts= {podcasts ? podcasts :""}/>
-      <Footer/>  
+        <Navbar/>
+        <Podcast podcasts={podcasts?podcasts: ""} firstpodcasts={firstpodcasts?firstpodcasts:""}/>
+        <Footer/>
+
     </>
   )
 }

@@ -1,12 +1,13 @@
 import React from 'react'
-import { Animate, Footer, Navbar } from '../component'
+import { Footer, Navbar, Podcast } from '../component'
 
-const AnimatePage = ({animates}) => {
+const AnimatePage = () => {
     // console.log(animates);
   return (
     <>
         <Navbar/>
-        <Animate animates={animates?animates:""}/>
+        {/* <Animate animates={animates?animates:""}/> */}
+        <Podcast/>
         <Footer/>
     </>
   )

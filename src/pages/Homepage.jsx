@@ -1,7 +1,7 @@
 import React from 'react';
-import { Navbar, Blogs, Footer, Video } from "../component"
+import { Navbar, Blogs, Footer, Video, Podcastp } from "../component"
 
-const Homepage = ({blogs, videos, firstblogs}) => {
+const Homepage = ({blogs, videos, firstblogs, podcasts}) => {
    
 
 
@@ -9,7 +9,9 @@ const Homepage = ({blogs, videos, firstblogs}) => {
     <div>
       <Navbar />
       <Blogs blogs={blogs?blogs:""} firstblogs={firstblogs?firstblogs:""}/> 
-      <Video videos={videos?videos:""}/>      
+      {/* <Video videos={videos?videos:""}/> */}
+      {/* <Podcastp podcasts={podcastData?podcastData : ""}/>       */}
+      {/* <Podcastp podcasts={podcasts?podcasts:""}/> */}
       <Footer />
     </div>
   )
