@@ -57,37 +57,37 @@ import { Animate, AnimateContent } from "./component";
 
 export default function App() {
   const { loading: blogLoading, data: blogData, error: blogError } = useFetch(
-    "https://four11-admindashboard.onrender.com/api/blogs?populate=*",
+    "https://four11admin.onrender.com/api/blogs?populate=*",
     // "http://localhost:1337/api/blogs?populate=*",
     {},
     []
   );
   const { loading: videoLoading, data: videoData, error: videoError } = useFetch(
-    "https://four11-admindashboard.onrender.com/api/videos?populate=*",
+    "https://four11admin.onrender.com/api/videos?populate=*",
     // "http://localhost:1337/api/videos?populate=*",
     {},
     []
   );
   const { loading: firstblogLoading, data: firstblogData, error: firstblogError } = useFetch(
-    // "https://four11-admindashboard.onrender.com/api/firstblogs?populate=*",
-    "http://localhost:1337/api/firstblogs?populate=*",
+    "https://four11admin.onrender.com/api/firstblogs?populate=*",
+    // "http://localhost:1337/api/firstblogs?populate=*",
     {},
     []
   );
   const { loading: podcastLoading, data: podcastData, error: podcastError } = useFetch(
-    "https://four11-admindashboard.onrender.com/api/podcasts?populate=*",
+    "https://four11admin.onrender.com/api/podcasts?populate=*",
     // "http://localhost:1337/api/podcasts?populate=*",
     {},
     []
   );
   const { loading: animateLoading, data: animatetData, error: animateError } = useFetch(
-    "https://four11-admindashboard.onrender.com/api/animates?populate=*",
+    "https://four11admin.onrender.com/api/animates?populate=*",
     // "http://localhost:1337/api/animates?populate=*",
     {},
     []
   );
   const { loading: firstpodcastLoading, data: firstpodcastData, error: firstpodcastError } = useFetch(
-    "https://four11-admindashboard.onrender.com/api/animates?populate=*",
+    "https://four11admin.onrender.com/api/animates?populate=*",
     // "http://localhost:1337/api/firstpodcasts?populate=*",
     {},
     []
