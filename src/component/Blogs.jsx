@@ -25,6 +25,8 @@ const Blogs = ({blogs, firstblogs}) => {
 // const date = new Date(firstblog.createdAt).toLocaleDateString('en-US', options);
 
   
+// const dates = blogs.map(blog => blog.attributes.publishedAt);
+// console.log(publishedAt);
 
 
 
@@ -178,7 +180,7 @@ const Blogs = ({blogs, firstblogs}) => {
                 </a>
               </div>
             </div>
-            <img src="https://i.ibb.co/gDdnJb5/img-6.png" class="w-full" alt="wall design" />
+            <img src={firstblog.attributes.firstblogImg.data.attributes.url} class="w-full" alt="wall design" />
             </Link>
             )}
           </div>
@@ -197,13 +199,13 @@ const Blogs = ({blogs, firstblogs}) => {
 		<div className=" text-center">
 	{blogg.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
-	<div className="container max-w-7xl p-1 mx-auto space-y-6 sm:space-y-12 border">
-		<a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
+	<div className="container max-w-7xl p-1 mx-auto space-y-1 sm:space-y-1 border">
+		<a rel="noopener noreferrer" href="#" className="blockmax-w-7xl  gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
 			<img src={blog.attributes.blogImg.data.attributes.url} alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
-				<h3 className="text-2xl font-semibold sm:text-4xl ">Noster tincidunt reprimique ad pro</h3>
+				<h3 className="text-2xl font-semibold sm:text-4xl "> {blog.attributes.blogTitle}</h3>
 				<span className="text-xs dark:text-gray-400">February 19, 2021</span>
-				<p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
+				<p >{blog.attributes.blogDesc}</p>
 			</div>
 		</a>
     </div>
@@ -222,7 +224,7 @@ const Blogs = ({blogs, firstblogs}) => {
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
 					<a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
-					<h3 className="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+					<h3 className="flex-1 py-2 text-lg font-semibold leading-snug ">Te nulla oportere reprimique his dolorum</h3>
 					<div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
 						<span>June 1, 2020</span>
 						<span>2.1K views</span>
@@ -280,6 +282,114 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
+
+
+
+
+
+
+
+
+
+<div class="bg-white py-6">
+    <div class="lg:container mx-auto px-2 sm:px-4 lg:px-2">
+     
+        <div class="flex flex-row flex-wrap">
+          
+            <div class="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+                <div class="relative hover-img max-h-98 overflow-hidden">
+                    <a href="#">
+                        <img class="max-w-full w-full mx-auto h-auto" src="https://tailnews.tailwindtemplate.net/src/img/dummy/img1.jpg" alt="Image description"/>
+                    </a>
+                    <div class="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-cover">
+                        <a href="#">
+                            <h2 class="text-3xl font-bold capitalize text-white mb-3">Amazon Shoppers Are Ditching Designer Belts for This Best-Selling</h2>
+                        </a>
+                        <p class="text-gray-100 hidden sm:inline-block">This is a wider card with supporting text below as a natural lead-in to additional content. This very helpfull for generate default content..</p>
+                        <div class="pt-2">
+                            <div class="text-gray-100">
+                                <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Europe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="flex-shrink max-w-full w-full lg:w-1/2">
+                <div class="box-one flex flex-row flex-wrap">
+                    <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                        <div class="relative hover-img max-h-48 overflow-hidden">
+                            <a href="#">
+                                <img class="max-w-full w-full mx-auto h-auto" src="https://tailnews.tailwindtemplate.net/src/img/dummy/img2.jpg" alt="Image description"/>
+                            </a>
+                            <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                                <a href="#">
+                                    <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">News magazines are becoming obsolete, replaced by gadgets</h2>
+                                </a>
+                                <div class="pt-1">
+                                    <div class="text-gray-100">
+                                        <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Techno
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                        <div class="relative hover-img max-h-48 overflow-hidden">
+                            <a href="#">
+                                <img class="max-w-full w-full mx-auto h-auto" src="https://tailnews.tailwindtemplate.net/src/img/dummy/img3.jpg" alt="Image description"/>
+                            </a>
+                            <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                                <a href="#">
+                                    <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Minimalist designs are starting to be popular with the next generation</h2>
+                                </a>
+                                <div class="pt-1">
+                                    <div class="text-gray-100">
+                                        <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Architecture
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                        <div class="relative hover-img max-h-48 overflow-hidden">
+                            <a href="#">
+                                <img class="max-w-full w-full mx-auto h-auto" src="https://tailnews.tailwindtemplate.net/src/img/dummy/img4.jpg" alt="Image description"/>
+                            </a>
+                            <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                                <a href="#">
+                                    <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Tips for decorating the interior of the living room</h2>
+                                </a>
+                                <div class="pt-1">
+                                    <div class="text-gray-100">
+                                        <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Interior
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex-shrink max-w-full w-full sm:w-1/2">
+                        <div class="relative hover-img max-h-48 overflow-hidden">
+                            <a href="#">
+                                <img class="max-w-full w-full mx-auto h-auto" src="https://tailnews.tailwindtemplate.net/src/img/dummy/img5.jpg" alt="Image description"/>
+                            </a>
+                            <div class="absolute px-4 pt-7 pb-4 bottom-0 w-full bg-gradient-cover">
+                                <a href="#">
+                                    <h2 class="text-lg font-bold capitalize leading-tight text-white mb-1">Online taxi users are increasing drastically ahead of the new year</h2>
+                                </a>
+                                <div class="pt-1">
+                                    <div class="text-gray-100">
+                                        <div class="inline-block h-3 border-l-2 border-red-600 mr-2"></div>Lifestyle
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -454,7 +564,7 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
-
+{/* 
 <section class="flex flex-col justify-center antialiased bg-gray-900 text-gray-200 min-h-screen">
     <div class="max-w-7xl mx-auto p-1 sm:px-6 h-full 2xl:mx-auto 2xl:container lg:px-14 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
 	{blogi.map((blog)=>
@@ -467,7 +577,7 @@ const Blogs = ({blogs, firstblogs}) => {
                 </figure>
             </a>
             <div >
-                {/* <header>
+                <header>
                     <div class="mb-3">
                         <ul class="flex flex-wrap text-xs font-medium -m-1">
                             <li class="m-1">
@@ -481,7 +591,7 @@ const Blogs = ({blogs, firstblogs}) => {
                     <h3 class="text-2xl lg:text-3xl font-bold leading-tight mb-2">
                         <a class="hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Designing a functional workflow at home.</a>
                     </h3>
-                </header> */}
+                </header>
                 <p class="text-lg text-gray-400 flex">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
                 <footer class="flex items-center mt-4">
                     <a href="#0">
@@ -498,14 +608,63 @@ const Blogs = ({blogs, firstblogs}) => {
 		</Link>
 	)}
     </div>
+</section> */}
+
+
+
+<section class="flex flex-col justify-center antialiased bg-gray-900 text-gray-200 min-h-screen">
+    <div class="max-w-6xl mx-auto p-4 sm:px-6 h-full">
+        {/* <!-- Blog post --> */}
+		{blogi.map((blog)=>
+        <Link to={`/blog/${blog.id}`}>
+        <article class="max-w-sm mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center">
+            <a class="relative block group" href="#0">
+                <div class="absolute inset-0 bg-gray-800 hidden md:block transform md:translate-y-2 md:translate-x-4 xl:translate-y-4 xl:translate-x-8 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out pointer-events-none" aria-hidden="true"></div>
+                <figure class="relative h-0 pb-[56.25%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out">
+                    <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src={blog.attributes.blogImg.data.attributes.url}  width="540" height="303" alt="Blog post"/>
+                </figure>
+            </a>
+            <div>
+                {/* <header>
+                    <div class="mb-3">
+                        <ul class="flex flex-wrap text-xs font-medium -m-1">
+                            <li class="m-1">
+                                <a class="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out" href="#0">Product</a>
+                            </li>
+                            <li class="m-1">
+                                <a class="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-blue-500 hover:bg-blue-600 transition duration-150 ease-in-out" href="#0">Engineering</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight mb-2">
+                        <a class="hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Designing a functional workflow at home.</a>
+                    </h3>
+                </header> */}
+                <p class="text-lg text-gray-400 flex-grow">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                <footer class="flex items-center mt-4">
+                    <a href="#0">
+                        <img class="rounded-full flex-shrink-0 mr-4" src={blog.attributes.authorImg.data.attributes.url} alt="Author 04" style={{ width: "50px", height: "50px" }}/>
+                    </a>
+                    <div>
+                        <a class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Chris Solerieu</a>
+                        <span class="text-gray-700"> - </span>
+                        <span class="text-gray-500">Jan 19, 2020</span>
+                    </div>
+                </footer>
+            </div>
+        </article>  
+		</Link>
+		)}  
+    </div>
 </section>
 
 
+
 <div x-show="open" class="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60" x-data="{ open: true }">
-    <div class="bg-gray-800 text-gray-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
+    {/* <div class="bg-gray-800 text-gray-50 text-sm p-3 md:rounded shadow-lg flex justify-between">
         
         
-    </div>
+    </div> */}
 </div>
 
 

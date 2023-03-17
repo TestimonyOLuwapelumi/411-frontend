@@ -11,6 +11,7 @@ import AnimateContent from "./AnimateContent";
 import Podcast from "./podcast/Podcast";
 import Podcastp from "./podcast/Podcastp";
 import PodcastCont from "./podcast/PodcastCont";
+import Nav from "./Nav";
 
 
 
@@ -30,6 +31,7 @@ export {
     AnimateContent,
     Podcast,
     Podcastp,
-    PodcastCont
+    PodcastCont,
+    Nav
 
 }

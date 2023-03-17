@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.sectt {
+    background-color: #fff;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectt .divv{
+    display: flex;
+    margin: 0 10px;
+  }
+  
+  .uu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS devices */
+  }
+  
+  .ll {
+    margin: 0;
+    display: flex;
+  }
+  
+  .aba {
+    display: flex;
+    /* padding: 1px; */
+    color: #fff;
+    text-decoration: none;
+  }
+
+.uu .ll .aba {
+  color: #000;
+  display: flex;
+  /* width: 115px; */
+}
+.sectt ::-webkit-scrollbar{
+    /* background: #fff; */
+    height: 0;
+  }
+
+  .sectt ::-webkit-scrollbar-thumb{
+    /* background: #fff; */
+    height: 0;
+  }
+  
+  @media (max-width: 550px) {
+
+    .uu .ll .aba {
+        color: #000;
+        display: flex;
+       
+        /* margin-left: 200px; */
+        /* display: flex; */
+        display: inline-flex;
+      }
+      .bb{
+         width: 115px;
+      }
+  }
+
+  @media (max-width: 768px){
+    .uu .ll .aba {
+        color: #000;
+        display: flex;
+        /* width: 115px; */
+      }
+  }
+
+  
+@media (max-width: 1024px){
+    .uu .ll .aba {
+        color: #000;
+        display: flex;
+        /* width: 115px; */
+      }
+}
+
+@media (max-width: 1200px){
+    .uu .ll .aba {
+        color: #000;
+        display: flex;
+        /* width: 115px; */
+      }
+}

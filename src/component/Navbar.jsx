@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import{menu, close, logo, logoo} from '../assets';
 import { Link } from 'react-router-dom'
+import Nav from './Nav';
 // import myImage from "./Asset 1.png"
 
 const Navbar = () => {
@@ -9,6 +10,7 @@ const Navbar = () => {
 
 
   return (
+    <>
     <div className='w-full h-[80px] z-10 bg-white fixed drop-shadow-lg relative ss:relative head'>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
@@ -64,6 +66,8 @@ const Navbar = () => {
         </ul>
 
     </div>
+    <Nav/>
+    </>
   )
 }
 
