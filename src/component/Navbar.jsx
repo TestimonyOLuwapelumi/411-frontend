@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import{menu, close, logo} from '../assets';
+import{menu, close, logo, logoo} from '../assets';
 import { Link } from 'react-router-dom'
 // import myImage from "./Asset 1.png"
 
@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
-                    <Link to={'/'}><img src={logo} alt="logo" className='sm:ml-10 ss:ml-10 md:ml-3 opacity-[55%] w-[50px] h-[50px]' /></Link>
+                    <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-1 opacity-[100%] w-full h-[50px]' /></Link>
                 </div>
           
 
