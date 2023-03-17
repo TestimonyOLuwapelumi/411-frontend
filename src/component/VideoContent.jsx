@@ -32,12 +32,12 @@ const VideoContent = ({videos}) => {
   return (
     <>
     <div className="text-center">
-                <header className="py-16">
+                {/* <header className="py-16">
                     <div className="container mx-auto px-4">
                         <h1 className="text-4xl font-bold mb-2">{video.attributes.videoTitle}</h1>
-                        {/* <p className="text-lg">{video.attributes.videoDesc} </p> */}
+                        <p className="text-lg">{video.attributes.videoDesc} </p>
                     </div>
-                </header>
+                </header> */}
 
                 <main className="container mx-auto px-4 py-8">
                     <center>
@@ -48,6 +48,7 @@ const VideoContent = ({videos}) => {
                             <video   className="h-64 w-64"  controls >
                              <source src={video.attributes.videoImg.data.attributes.url}  type="video/mp4" />
                             </video>
+                            <h1 className="text-4xl font-bold mb-2">{video.attributes.videoTitle}</h1>
                                 <p className="text-lg mb-8"></p>
                             </div>
                         </div>

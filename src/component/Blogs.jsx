@@ -194,21 +194,21 @@ const Blogs = ({blogs, firstblogs}) => {
 
 	<div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
     <div class="flex flex-col items-center justify-center">
-		<div className="space-y-2 text-center">
+		<div className=" text-center">
 	{blogg.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
-	<div className="container max-w-7xl p-1 mx-auto space-y-6 sm:space-y-12">
+	<div className="container max-w-7xl p-1 mx-auto space-y-6 sm:space-y-12 border">
 		<a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
 			<img src={blog.attributes.blogImg.data.attributes.url} alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
-				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Noster tincidunt reprimique ad pro</h3>
+				<h3 className="text-2xl font-semibold sm:text-4xl ">Noster tincidunt reprimique ad pro</h3>
 				<span className="text-xs dark:text-gray-400">February 19, 2021</span>
 				<p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
 			</div>
 		</a>
     </div>
-			<h2 className="text-3xl font-bold"></h2>
-			<p className="font-serif text-sm dark:text-gray-400"></p>
+			{/* <h2 className="text-3xl font-bold"></h2>
+			<p className="font-serif text-sm dark:text-gray-400"></p> */}
 			</Link>
 				)}
 		</div>
@@ -482,10 +482,10 @@ const Blogs = ({blogs, firstblogs}) => {
                         <a class="hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Designing a functional workflow at home.</a>
                     </h3>
                 </header> */}
-                <p class="text-lg text-gray-400 flex-grow">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                <p class="text-lg text-gray-400 flex">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
                 <footer class="flex items-center mt-4">
                     <a href="#0">
-                        <img class="rounded-full flex-shrink-0 mr-4" src="https://preview.cruip.com/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04"/>
+                        <img class="rounded-full mr-4" src="https://preview.cruip.com/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04"/>
                     </a>
                     <div>
                         <a class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Chris Solerieu</a>

@@ -18,7 +18,7 @@ const Navbar = () => {
 
                 <div className='flex items-center'>
                     <ul className='hidden md:flex'>
-                        <Link to={"/"}><li>Home</li></Link>
+                        <Link to={"/"}><li className='border-2 border-blue-500 hover:border-red-500'>Home</li></Link>
                         <Link to={"/videos"}><li>Videos</li></Link>
                        <Link to={"/podcasts"}><li>Podcast</li></Link>
                         <Link to={"/*"}><li>About</li></Link>
@@ -44,11 +44,15 @@ const Navbar = () => {
 
         </div>
         <ul className={toggle?'absolute bg-white w-full px-8 md:hidden':'hidden'}>
-                        <Link to={"/"}><li>Home</li></Link>
-                        <Link to={"/videos"}><li>Videos</li></Link>
-                        <Link to={"/podcasts"}><li>Podcast</li></Link>
-                        <Link to={"/*"}><li>About</li></Link>
-                        <Link to={"/*"}><li>Support</li></Link>
+                         <Link to={"/"}><li className='border-2 border-blue-500 hover:border-red-500 w-20'>Home</li></Link>
+                         <br />
+                        <Link to={"/videos"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20'>Videos</li></Link>
+                        <br />
+                       <Link to={"/podcasts"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20'>Podcast</li></Link>
+                       <br />
+                        <Link to={"/*"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20'>About</li></Link>
+                        <br />
+                        <Link to={"/*"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20'>Support</li></Link>
                         <div className='flex flex-col my-4'>
                             <Link to={"/animates"}><button className='bg-transparent text-black mb-4 py-3 px-8'>Animation Stories</button></Link>
                             <Link to={`/quizapp`}>  

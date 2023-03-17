@@ -12,7 +12,7 @@ const Podcast = ({podcasts, firstpodcasts}) => {
   return (
     <>
             
-  <header className="active" data-header>
+  {/* <header className="active" data-header>
     <div className="container">
 
    
@@ -75,7 +75,7 @@ const Podcast = ({podcasts, firstpodcasts}) => {
       </nav>
 
     </div>
-  </header>
+  </header> */}
 
 
 
@@ -378,7 +378,7 @@ const Podcast = ({podcasts, firstpodcasts}) => {
 
 
 
-
+{/* 
   <footer>
 
     <div className="footer-top">
@@ -467,7 +467,7 @@ const Podcast = ({podcasts, firstpodcasts}) => {
       </div>
     </div>
 
-  </footer>
+  </footer> */}
 
 
 

@@ -90,7 +90,7 @@ const Blogs = ({videos}) => {
             </div> */}
 
 
-            <div className="bg-[#000] mt-12">
+            <div className="bg-[#fff] mt-12">
                 <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                     <h2 className="mb-3 text-3xl md:text-3xl font-extrabold text-slate-50 flex flex-col items-center">Watch</h2>
                     <h2 className="mb-12 text-2xl md:text-2xl font-extrabold text-blue-700 flex flex-col items-center">Trending Videos</h2>
