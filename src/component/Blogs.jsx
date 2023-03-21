@@ -192,7 +192,7 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
-<section className="flex justify-center items-center drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+<section className="flex justify-center items-center">
 
 	<div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
     <div class="flex flex-col items-center justify-center">
@@ -661,7 +661,7 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
-<section class="flex flex-col justify-center antialiased bg-gray-900 text-gray-200 min-h-screen">
+<section class="flex flex-col justify-center antialiased bg-blue-800 text-gray-200 min-h-screen">
     <div class="max-w-6xl mx-auto p-4 sm:px-6 h-full">
         {/* <!-- Blog post --> */}
 		{blogi.map((blog)=>
