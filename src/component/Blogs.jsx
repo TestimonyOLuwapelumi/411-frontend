@@ -192,7 +192,7 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
-<section className="flex justify-center items-center">
+<section className="flex justify-center items-center drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
 
 	<div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
     <div class="flex flex-col items-center justify-center">
@@ -217,7 +217,7 @@ const Blogs = ({blogs, firstblogs}) => {
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
 		{bloggg.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
-			<article className="flex flex-col dark:bg-gray-900">
+			<article className="flex flex-col dark:bg-blue-600">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={blog.attributes.blogImg.data.attributes.url} />
 				</a>
@@ -661,7 +661,7 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
-<section class="flex flex-col justify-center antialiased bg-blue-800 text-gray-200 min-h-screen">
+<section class="flex flex-col justify-center antialiased bg-gray-900 text-gray-200 min-h-screen">
     <div class="max-w-6xl mx-auto p-4 sm:px-6 h-full">
         {/* <!-- Blog post --> */}
 		{blogi.map((blog)=>
