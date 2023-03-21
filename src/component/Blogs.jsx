@@ -217,7 +217,7 @@ const Blogs = ({blogs, firstblogs}) => {
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
 		{bloggg.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
-			<article className="flex flex-col dark:bg-blue-600">
+			<article className="flex flex-col dark:drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] border">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src={blog.attributes.blogImg.data.attributes.url} />
 				</a>
@@ -689,15 +689,15 @@ const Blogs = ({blogs, firstblogs}) => {
                         <a class="hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Designing a functional workflow at home.</a>
                     </h3>
                 </header> */}
-                <p class="text-lg text-gray-400 flex-grow">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                <p class="text-lg text-gray-200 flex-grow">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
                 <footer class="flex items-center mt-4">
                     <a href="#0">
                         <img class="rounded-full flex-shrink-0 mr-4" src={blog.attributes.authorImg.data.attributes.url} alt="Author 04" style={{ width: "50px", height: "50px" }}/>
                     </a>
                     <div>
                         <a class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Chris Solerieu</a>
-                        <span class="text-gray-700"> - </span>
-                        <span class="text-gray-500">Jan 19, 2020</span>
+                        <span class="text-gray-200"> - </span>
+                        <span class="text-gray-200">Jan 19, 2020</span>
                     </div>
                 </footer>
             </div>
