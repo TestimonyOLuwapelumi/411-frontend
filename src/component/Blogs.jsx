@@ -196,11 +196,11 @@ const Blogs = ({blogs, firstblogs}) => {
 
 	<div className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
     <div class="flex flex-col items-center justify-center">
-		<div className=" text-center">
+		{/* <div className=" text-center">
 	{blogg.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
 	<div className="container max-w-7xl p-1 mx-auto space-y-1 sm:space-y-1 border">
-		<a rel="noopener noreferrer" href="#" className="blockmax-w-7xl  gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
+		<a rel="noopener noreferrer" href="#" className="blockmax-w-7xl   mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-900">
 			<img src={blog.attributes.blogImg.data.attributes.url} alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
 				<h3 className="text-2xl font-semibold sm:text-4xl "> {blog.attributes.blogTitle}</h3>
@@ -209,11 +209,11 @@ const Blogs = ({blogs, firstblogs}) => {
 			</div>
 		</a>
     </div>
-			{/* <h2 className="text-3xl font-bold"></h2>
-			<p className="font-serif text-sm dark:text-gray-400"></p> */}
+			<h2 className="text-3xl font-bold"></h2>
+			<p className="font-serif text-sm dark:text-gray-400"></p>
 			</Link>
 				)}
-		</div>
+		</div> */}
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
 		{bloggg.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
@@ -286,12 +286,61 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
+<div>    
+      <section class=" ">
+    
+      <div class="container p-1 mx-auto space-y4 ">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+
+		{bloggg.map((blog)=>
+        <Link to={`/blog/${blog.id}`}>
+          <div class="lg:hidden ">
+            <div class="bg-white h-full w-full pl-4">
+              <div>
+                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
+                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+        backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}></div>
+                    <div class="pl-3 w-3/5">
+                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
+                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
+                            <div>Rowena Wheeler</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          </div>
+          <article class="flex flex-col dark:bg-gray-900 hidden lg:block">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src={blog.attributes.blogImg.data.attributes.url} />
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
+              <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+              <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
+                <span>June 1, 2020</span>
+                <span>2.1K views</span>
+              </div>
+            </div>
+          </article>
+		  </Link>
+				)}
+         
+        </div>
+      </div>
+    </section>
+  </div>
 
 
 
 
-
-<div class="bg-white py-6">
+{/* <div class="bg-white py-6">
     <div class="lg:container mx-auto px-2 sm:px-4 lg:px-2">
      
         <div class="flex flex-row flex-wrap">
@@ -389,7 +438,7 @@ const Blogs = ({blogs, firstblogs}) => {
             </div>
         </div>
     </div>
-</div>
+</div> */}
 
 
 
@@ -669,13 +718,65 @@ const Blogs = ({blogs, firstblogs}) => {
 
 
 
-<section className="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
-	<div className="container p-6 mx-auto space-y-8">
+<div>    
+      <section class=" ">
+    
+      <div class="container p-1 mx-auto space-y4 pl-4">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+
+		{bloggi.map((blog)=>
+        <Link to={`/blog/${blog.id}`}>
+          <div class="lg:hidden ">
+            <div class="bg-white h-full w-full ">
+              <div>
+                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
+                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+        backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}></div>
+                    <div class="pl-3 w-3/5">
+                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
+                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
+                            <div>Rowena Wheeler</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          </div>
+          <article class="flex flex-col dark:bg-gray-900 hidden lg:block">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src={blog.attributes.blogImg.data.attributes.url} />
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</a>
+              <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+              <div class="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
+                <span>June 1, 2020</span>
+                <span>2.1K views</span>
+              </div>
+            </div>
+          </article>
+		  </Link>
+				)}
+         
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+{/* <section className="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+	<div className="container p-6 mx-auto space-y-8"> */}
 		{/* <div className="space-y-2 text-center">
 			<h2 className="text-3xl font-bold">Partem reprimique an pro</h2>
 			<p className="font-serif text-sm dark:text-gray-400">Qualisque erroribus usu at, duo te agam soluta mucius.</p>
 		</div> */}
-		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+		{/* <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
 		{bloggi.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
 			<article className="flex flex-col dark:bg-gray-900">
@@ -693,7 +794,7 @@ const Blogs = ({blogs, firstblogs}) => {
 				</div>
 			</article>
 			</Link>
-		)}
+		)} */}
 			{/* <article className="flex flex-col dark:bg-gray-900">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?2" />
@@ -736,9 +837,9 @@ const Blogs = ({blogs, firstblogs}) => {
 					</div>
 				</div>
 			</article> */}
-		</div>
+		{/* </div>
 	</div>
-</section>
+</section> */}
 
 
 
