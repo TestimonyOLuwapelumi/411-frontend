@@ -25,7 +25,7 @@ const Humour = () => {
   return (
 
     <>
-		<section className="  dark:text-gray-100 ">
+		<section className="  ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -33,7 +33,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -41,7 +41,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
+					<span className="text-xs ">January 22, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -49,7 +49,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -60,7 +60,7 @@ const Humour = () => {
 	</div>
 </section>
 
-		<section className="  dark:text-gray-100 ">
+		<section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -89,7 +89,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
 			</a> 
@@ -118,7 +118,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
+					<span className="text-xs ">January 22, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -147,7 +147,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -176,7 +176,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -220,7 +220,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -228,7 +228,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
+					<span className="text-xs text-gray-400">January 22, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -236,23 +236,23 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
       <div className="flex justify-center lg:hidden">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 		</div>
 		<div className="flex justify-center hidden lg:block">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 ">Load more posts...</button>
 		</div>
 	</div>
 </section>
 
 
 
-<section className="  dark:text-gray-100 ">
+<section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -281,7 +281,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
+					<span className="text-xs">January 21, 2021</span>
 					<p></p>
 				</div>
 			</a> 
@@ -310,7 +310,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
+					<span className="text-xs ">January 22, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -339,7 +339,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -368,16 +368,16 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
     	<div className="flex justify-center lg:hidden">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 		</div>
     <div className="flex justify-center hidden lg:block">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 	</div>
 </section>
@@ -428,7 +428,7 @@ const Humour = () => {
   </div>
 
 
-  <section className="  dark:text-gray-100 ">
+  <section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -457,7 +457,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
+					<span className="text-xs">January 21, 2021</span>
 					<p></p>
 				</div>
 			</a> 
@@ -486,7 +486,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
+					<span className="text-xs ">January 22, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -515,7 +515,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -544,7 +544,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -553,13 +553,13 @@ const Humour = () => {
 		</div>
 		</div>
     <div className="flex justify-center hidden lg:block">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 	</div>
 </section>
 
 
-<section className="  dark:text-gray-100 ">
+<section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -588,7 +588,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 21, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
 			</a> 
@@ -617,7 +617,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 22, 2021</span>
+					<span className="text-xs ">January 22, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -646,7 +646,7 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
@@ -675,16 +675,16 @@ const Humour = () => {
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs dark:text-gray-400">January 23, 2021</span>
+					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
 			</a>
     	<div className="flex justify-center lg:hidden">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 ">Load more posts...</button>
 		</div>
 		</div>
     <div className="flex justify-center hidden lg:block">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 dark:text-gray-100">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 ">Load more posts...</button>
 		</div>
 	</div>
 </section>
