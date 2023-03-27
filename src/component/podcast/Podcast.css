@@ -1,4 +1,4 @@
-/*-----------------------------------*\
+/* -----------------------------------*\
   #style.css
 \*-----------------------------------*/
 
@@ -166,10 +166,10 @@ body {
 
 
 /*-----------------------------------*\
-  #HEADER
+  #.header
 \*-----------------------------------*/
 
-header {
+.header {
   position: fixed;
   top: -90px;
   left: 0;
@@ -181,9 +181,9 @@ header {
   z-index: 4;
 }
 
-header.active { top: 0; }
+.header.active { top: 0; }
 
-header .container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -754,10 +754,10 @@ header .container {
 
 
   /**
-   * HEADER
+   * ..header
    */
 
-  header { top: -120px; }
+  .header { top: -120px; }
 
   .nav-toggle-btn { display: none; }
 
@@ -892,12 +892,12 @@ header .container {
 
 
   /**
-   * HEADER
+   * .header
    */
 
-  header { padding-block: 25px; }
+  .header { padding-block: 25px; }
 
-  header .container { max-width: 1300px; }
+  .header .container { max-width: 1300px; }
 
   .navbar { gap: 20px; }
 
@@ -947,17 +947,13 @@ header .container {
 
 
 
-  /**
-   * PODCAST
-   */
+
 
   .podcast-list { grid-template-columns: repeat(4, 1fr); }
 
 
 
-  /**
-   * FOOTER
-   */
+
 
   .footer-link-title {
     --fs-2: 22px;

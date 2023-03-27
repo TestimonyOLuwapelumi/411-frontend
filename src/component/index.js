@@ -12,6 +12,11 @@ import Podcast from "./podcast/Podcast";
 import Podcastp from "./podcast/Podcastp";
 import PodcastCont from "./podcast/PodcastCont";
 import Nav from "./Nav";
+import About from "./About";
+import Humour from "./Humour";
+import PersonalityTest from "./PersonalityTest";
+import Imagination from "./Imagination";
+import Carousel from "./Carousel";
 
 
 
@@ -32,6 +37,11 @@ export {
     Podcast,
     Podcastp,
     PodcastCont,
-    Nav
+    Nav,
+    About,
+    Humour,
+    PersonalityTest,
+    Imagination,
+    Carousel
 
 }

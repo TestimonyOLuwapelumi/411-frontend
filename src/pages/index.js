@@ -1,4 +1,5 @@
 
+import { About } from "../component";
 import Animatecontent from "./Animatecontent";
 import AnimatePage from "./AnimatePage";
 import BlogContentPage from "./BlogContentPage";
@@ -20,6 +21,7 @@ export{
     Animatecontent,
     PodcastPage,
     Pod,
-    PodcastContent
+    PodcastContent,
+    About
 
 }
