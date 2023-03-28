@@ -18,7 +18,8 @@ const Navbar = () => {
 
                 <div className='flex items-center'>
                     <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-2 opacity-[100%] w-full h-[50px]  ml-3' /></Link>
-                    <h1 className='ml-3 lg:ml-7 text-2xl lg:text-4xl'>What is the 411?</h1>
+                    
+                    <h1 className='ml-3 lg:ml-7 text-2xl lg:text-3xl divv'>What is the 411?</h1>
                 </div>
           
 
@@ -74,8 +75,8 @@ const Navbar = () => {
 
     </div>
     <header class="w-full container mx-auto pt-20 lg:pt-1 drop-shadow-2xl bg-blue-800 ">
-      <div class="flex flex-col items-center py-1 lg:py-1">
-        <img src={myImage} alt="" className='h-20 w-full'/>
+      <div class="flex flex-col items-center py-1 lg:py-1 ">
+        {/* <img src={myImage} alt="" className='h-96 w-full'/> */}
             {/* <a class="font-bold text-gray-800 uppercase hover:text-gray-900 text-4xl lg:text-6xl text-white" href="#">
                 Thx 411
             </a>

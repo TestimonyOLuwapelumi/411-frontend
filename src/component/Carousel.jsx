@@ -1,50 +1,49 @@
-import React, { useState } from "react";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import React from 'react'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-const Carousel = ({ images }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-  const previousSlide = () => {
-    const lastIndex = images.length - 1;
-    const shouldResetIndex = currentImageIndex === 0;
-    const index = shouldResetIndex ? lastIndex : currentImageIndex - 1;
-    setCurrentImageIndex(index);
-  };
-
-  const nextSlide = () => {
-    const lastIndex = images.length - 1;
-    const shouldResetIndex = currentImageIndex === lastIndex;
-    const index = shouldResetIndex ? 0 : currentImageIndex + 1;
-    setCurrentImageIndex(index);
-  };
-
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+const Carousel = () => {
   return (
-    <div className="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl">
-      <div className="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg">
-        <img
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          src={images[currentImageIndex]}
-          alt=""
-        />
-      </div>
-      <div className="absolute inset-y-0 right-0 flex items-center">
-        <button
-          className="h-full px-4 text-3xl text-gray-800 hover:text-gray-900 transition duration-150 ease-in-out"
-          onClick={nextSlide}
-        >
-          <FaArrowAltCircleRight />
-        </button>
-      </div>
-      <div className="absolute inset-y-0 left-0 flex items-center">
-        <button
-          className="h-full px-4 text-3xl text-gray-800 hover:text-gray-900 transition duration-150 ease-in-out"
-          onClick={previousSlide}
-        >
-          <FaArrowAltCircleLeft />
-        </button>
-      </div>
+    <>
+     <div className="">
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+   
+      <SwiperSlide>
+        <div className=" bg-blue-800 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia quod illo adipisci voluptates quae voluptas, iusto, nihil in vitae consequuntur facilis numquam laudantium dolore aperiam eligendi impedit obcaecati aliquid, maxime vel ea cumque explicabo rerum. Maiores, quod, nisi repellendus debitis facere doloribus unde quis fugit repellat tenetur veniam, sed labore rerum quo quisquam! Nesciunt, voluptate quos. Consequuntur exercitationem quos reiciendis vero quam est! Reiciendis, et exercitationem fugit dolorem modi cumque doloremque nostrum autem quaerat omnis quisquam, facere iure aut facilis temporibus adipisci ratione excepturi commodi perferendis, eveniet quos earum deserunt praesentium saepe? Velit saepe ipsa rerum commodi iure dolores accusantium autem adipisci ut quo neque explicabo molestias, debitis omnis nisi laboriosam est voluptate veritatis ullam quasi deserunt dicta. Fuga expedita aspernatur necessitatibus ea ipsum nostrum rerum asperiores incidunt aut. Corrupti exercitationem veritatis aspernatur repellat. Iste earum ea laudantium autem optio! Dolore non perspiciatis explicabo minima, corporis accusamus atque laudantium doloribus, ut eius necessitatibus quisquam autem? Beatae accusamus aspernatur dolores, quas molestiae eius eaque impedit distinctio pariatur nisi ducimus officiis quia animi laudantium aut ipsa corrupti facilis ea numquam, cumque doloribus dicta quis! Quaerat blanditiis cupiditate nobis perferendis porro maiores doloribus modi quidem sunt, nulla, fugiat delectus! Neque, praesentium.
+        </div>
+      </SwiperSlide>
+      <SwiperSlide> <div className=" bg-blue-800 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia quod illo adipisci voluptates quae voluptas, iusto, nihil in vitae consequuntur facilis numquam laudantium dolore aperiam eligendi impedit obcaecati aliquid, maxime vel ea cumque explicabo rerum. Maiores, quod, nisi repellendus debitis facere doloribus unde quis fugit repellat tenetur veniam, sed labore rerum quo quisquam! Nesciunt, voluptate quos. Consequuntur exercitationem quos reiciendis vero quam est! Reiciendis, et exercitationem fugit dolorem modi cumque doloremque nostrum autem quaerat omnis quisquam, facere iure aut facilis temporibus adipisci ratione excepturi commodi perferendis, eveniet quos earum deserunt praesentium saepe? Velit saepe ipsa rerum commodi iure dolores accusantium autem adipisci ut quo neque explicabo molestias, debitis omnis nisi laboriosam est voluptate veritatis ullam quasi deserunt dicta. Fuga expedita aspernatur necessitatibus ea ipsum nostrum rerum asperiores incidunt aut. Corrupti exercitationem veritatis aspernatur repellat. Iste earum ea laudantium autem optio! Dolore non perspiciatis explicabo minima, corporis accusamus atque laudantium doloribus, ut eius necessitatibus quisquam autem? Beatae accusamus aspernatur dolores, quas molestiae eius eaque impedit distinctio pariatur nisi ducimus officiis quia animi laudantium aut ipsa corrupti facilis ea numquam, cumque doloribus dicta quis! Quaerat blanditiis cupiditate nobis perferendis porro maiores doloribus modi quidem sunt, nulla, fugiat delectus! Neque, praesentium.
+        </div></SwiperSlide>
+      <SwiperSlide> <div className=" bg-blue-800 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia quod illo adipisci voluptates quae voluptas, iusto, nihil in vitae consequuntur facilis numquam laudantium dolore aperiam eligendi impedit obcaecati aliquid, maxime vel ea cumque explicabo rerum. Maiores, quod, nisi repellendus debitis facere doloribus unde quis fugit repellat tenetur veniam, sed labore rerum quo quisquam! Nesciunt, voluptate quos. Consequuntur exercitationem quos reiciendis vero quam est! Reiciendis, et exercitationem fugit dolorem modi cumque doloremque nostrum autem quaerat omnis quisquam, facere iure aut facilis temporibus adipisci ratione excepturi commodi perferendis, eveniet quos earum deserunt praesentium saepe? Velit saepe ipsa rerum commodi iure dolores accusantium autem adipisci ut quo neque explicabo molestias, debitis omnis nisi laboriosam est voluptate veritatis ullam quasi deserunt dicta. Fuga expedita aspernatur necessitatibus ea ipsum nostrum rerum asperiores incidunt aut. Corrupti exercitationem veritatis aspernatur repellat. Iste earum ea laudantium autem optio! Dolore non perspiciatis explicabo minima, corporis accusamus atque laudantium doloribus, ut eius necessitatibus quisquam autem? Beatae accusamus aspernatur dolores, quas molestiae eius eaque impedit distinctio pariatur nisi ducimus officiis quia animi laudantium aut ipsa corrupti facilis ea numquam, cumque doloribus dicta quis! Quaerat blanditiis cupiditate nobis perferendis porro maiores doloribus modi quidem sunt, nulla, fugiat delectus! Neque, praesentium.
+        </div></SwiperSlide>
+      <SwiperSlide> <div className=" bg-gray-800 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quia quod illo adipisci voluptates quae voluptas, iusto, nihil in vitae consequuntur facilis numquam laudantium dolore aperiam eligendi impedit obcaecati aliquid, maxime vel ea cumque explicabo rerum. Maiores, quod, nisi repellendus debitis facere doloribus unde quis fugit repellat tenetur veniam, sed labore rerum quo quisquam! Nesciunt, voluptate quos. Consequuntur exercitationem quos reiciendis vero quam est! Reiciendis, et exercitationem fugit dolorem modi cumque doloremque nostrum autem quaerat omnis quisquam, facere iure aut facilis temporibus adipisci ratione excepturi commodi perferendis, eveniet quos earum deserunt praesentium saepe? Velit saepe ipsa rerum commodi iure dolores accusantium autem adipisci ut quo neque explicabo molestias, debitis omnis nisi laboriosam est voluptate veritatis ullam quasi deserunt dicta. Fuga expedita aspernatur necessitatibus ea ipsum nostrum rerum asperiores incidunt aut. Corrupti exercitationem veritatis aspernatur repellat. Iste earum ea laudantium autem optio! Dolore non perspiciatis explicabo minima, corporis accusamus atque laudantium doloribus, ut eius necessitatibus quisquam autem? Beatae accusamus aspernatur dolores, quas molestiae eius eaque impedit distinctio pariatur nisi ducimus officiis quia animi laudantium aut ipsa corrupti facilis ea numquam, cumque doloribus dicta quis! Quaerat blanditiis cupiditate nobis perferendis porro maiores doloribus modi quidem sunt, nulla, fugiat delectus! Neque, praesentium.
+        </div></SwiperSlide>
+    </Swiper>
     </div>
-  );
-};
 
-export default Carousel;
+    
+    </>
+  )
+}
+
+export default Carousel

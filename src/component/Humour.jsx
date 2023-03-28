@@ -3,6 +3,7 @@ import axios from 'axios'
 import{menu, close, logo, logoo} from '../assets';
 import Carousel from './Carousel';
 // import Carousel from "./Carousel"
+import "./Hum.css"
 
 
 const images = [
@@ -29,30 +30,47 @@ const Humour = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    ">
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+          <h6 className='text-blue-800'>#Personality Test</h6>
+          {/* <span>#Personality Test</span> */}
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    ">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 22, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    ">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
+			
 		</div>
 		{/* <div className="flex justify-center">
 			<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline bg-gray-900 dark:text-gray-400">Load more posts...</button>
@@ -75,7 +93,7 @@ const Humour = () => {
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
+                        <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
                         <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
                             <div>Rowena Wheeler</div>
@@ -85,13 +103,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a> 
       <div class="lg:hidden ">
             <div class="bg-white h-full w-full border-b-2">
@@ -104,7 +127,7 @@ const Humour = () => {
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
+                        <p class="text-xs text-gray-500 uppercase">#Humour</p>
                         <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
                             <div>Rowena Wheeler</div>
@@ -114,13 +137,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 22, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
@@ -133,7 +161,7 @@ const Humour = () => {
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
+                        <p class="text-xs text-gray-500 uppercase">#Imagination</p>
                         <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
                             <div>Rowena Wheeler</div>
@@ -143,13 +171,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
@@ -162,7 +195,7 @@ const Humour = () => {
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
+                        <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
                         <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
                             <div>Rowena Wheeler</div>
@@ -172,13 +205,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 23, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
 		</div>
 		{/* <div className="flex justify-center">
@@ -216,29 +254,44 @@ const Humour = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    ">
+    <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    ">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+        <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 22, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    ">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
+          <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a>
       <div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
@@ -250,8 +303,7 @@ const Humour = () => {
 	</div>
 </section>
 
-
-
+<Carousel/>
 <section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
@@ -277,13 +329,17 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs">January 21, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
@@ -306,14 +362,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 22, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
@@ -335,14 +395,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
@@ -364,14 +428,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
     	<div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
@@ -453,13 +521,17 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs">January 21, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
@@ -482,14 +554,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 22, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
@@ -511,14 +587,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
@@ -540,15 +620,19 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
-    <div className="flex justify-center lg:hidden">
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
+    	<div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 		</div>
@@ -584,13 +668,17 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
 					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
 			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
@@ -613,14 +701,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 22, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
@@ -642,14 +734,18 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
@@ -671,20 +767,24 @@ const Humour = () => {
             </div>
           </div>
           </div>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<span className="text-xs ">January 21, 2021</span>
 					<p></p>
 				</div>
-			</a>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</a> 
     	<div className="flex justify-center lg:hidden">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 ">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 		</div>
     <div className="flex justify-center hidden lg:block">
-			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 ">Load more posts...</button>
+			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
 	</div>
 </section>
@@ -791,6 +891,7 @@ const Humour = () => {
               </p>
             </div>
           </div>
+          
         </a>
         <a href aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
