@@ -44,7 +44,8 @@ export default function App() {
   return (
     <>
     {/* <About/> */}
-    <AboutPage/>
+    <Homepage/>
+    {/* <AboutPage/> */}
     
       {/* <Routes>
         <Route path="/" element={<Homepage blogs={blogData ? blogData : ""}   firstblogs={firstblogData ? firstblogData : ""} />} />

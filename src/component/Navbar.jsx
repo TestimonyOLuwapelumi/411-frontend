@@ -52,15 +52,15 @@ const Navbar = () => {
 
         </div>
         <ul className={toggle?'absolute bg-white w-64 lg:w-96 px-8 right-0 text-center ':'hidden'}>
-            <Link to={"/"}><li className='border-2 border-blue-500 hover:border-red-500 w-20 inline-block'>Home</li></Link>
+            <Link to={"/"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
             <br />
-            <Link to={"/videos"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
+            <Link to={"/videos"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
             <br />
-            <Link to={"/podcasts"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20 inline-block'>Podcast</li></Link>
+            <Link to={"/podcasts"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Podcast</li></Link>
             <br />
-            <Link to={"/*"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
+            <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
             <br />
-            <Link to={"/*"}><li className='border-2 border-blue-500 hover:border-red-500 space-y-16 w-20 inline-block'>Support</li></Link>
+            <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>Support</li></Link>
 
             <div className='flex flex-col my-4 text-center'>
             <Link to={"/animates"}><button className='bg-transparent text-black mb-4 py-3 px-8 inline-block'>Animation Stories</button></Link>

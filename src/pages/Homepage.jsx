@@ -1,14 +1,15 @@
 import React from 'react';
-import { Navbar, Blogs, Footer, Video, Podcastp } from "../component"
+import { Navbar, Blogs, Footer, Video, Podcastp, Home } from "../component"
 
-const Homepage = ({blogs, videos, firstblogs, podcasts}) => {
+const Homepage = () => {
    
 
 
   return (
     <div>
       <Navbar />
-      <Blogs blogs={blogs?blogs:""} firstblogs={firstblogs?firstblogs:""}/> 
+      <Home/>
+      {/* <Blogs blogs={blogs?blogs:""} firstblogs={firstblogs?firstblogs:""}/>  */}
       {/* <Video videos={videos?videos:""}/> */}
       {/* <Podcastp podcasts={podcastData?podcastData : ""}/>       */}
       {/* <Podcastp podcasts={podcasts?podcasts:""}/> */}

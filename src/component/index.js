@@ -18,6 +18,7 @@ import PersonalityTest from "./PersonalityTest";
 import Imagination from "./Imagination";
 import Carousel from "./Carousel";
 import Carousell from "./Carousell";
+import Home from "./Home";
 
 
 
@@ -44,6 +45,7 @@ export {
     PersonalityTest,
     Imagination,
     Carousel,
-    Carousell
+    Carousell,
+    Home
 
 }
