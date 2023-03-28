@@ -43,6 +43,7 @@ const Navbar = () => {
 
                 </div> */}
 
+                {/* <input type="email" class="border-l border-t border-b border-gray-200 rounded-l-md lg:w-64 text-base md:text-lg px-3 py-2 lg:ml-0 mb-20 object-contain mr-5 w-20 " placeholder="Enter Your Email"/> */}
                 <div className=' ' onClick={handleClick}>
                     <img src={!toggle?menu:close} alt="menu" className='w-[28px] h-[28px] object-contain mr-5' />
                 </div>

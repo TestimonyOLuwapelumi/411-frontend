@@ -8,7 +8,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-const Carousel = () => {
+// import Carousell from './Carousell';
+const Carousell = () => {
   return (
     <>
      <div className="">
@@ -213,4 +214,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default Carousell

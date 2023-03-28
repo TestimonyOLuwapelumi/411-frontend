@@ -68,19 +68,19 @@
   }
   
   .topp {
-    animation: animateTop 3s ease-in-out infinite;
+    animation: animateTop 4s ease-in-out infinite;
   }
   
   .bottomm {
-    animation: animateBottom 3s ease-in-out infinite;
+    animation: animateBottom 4s ease-in-out infinite;
   }
   
   .rightt {
-    animation: animateRight 3s ease-in-out infinite;
+    animation: animateRight 4s ease-in-out infinite;
   }
   
   .leftt {
-    animation: animateLeft 3s ease-in-out infinite;
+    animation: animateLeft 4s ease-in-out infinite;
   }
   
   @keyframes animateTop {
