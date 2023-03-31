@@ -1,11 +1,12 @@
 import React from 'react'
-import { Footer, Navbar, VideoContent } from '../component'
+import { Footer, Navbar, Video, VideoContent } from '../component'
 
-const VideoPage = ({videos}) => {
+const VideoPage = ({allDatav}) => {
   return (
     <>
     <Navbar/>
-    <VideoContent videos={videos?videos:""}/>
+    {/* <VideoContent/> */}
+    <Video allDatav={allDatav}/>
     <Footer/>
     </>
   )

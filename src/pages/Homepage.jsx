@@ -1,14 +1,15 @@
 import React from 'react';
-import { Navbar, Blogs, Footer, Video, Podcastp, Home } from "../component"
+import { Navbar, Footer,  Home} from "../component"
 
-const Homepage = () => {
-   
+const Homepage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
+   console.log(allData);
 
 
   return (
     <div>
       <Navbar />
-      <Home/>
+      <Home allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatav={allDatav} allDatapo={allDatapo}/>
+      {/* <Humour/> */}
       {/* <Blogs blogs={blogs?blogs:""} firstblogs={firstblogs?firstblogs:""}/>  */}
       {/* <Video videos={videos?videos:""}/> */}
       {/* <Podcastp podcasts={podcastData?podcastData : ""}/>       */}

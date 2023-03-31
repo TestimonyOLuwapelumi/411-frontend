@@ -1,13 +1,12 @@
 import React from 'react'
 import { Footer, Navbar, Podcast } from '../component'
 
-const PodcastPage = ({podcasts, firstpodcasts}) => {
-    console.log(podcasts);
-    console.log(firstpodcasts);
+const PodcastPage = ({allDatapo}) => {
+    
   return (
     <>
         <Navbar/>
-        <Podcast podcasts={podcasts?podcasts: ""} firstpodcasts={firstpodcasts?firstpodcasts:""}/>
+        <Podcast allDatapo={allDatapo}/>
         <Footer/>
 
     </>

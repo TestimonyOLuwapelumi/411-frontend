@@ -135,14 +135,6 @@ export default function App() {
       <Route path="/pod" element={<Pod podcasts={podcastData?podcastData : ""}/>}/>
       <Route path="/podcasts/:id" element={<PodcastContent podcasts={podcastData?podcastData : ""}/>} />
       {/* <PodcastContent/> */}
-
-        
-
-
-        
-
-
-
       </Routes>
       
     </>

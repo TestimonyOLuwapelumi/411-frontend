@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,6 +28,44 @@
       }
     
 }
+h3{
+  font-family: 'Cabin', sans-serif;
+ }
+p{
+  font-family: 'Cabin', sans-serif;
+ }
+span{
+  font-family: 'Cabin', sans-serif;
+ }
+h1{
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+ }
+h2{
+  font-family: 'Cabin', sans-serif;
+ }
+h4{
+  font-family: 'Cabin', sans-serif;
+ }
+h5{
+  font-family: 'Cabin', sans-serif;
+ }
+h6{
+  font-family: 'Cabin', sans-serif;
+ }
+li{
+  font-family: 'Cabin', sans-serif;
+ }
+a{
+  font-family: 'Cabin', sans-serif;
+ }
+ul{
+  font-family: 'Cabin', sans-serif;
+ }
+button{
+  font-family: 'Cabin', sans-serif;
+ }
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

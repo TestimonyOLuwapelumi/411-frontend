@@ -8,17 +8,23 @@ import FirstBlogContent from "./FirstBlogContent";
 import Firstblog from "./Firstblog";
 import Animate from "./Animate";
 import AnimateContent from "./AnimateContent";
-import Podcast from "./podcast/Podcast";
-import Podcastp from "./podcast/Podcastp";
-import PodcastCont from "./podcast/PodcastCont";
 import Nav from "./Nav";
 import About from "./About";
 import Humour from "./Humour";
-import PersonalityTest from "./PersonalityTest";
 import Imagination from "./Imagination";
 import Carousel from "./Carousel";
 import Carousell from "./Carousell";
 import Home from "./Home";
+import Personality from "./Personality";
+import HumourContent from "./HumourContent";
+import Data from "./Data";
+import PersonalityContent from "./PersonalityContent";
+import Blogj from "./Blogj";
+import BloggContent from "./BloggContent";
+import ImaginationContent from "./ImaginationContent";
+import Podcast from "./Podcast";
+import PodcastContent from "./PodcastContent";
+import Loader from "./Loader";
 
 
 
@@ -36,16 +42,23 @@ export {
     Firstblog,
     Animate,
     AnimateContent,
-    Podcast,
-    Podcastp,
-    PodcastCont,
     Nav,
     About,
     Humour,
-    PersonalityTest,
     Imagination,
     Carousel,
     Carousell,
-    Home
+    Home,
+    Personality,
+    HumourContent,
+    Data,
+    PersonalityContent,
+    Blogj,
+    BloggContent,
+    ImaginationContent,
+    Podcast,
+    PodcastContent,
+    Loader
+    
 
 }

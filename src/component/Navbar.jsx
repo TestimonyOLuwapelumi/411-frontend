@@ -54,23 +54,26 @@ const Navbar = () => {
         <ul className={toggle?'absolute bg-white w-64 lg:w-96 px-8 right-0 text-center ':'hidden'}>
             <Link to={"/"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
             <br />
-            <Link to={"/videos"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
+            <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
             <br />
-            <Link to={"/podcasts"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Podcast</li></Link>
+            <Link to={"/podcast"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Podcast</li></Link>
+            {/* <Link to={"/personality"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Personality Test</li></Link>
+            <Link to={"/humour"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Humour</li></Link>
+            <Link to={"/Imagination"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Imagination</li></Link> */}
             <br />
             <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
             <br />
             <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>Support</li></Link>
 
             <div className='flex flex-col my-4 text-center'>
-            <Link to={"/animates"}><button className='bg-transparent text-black mb-4 py-3 px-8 inline-block'>Animation Stories</button></Link>
-            <Link to={`/quizapp`}>
+            {/* <Link to={"/animates"}><button className='bg-transparent text-black mb-4 py-3 px-8 inline-block'>Animation Stories</button></Link> */}
+            {/* <Link to={`/quizapp`}>
                 <button className='px-8 py-3 inline-block'>Quiz</button>
-            </Link>
+            </Link> */}
 
             </div>
             <div className="mx-auto">
-      <p>Some content here</p>
+      {/* <p>Some content here</p> */}
     </div>
         </ul>
 
@@ -89,9 +92,9 @@ const Navbar = () => {
     <section class="sectt w-full h-[80px] z-10 bg-white drop-shadow-lg">
       {/* <div class="divv"><h1>j</h1><h1>j</h1></div> */}
   <ul class="uu">
-    <li class="ll"><a href="#" class="aba bb">Personality Test</a></li>
-    <li class="ll"><a href="#" class="aba">Humour</a></li>
-    <li class="ll"><a href="#" class="aba">Imagination</a></li>
+    <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
+    <Link to={"/humour"}><li class="ll"><a href="#" class="aba">Humour</a></li></Link>
+   <Link to={"/imagination"}> <li class="ll"><a href="#" class="aba">Imagination</a></li></Link>
     {/* <li class="ll"><a href="#" class="aba">Products</a></li>
     <li class="ll"><a href="#" class="aba">Contact</a></li>
     <li class="ll"><a href="#" class="aba">Blog</a></li>

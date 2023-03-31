@@ -5,17 +5,47 @@ import Carousel from './Carousel';
 // import Carousel from "./Carousel"
 import "./Hum.css"
 import Carousell from './Carousell';
+import { Link } from 'react-router-dom'
 
-const Home = () => {
-    const [allData, setallData] = useState([])
-    const url = 'http://localhost:1337/api/humours?populate=*';
+const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
+  const humour = allData.slice(0, 1);
+  const humour2 = allData.slice(1, 2);
+  const humour3 = allData.slice(2, 3);
+  const humour4 = allData.slice(3, 5);
 
-    useEffect(() => {
-      getData()
-    }, [])
-    const getData = () =>{
-        axios.get(url).then(res =>setallData(res.data.data)).catch(err =>{console.log(er);})
-    }
+
+
+  const imagination = allDatai.slice(0,1)
+  const imagination2 = allDatai.slice(1,2)
+  const imagination3 = allDatai.slice(2,3)
+  const imagination4 = allDatai.slice(3,5)
+ 
+
+
+  const personality = allDatap.slice(0,1)
+  const personality2 = allDatap.slice(1,2)
+  const personality3 = allDatap.slice(2,3)
+  const personality4 = allDatap.slice(3,4)
+  const personality5 = allDatap.slice(4,6)
+
+
+
+  const allDatavv = allDatav.slice(0,3)
+  const allDatapoo = allDatapo.slice(0,4)
+
+
+  const blog = allDatab.slice(0,4)
+  const blog1 = allDatab.slice(4,6)
+
+    // const [allData, setallData] = useState([])
+    // const url = 'http://localhost:1337/api/humours?populate=*';
+
+    // useEffect(() => {
+    //   getData()
+    // }, [])
+    // const getData = () =>{
+    //     axios.get(url).then(res =>setallData(res.data.data)).catch(err =>{console.log(er);})
+    // }
     console.log(allData);
 
   return (
@@ -25,13 +55,15 @@ const Home = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {personality.map((personality)=>
+    <Link to={`/personality/${personality.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
           <h6 className='text-blue-800'>#Personality Test</h6>
           {/* <span>#Personality Test</span> */}
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
+					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -39,12 +71,19 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+      </Link>
+    )}
+
+
+
+    {humour.map((humour)=>
+     <Link to={`/humour/${humour.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
+					<span className="text-xs ">{humour.attributes.humourDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -52,12 +91,19 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+       </Link>
+       )}
+
+
+
+       {imagination.map((imagination)=>
+     <Link to={`/imagination/${imagination.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
+					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -65,33 +111,39 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
-			
+      </Link>
+       )}
 		</div>
 		{/* <div className="flex justify-center">
 			<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline bg-gray-900 dark:text-gray-400">Load more posts...</button>
 		</div> */}
 	</div>
+
+
+
 </section>
 
 		<section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    {personality2.map((personality)=>
+     <Link to={`/personality/${personality.id}`}>
     <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
                     <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
+        backgroundImage: `url(${personality.attributes.personalImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <h3 class="text-md font-semibold leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+                            <div>{personality.attributes.personalityDesc}</div>
                         </div>
                     </div>
                 </a>
@@ -99,11 +151,11 @@ const Home = () => {
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
+					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -111,21 +163,28 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a> 
+      </Link>
+       )}
+
+
+
+       {humour2.map((humour)=>
+     <Link to={`/humour/${humour.id}`}>
       <div class="lg:hidden ">
             <div class="bg-white h-full w-full border-b-2">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
                     <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
+        backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Humour</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <h3 class="text-md font-semibold leading-tight mb-3">{humour.attributes.humourTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+                            <div>{humour.attributes.humourDesc}</div>
                         </div>
                     </div>
                 </a>
@@ -133,11 +192,11 @@ const Home = () => {
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?2" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 22, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
+					<span className="text-xs ">{humour.attributes.humourDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -145,21 +204,27 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+      </Link>
+      )}
+
+
+      {imagination2.map((imagination)=>
+     <Link to={`/imagination/${imagination.id}`}>
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
                     <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
+        backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Imagination</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <h3 class="text-md font-semibold leading-tight mb-3">{imagination.attributes.imaginationTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+                            <div>{imagination.attributes.imaginationDesc}</div>
                         </div>
                     </div>
                 </a>
@@ -167,11 +232,11 @@ const Home = () => {
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
+					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -179,21 +244,27 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+      </Link>
+      )}
+
+
+      {personality3.map((personality)=>
+     <Link to={`/personality/${personality.id}`}>
       <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
                     <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
+        backgroundImage: `url(${personality.attributes.personalImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <h3 class="text-md font-semibold leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+                            <div>{personality.attributes.personalityDesc}</div>
                         </div>
                     </div>
                 </a>
@@ -201,11 +272,11 @@ const Home = () => {
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?3" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url}  />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 23, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
+					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -213,6 +284,8 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+       </Link>
+       )}
 		</div>
 		{/* <div className="flex justify-center">
 			<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline bg-gray-900 dark:text-gray-400">Load more posts...</button>
@@ -249,12 +322,14 @@ const Home = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {humour3.map((humour)=>
+     <Link to={`/humour/${humour.id}`}>
     <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
+					<span className="text-xs ">{humour.attributes.humourDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -262,12 +337,16 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+      </Link>
+       )}
+        {imagination3.map((imagination)=>
+     <Link to={`/imagination/${imagination.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
+					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -275,12 +354,16 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+      </Link>
+       )}
+        {personality4.map((personality)=>
+     <Link to={`/personality/${personality.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
           <h6 className='text-blue-800'>#Personality Test</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
+					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -288,13 +371,20 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a>
+       </Link>
+       )}
+       <div></div>
+       <Link to={"/personality"}>
       <div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 		</div>
+    <Link to={"/personality"}>
 		<div className="flex justify-center hidden lg:block">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800 ">Load more posts...</button>
 		</div>
+    </Link>
 	</div>
 </section>
 
@@ -314,21 +404,23 @@ const Home = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    {blog.map((blog)=>
+     <Link to={`/blog/${blog.id}`}>
     <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
                     <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
+        backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <p class="text-xs text-gray-500 uppercase">#Newupdate</p>
+                        <h3 class="text-md font-semibold leading-tight mb-3">{blog.attributes.blogTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+                            <div>{blog.attributes.blogDesc}</div>
                         </div>
                     </div>
                 </a>
@@ -336,10 +428,11 @@ const Home = () => {
           </div>
           </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={blog.attributes.blogImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+        <h6 className='text-blue-800'>#Newupdate</h6>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
+					<span className="text-xs ">{blog.attributes.blogDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -347,112 +440,19 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
+      </Link>
+    )}
+     <Link to={"/blog"}>
     	<div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 		</div>
+    <Link to={"/blog"}>
     <div className="flex justify-center hidden lg:block">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 	</div>
 </section>
 
@@ -470,32 +470,35 @@ const Home = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    {personality5.map((personality)=>
+     <Link to={`/personality/${personality.id}`}>
     <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
                     <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
+        backgroundImage: `url(${personality.attributes.personalImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
                     <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+                        <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
+                        <h3 class="text-md font-semibold leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+                            <div>{personality.attributes.personalityDesc}</div>
                         </div>
                     </div>
                 </a>
             </div>
           </div>
           </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
+        <h6 className='text-blue-800'>#Personality Test</h6>
+					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
+					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -503,112 +506,59 @@ const Home = () => {
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+      </Link>
+       )}
+
+    {humour4.map((humour)=>
+        <Link to={`/humour/${humour.id}`}>
+          <div class="lg:hidden ">
+                <div class="bg-white h-full w-full border-b-2">
+                  <div>
+                    <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
+                        <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+            backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}></div>
+                        <div class="pl-3 w-3/5">
+                            <p class="text-xs text-gray-500 uppercase">#Humour</p>
+                            <h3 class="text-md font-semibold leading-tight mb-3">{humour.attributes.humourTitle}</h3>
+                            <div class="flex w-full items-center text-xs text-gray-500 font-medium">
+                                <div>{humour.attributes.humourDesc}</div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
+                    </a>
+                </div>
+              </div>
+              </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
+            <img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
+            <div className="p-6 space-y-2">
+            <h6 className='text-blue-800'>#Humour</h6>
+              <h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
+              <span className="text-xs ">{humour.attributes.humourDesc}</span>
+              <p></p>
             </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
+            <span class="spann topp"></span>
+          <span class="spann rightt"></span>
+          <span class="spann bottomm"></span>
+          <span class="spann leftt"></span>
+          </a>
+          </Link>
+          )}
+
+          <Link to={"/humour"}>
     	<div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 		</div>
+    <Link to={"/humour"}>
     <div className="flex justify-center hidden lg:block">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 	</div>
 </section>
 
@@ -617,145 +567,97 @@ const Home = () => {
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-    <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+
+    {imagination4.map((imagination)=>
+        <Link to={`/imagination/${imagination.id}`}>
+          <div class="lg:hidden border-b-2">
+                <div class="bg-white h-full w-full ">
+                  <div>
+                    <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
+                        <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+            backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}></div>
+                        <div class="pl-3 w-3/5">
+                            <p class="text-xs text-gray-500 uppercase">#Imagination</p>
+                            <h3 class="text-md font-semibold leading-tight mb-3">{imagination.attributes.imaginationTitle}</h3>
+                            <div class="flex w-full items-center text-xs text-gray-500 font-medium">
+                                <div>{imagination.attributes.imaginationDesc}</div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
+                    </a>
+                </div>
+              </div>
+              </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
+            <img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+            <div className="p-6 space-y-2">
+            <h6 className='text-blue-800'>#Imagination</h6>
+              <h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
+              <span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
+              <p></p>
+            </div>
+            <span class="spann topp"></span>
+          <span class="spann rightt"></span>
+          <span class="spann bottomm"></span>
+          <span class="spann leftt"></span>
+          </a>
+          </Link>
+          )}
+
+
+    {blog.map((blog)=>
+     <Link to={`/blog/${blog.id}`}>
+          <div class="lg:hidden border-b-2">
+                <div class="bg-white h-full w-full ">
+                  <div>
+                    <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
+                        <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+            backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}></div>
+                        <div class="pl-3 w-3/5">
+                            <p class="text-xs text-gray-500 uppercase">#Newupdate</p>
+                            <h3 class="text-md font-semibold leading-tight mb-3">{blog.attributes.blogTitle}</h3>
+                            <div class="flex w-full items-center text-xs text-gray-500 font-medium">
+                                <div>{blog.attributes.blogDesc}</div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
+                    </a>
+                </div>
+              </div>
+              </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
+            <img role="presentation" className="object-cover w-full rounded h-44   " src={blog.attributes.blogImg.data.attributes.url} />
+            <div className="p-6 space-y-2">
+            <h6 className='text-blue-800'>#Newupdate</h6>
+              <h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
+              <span className="text-xs ">{blog.attributes.blogDesc}</span>
+              <p></p>
             </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
-      <div class="lg:hidden border-b-2">
-            <div class="bg-white h-full w-full ">
-              <div>
-                <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
-        backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}></div>
-                    <div class="pl-3 w-3/5">
-                        <p class="text-xs text-gray-500 uppercase">MUSIC</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
-                        <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>Rowena Wheeler</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-          </div>
-          </div>
-          <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src="https://source.unsplash.com/random/480x360?1" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold   group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs ">January 21, 2021</span>
-					<p></p>
-				</div>
-        <span class="spann topp"></span>
-      <span class="spann rightt"></span>
-      <span class="spann bottomm"></span>
-      <span class="spann leftt"></span>
-			</a> 
+            <span class="spann topp"></span>
+          <span class="spann rightt"></span>
+          <span class="spann bottomm"></span>
+          <span class="spann leftt"></span>
+          </a>
+          </Link>
+          )}
+
+          <Link to={"/imagination"}>
     	<div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 		</div>
+    <Link to={"/imagination"}>
     <div className="flex justify-center hidden lg:block">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
+    </Link>
 	</div>
 </section>
 
@@ -848,64 +750,29 @@ const Home = () => {
         </p>
       </div> */}
       <div className="grid gap-6 row-gap-5 mb-3 lg:grid-cols-4 sm:grid-cols-2 sm:row-gap-2 sm:grid-cols-2">
+      {allDatapoo.map((podcast)=>
+          <Link to={`/podcast/${podcast.id}`}>
         <a href aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
               className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src={podcast.attributes.podcastImg.data.attributes.url}
               alt=""
             />
             <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p className="text-sm font-medium tracking-wide text-white">
-                Sed ut perspiciatis unde omnis iste natus error
+                {podcast.attributes.podcastTitle}
               </p>
             </div>
           </div>
           
         </a>
-        <a href aria-label="View Item">
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p className="text-sm font-medium tracking-wide text-white">
-                Leverage agile frameworks to provide a robust synopsis
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href aria-label="View Item">
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p className="text-sm font-medium tracking-wide text-white">
-                Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href aria-label="View Item">
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p className="text-sm font-medium tracking-wide text-white">
-                Rough pomfret lemon shark plownose chimaera
-              </p>
-            </div>
-          </div>
-        </a>
+         </Link>
+         )}
+       
+       
       </div>
+      <Link to={"/podcast"}>
       <div className="text-center">
         <a
           href="/"
@@ -922,6 +789,7 @@ const Home = () => {
           </svg>
         </a>
       </div>
+      </Link>
     </div>
 
 
@@ -929,52 +797,32 @@ const Home = () => {
      
       <div className="grid gap-6 row-gap-5 mb-4 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
         
-        <a href="/" aria-label="View Item">
+      {allDatavv.map((video)=>
+          <Link to={`/video/${video.id}`}>
+        <a href aria-label="View Item">
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
               className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src={video.attributes.videoImg.data.attributes.url}
               alt=""
             />
             <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p className="text-sm font-medium tracking-wide text-white">
-                Leverage agile frameworks to provide a robust synopsis
+                {video.attributes.videoTitle}
               </p>
             </div>
           </div>
+          
         </a>
-        <a href="/" aria-label="View Item">
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p className="text-sm font-medium tracking-wide text-white">
-                Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="/" aria-label="View Item">
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-            <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
-              src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p className="text-sm font-medium tracking-wide text-white">
-                Rough pomfret lemon shark plownose chimaera
-              </p>
-            </div>
-          </div>
-        </a>
+         </Link>
+         )}
+        
+      
       </div>
+        <Link to={"/video"}>
       <div className="text-center">
         <a
-          href="/"
+          href=""
           aria-label=""
           className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
@@ -988,6 +836,7 @@ const Home = () => {
           </svg>
         </a>
       </div>
+        </Link>
     </div>
     <div class="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
    
