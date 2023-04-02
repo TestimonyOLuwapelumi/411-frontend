@@ -51,7 +51,7 @@ const Navbar = () => {
                 
 
         </div>
-        <ul className={toggle?'absolute bg-white w-64 lg:w-96 px-8 right-0 text-center ':'hidden'}>
+        <ul className={toggle?'absolute bg-white w-64 lg:w-96 h px-8 right-0 text-center ':'hidden'}>
             <Link to={"/"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
             <br />
             <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>

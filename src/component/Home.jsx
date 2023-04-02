@@ -7,7 +7,7 @@ import "./Hum.css"
 import Carousell from './Carousell';
 import { Link } from 'react-router-dom'
 
-const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
+const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
   const humour = allData.slice(0, 1);
   const humour2 = allData.slice(1, 2);
   const humour3 = allData.slice(2, 3);
@@ -47,6 +47,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
     //     axios.get(url).then(res =>setallData(res.data.data)).catch(err =>{console.log(er);})
     // }
     console.log(allData);
+    console.log(allDatac);
 
   return (
 
@@ -395,7 +396,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
 ---------------------------
 1111111111111111111111carousel 1 */}
 
-<Carousel/>
+<Carousel allDatac={allDatac}/>
 
 
 
@@ -463,7 +464,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
 1111111111111111111111111Carousell */}
 
 
-  <Carousell/>
+  <Carousell allDatac={allDatac}/>
 
 
   <section className="   ">
@@ -608,7 +609,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav}) => {
           )}
 
 
-    {blog.map((blog)=>
+    {blog1.map((blog)=>
      <Link to={`/blog/${blog.id}`}>
           <div class="lg:hidden border-b-2">
                 <div class="bg-white h-full w-full ">

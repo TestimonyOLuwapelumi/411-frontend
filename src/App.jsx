@@ -29,6 +29,7 @@ export default function App() {
   const [allDatab, setallDatab] = useState([])
   const [allDatav, setallDatav] = useState([])
   const [allDatapo, setallDatapo] = useState([])
+  const [allDatac, setallDatac] = useState([])
 
     // const url = 'http://localhost:1337/api/humours?populate=*';
     const url = 'https://whatisthx411-backrnd.onrender.com/api/humours?populate=*';
@@ -102,6 +103,17 @@ export default function App() {
     }
     console.log(allDatapo);
 
+    // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
+    const url6 = 'https://whatisthx411-backrnd.onrender.com/api/carousels?populate=*';
+
+    useEffect(() => {
+      getDatc()
+    }, [])
+    const getDatc = () =>{
+        axios.get(url6).then(res =>setallDatac(res.data.data)).catch(err =>{console.log(er);})
+    }
+    console.log(allDatac);
+
 
 
   // const { loading: blogLoading, data: blogData, error: blogError } = useFetch(
@@ -154,7 +166,7 @@ export default function App() {
         
       </section>: */}
     <Routes>
-        <Route path="/" element={<Homepage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav}/>} />
+        <Route path="/" element={<Homepage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
         
         <Route path="/blog" element={<BloggPage allDatab={allDatab}/>} />
         
