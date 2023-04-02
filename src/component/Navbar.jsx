@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='w-full h-[80px] z-10 bg-white fixed drop-shadow-lg mb-1 ss:relative head'>
+    <div className='w-full h-[80px] z-10 bg-white fixed drop-shadow-lg mb-1 head'>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 
 
         </div>
-        <ul className={toggle?'absolute bg-white w-64 lg:w-96 h px-8 right-0 text-center ':'hidden'}>
+        <ul className={toggle?'absolute bg-white w-64 lg:w-96 h-screen px-8 right-0 text-center ':'hidden'}>
             <Link to={"/"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
             <br />
             <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
         </ul>
 
     </div>
-    <header class="w-full container mx-auto pt-20 lg:pt-1 drop-shadow-2xl bg-blue-800 ">
+    <header class="w-full container mx-auto pt-20 lg:pt-20 drop-shadow-2xl bg-blue-800 ">
       <div class="flex flex-col items-center py-1 lg:py-1 ">
         {/* <img src={myImage} alt="" className='h-96 w-full'/> */}
             {/* <a class="font-bold text-gray-800 uppercase hover:text-gray-900 text-4xl lg:text-6xl text-white" href="#">
