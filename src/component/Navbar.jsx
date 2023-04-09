@@ -91,7 +91,7 @@ const Navbar = () => {
     </header>
     <section class="sectt w-full h-[80px] z-10 bg-white drop-shadow-lg">
       {/* <div class="divv"><h1>j</h1><h1>j</h1></div> */}
-  <ul class="uu">
+  <ul class="uu ">
     <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
     <Link to={"/humour"}><li class="ll"><a href="#" class="aba">Humour</a></li></Link>
    <Link to={"/imagination"}> <li class="ll"><a href="#" class="aba">Imagination</a></li></Link>

@@ -1,7 +1,9 @@
 
 import { About } from "../component";
+import AboutPage from "./AboutPage";
 import BloggContentPage from "./BloggContentPage";
 import BloggPage from "./BloggPage";
+import CoolStuffPage from "./CoolStuffPage";
 import FirstPage from "./FirstPage";
 import Homepage from "./Homepage";
 import HumourContentPage from "./HumourContentPage";
@@ -31,6 +33,8 @@ export{
     BloggPage,
     BloggContentPage,
     ImaginationContentPage,
-    PodcastContentPage
+    PodcastContentPage,
+    AboutPage,
+    CoolStuffPage
 
 }

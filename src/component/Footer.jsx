@@ -66,13 +66,13 @@ const Footer = () => {
           {/* <p className='ml-7 pt-7 text-gray-100'>What is the 411?</p> */}
 
     </div>
-    <h1 className='mx-auto mt-6 max-w-md text-center text-2xl lg:text-3xl text-gray-100'>What is the 411?</h1>
+    <h1 className='mx-auto mt-0 max-w-md text-center text-2xl lg:text-1xl text-gray-100 '>What is the 411?</h1>
 
 
-    <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 hidden  hidden lg:block ">
+    <p class="mx-auto mt-0 max-w-md text-center leading-relaxed text-gray-100 hidden  hidden lg:block lg:text-1xl text-xs">
       Thx411 is a Big Media brand.
     </p>
-    <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100  hidden lg:block ">
+    <p class="mx-auto mt-0 max-w-md text-center leading-relaxed text-gray-100  hidden lg:block lg:text-1xl text-xs">
     Copyright © 2023. All rights reserved.
     </p>
     {/* <h1 className='mx-auto mt-6 max-w-md text-center text-2xl lg:text-3xl text-gray-100'>What is the 411?</h1> */}
@@ -83,31 +83,33 @@ const Footer = () => {
     <nav aria-label="Footer Nav" class="mt-5">
       <ul class="flex flex-wrap justify-center gap-1 md:gap-8 lg:gap-12">
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
             Contact us
           </a>
         </li>
 
+          <Link to={"/about"}>
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
             About
           </a>
         </li>
+          </Link>
 
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
             Advertise with us
           </a>
         </li>
 
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
             Terms & Conditions
           </a>
         </li>
 
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
             Privacy Policy
           </a>
         </li>

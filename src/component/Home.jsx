@@ -434,6 +434,26 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
         <h6 className='text-blue-800'>#Newupdate</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
 					<span className="text-xs ">{blog.attributes.blogDesc}</span>
+          <p>
+
+          {new Date(blog.attributes.publishedAt).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            daySuffix: function(day) {
+              if (day === 1 || day === 21 || day === 31) {
+                return 'st';
+              } else if (day === 2 || day === 22) {
+                return 'nd';
+              } else if (day === 3 || day === 23) {
+                return 'rd';
+              } else {
+                return 'th';
+              }
+            },
+          })};
+
+          </p>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -750,7 +770,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           perspiciatis unde omnis iste."
         </p>
       </div> */}
-      <div className="grid gap-6 row-gap-5 mb-3 lg:grid-cols-4 sm:grid-cols-2 sm:row-gap-2 sm:grid-cols-2">
+      <div className="grid gap-6 row-gap-5 mb-3 lg:grid-cols-4 sm:grid-cols-2 grid-cols-2 sm:row-gap-2 sm:grid-cols-2">
       {allDatapoo.map((podcast)=>
           <Link to={`/podcast/${podcast.id}`}>
         <a href aria-label="View Item">
@@ -794,9 +814,9 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     </div>
 
 
-	<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-6 lg:py-8">
+	<div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-6 lg:py-0 ">
      
-      <div className="grid gap-6 row-gap-5 mb-4 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
+      <div className="grid gap-6 row-gap-5 mb-4 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 grid-cols-2">
         
       {allDatavv.map((video)=>
           <Link to={`/video/${video.id}`}>

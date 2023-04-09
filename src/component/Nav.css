@@ -8,6 +8,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* width: 100%; */
   }
   .sectt .divv{
     display: flex;
@@ -23,6 +24,7 @@ body{
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS devices */
+    /* width: 300px; */
   }
   
   .ll {
@@ -132,6 +134,9 @@ body{
 
   
   @media (max-width: 550px) {
+    .uu{
+      width: 270px;
+    }
 
     .uu .ll .aba {
         color: #000;
@@ -144,29 +149,55 @@ body{
       .bb{
          width: 115px;
       }
+      .divv{
+        width: 180px;
+        height: 80px;
+      }
   }
 
   @media (max-width: 768px){
+    .uu{
+      width: 270px;
+    }
     .uu .ll .aba {
         color: #000;
         display: flex;
         /* width: 115px; */
+      }
+      .divv{
+        width: 180px;
+        height: 80px;
       }
   }
 
   
 @media (max-width: 1024px){
+  
+  .uu{
+    width: 270px;
+  }
     .uu .ll .aba {
         color: #000;
         display: flex;
         /* width: 115px; */
       }
+      .divv{
+        width: 180px;
+        height: 80px;
+      }
 }
 
 @media (max-width: 1200px){
+  .uu{
+    width: 270px;
+  }
     .uu .ll .aba {
         color: #000;
         display: flex;
         /* width: 115px; */
+      }
+      .divv{
+        width: 180px;
+        height: 80px;
       }
 }

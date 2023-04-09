@@ -4,7 +4,7 @@ import axios from 'axios'
 
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage} from "./pages";
+import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage} from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 import myImage from "./Asset 1.png"
 import { About, Animate, AnimateContent, Loader } from "./component";
@@ -212,11 +212,6 @@ export default function App() {
 
 
         <Route path="/about" element={<AboutPage allAbout={allAbout}/>}/>
-
-
-        <Route path="/cool-stuff" element={<CoolStuffPage  allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
-
-        
         
 
 

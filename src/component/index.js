@@ -25,6 +25,7 @@ import ImaginationContent from "./ImaginationContent";
 import Podcast from "./Podcast";
 import PodcastContent from "./PodcastContent";
 import Loader from "./Loader";
+import CoolStuff from "./CoolStuff";
 
 
 
@@ -58,7 +59,8 @@ export {
     ImaginationContent,
     Podcast,
     PodcastContent,
-    Loader
+    Loader,
+    CoolStuff
     
 
 }
