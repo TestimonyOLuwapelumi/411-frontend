@@ -77,7 +77,7 @@ const About = ({allAbout}) => {
         </Link>
         <Link to={"https://www.instagram.com/_thx411/"}>
             <a href="#" class="lg:w-full w-20 bg-blue-800 text-white font-semibold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center lg:px-2 lg:py-3 py-0 px-0 mt-0 lg:mt-6 lg:text-3xl text-0  hidden lg:block">
-                Click to follow
+                @_thx411
             </a>
             </Link>
             <span class="spann topp"></span>
@@ -106,7 +106,7 @@ const About = ({allAbout}) => {
         </Link>
         <Link to={"https://twitter.com/_thx411"}>
             <a class="lg:w-full w-20 bg-blue-800 text-white font-semibold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center lg:px-2 lg:py-3 py-0 px-0 mt-0 lg:mt-6 lg:text-3xl text-1xl  hidden lg:block">
-                Click to follow
+            @_thx411
             </a>
             </Link>
             <span class="spann topp"></span>
@@ -127,7 +127,7 @@ const About = ({allAbout}) => {
         </Link>
         <Link to="https://www.tiktok.com/@thx411_">
             <a  class="lg:w-full w-20 bg-blue-800 text-white font-semibold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center lg:px-2 lg:py-3 py-0 px-0 mt-0 lg:mt-6 lg:text-3xl text-1xl  hidden lg:block">
-                Click to follow
+            @_thx411
             </a>
             </Link>
             <span class="spann topp"></span>
