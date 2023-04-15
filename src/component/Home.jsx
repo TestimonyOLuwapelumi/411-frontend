@@ -59,7 +59,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     {personality.map((personality)=>
     <Link to={`/personality/${personality.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-96   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
           <h6 className='text-blue-800'>#Personality Test</h6>
           {/* <span>#Personality Test</span> */}
@@ -80,7 +80,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     {humour.map((humour)=>
      <Link to={`/humour/${humour.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-96   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -100,7 +100,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
        {imagination.map((imagination)=>
      <Link to={`/imagination/${imagination.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-96   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -152,7 +152,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -193,7 +193,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -233,7 +233,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -273,7 +273,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url}  />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={personality.attributes.personalImg.data.attributes.url}  />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -326,7 +326,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     {humour3.map((humour)=>
      <Link to={`/humour/${humour.id}`}>
     <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -343,7 +343,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
         {imagination3.map((imagination)=>
      <Link to={`/imagination/${imagination.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -360,7 +360,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
         {personality4.map((personality)=>
      <Link to={`/personality/${personality.id}`}>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline    cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
           <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -429,7 +429,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={blog.attributes.blogImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-64   " src={blog.attributes.blogImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Newupdate</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
@@ -515,7 +515,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           </div>
 			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-44   " src={personality.attributes.personalImg.data.attributes.url} />
+				<img role="presentation" className="object-cover w-full rounded h-72   " src={personality.attributes.personalImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -554,7 +554,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
               </div>
               </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-            <img role="presentation" className="object-cover w-full rounded h-44   " src={humour.attributes.humourImg.data.attributes.url} />
+            <img role="presentation" className="object-cover w-full rounded h-72   " src={humour.attributes.humourImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Humour</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -613,7 +613,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
               </div>
               </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-            <img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+            <img role="presentation" className="object-cover w-full rounded h-72   " src={imagination.attributes.imaginationImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Imagination</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -653,7 +653,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
               </div>
               </div>
           <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-            <img role="presentation" className="object-cover w-full rounded h-44   " src={blog.attributes.blogImg.data.attributes.url} />
+            <img role="presentation" className="object-cover w-full rounded h-72   " src={blog.attributes.blogImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Newupdate</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
@@ -703,7 +703,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                         width="512" height="512.002" 
                         viewBox="0 0 512 512.002">
                         <g transform="translate(0 0.002)">
-                            <path d="M64,257.6,227.9,376a47.72,47.72,0,0,0,56.2,0L448,257.6V96a32,32,0,0,0-32-32H96A32,32,0,0,0,64,96ZM160,160a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Zm0,80a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Z" opacity="0.4"/><path d="M352,160a16,16,0,0,0-16-16H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16Zm-16,64H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16V240A16,16,0,0,0,336,224ZM329.4,41.4C312.6,29.2,279.2-.3,256,0c-23.2-.3-56.6,29.2-73.4,41.4L152,64H360ZM64,129c-23.9,17.7-42.7,31.6-45.6,34A48,48,0,0,0,0,200.7v10.7l64,46.2Zm429.6,34c-2.9-2.3-21.7-16.3-45.6-33.9V257.6l64-46.2V200.7A48,48,0,0,0,493.6,163ZM256,417.1a79.989,79.989,0,0,1-46.888-15.192L0,250.9V464a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V250.9l-209.1,151A80,80,0,0,1,256,417.1Z"/>
+                            <path d="M64,257.6,227.9,376a47.72,47.72,0,0,0,56.2,0L728,257.6V96a32,32,0,0,0-32-32H96A32,32,0,0,0,64,96ZM160,160a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Zm0,80a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Z" opacity="0.4"/><path d="M352,160a16,16,0,0,0-16-16H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16Zm-16,64H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16V240A16,16,0,0,0,336,224ZM329.4,41.4C312.6,29.2,279.2-.3,256,0c-23.2-.3-56.6,29.2-73.4,41.4L152,64H360ZM64,129c-23.9,17.7-42.7,31.6-45.6,34A48,48,0,0,0,0,200.7v10.7l64,46.2Zm429.6,34c-2.9-2.3-21.7-16.3-45.6-33.9V257.6l64-46.2V200.7A48,48,0,0,0,493.6,163ZM256,417.1a79.989,79.989,0,0,1-46.888-15.192L0,250.9V464a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V250.9l-209.1,151A80,80,0,0,1,256,417.1Z"/>
                         </g>
                     </svg>
                 </div>
@@ -875,7 +875,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                        width="512" height="512.002" 
                        viewBox="0 0 512 512.002">
                        <g transform="translate(0 0.002)">
-                           <path d="M64,257.6,227.9,376a47.72,47.72,0,0,0,56.2,0L448,257.6V96a32,32,0,0,0-32-32H96A32,32,0,0,0,64,96ZM160,160a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Zm0,80a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Z" opacity="0.4"/><path d="M352,160a16,16,0,0,0-16-16H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16Zm-16,64H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16V240A16,16,0,0,0,336,224ZM329.4,41.4C312.6,29.2,279.2-.3,256,0c-23.2-.3-56.6,29.2-73.4,41.4L152,64H360ZM64,129c-23.9,17.7-42.7,31.6-45.6,34A48,48,0,0,0,0,200.7v10.7l64,46.2Zm429.6,34c-2.9-2.3-21.7-16.3-45.6-33.9V257.6l64-46.2V200.7A48,48,0,0,0,493.6,163ZM256,417.1a79.989,79.989,0,0,1-46.888-15.192L0,250.9V464a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V250.9l-209.1,151A80,80,0,0,1,256,417.1Z"/>
+                           <path d="M64,257.6,227.9,376a47.72,47.72,0,0,0,56.2,0L728,257.6V96a32,32,0,0,0-32-32H96A32,32,0,0,0,64,96ZM160,160a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Zm0,80a16,16,0,0,1,16-16H336a16,16,0,0,1,16,16v16a16,16,0,0,1-16,16H176a16,16,0,0,1-16-16Z" opacity="0.4"/><path d="M352,160a16,16,0,0,0-16-16H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16Zm-16,64H176a16,16,0,0,0-16,16v16a16,16,0,0,0,16,16H336a16,16,0,0,0,16-16V240A16,16,0,0,0,336,224ZM329.4,41.4C312.6,29.2,279.2-.3,256,0c-23.2-.3-56.6,29.2-73.4,41.4L152,64H360ZM64,129c-23.9,17.7-42.7,31.6-45.6,34A48,48,0,0,0,0,200.7v10.7l64,46.2Zm429.6,34c-2.9-2.3-21.7-16.3-45.6-33.9V257.6l64-46.2V200.7A48,48,0,0,0,493.6,163ZM256,417.1a79.989,79.989,0,0,1-46.888-15.192L0,250.9V464a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V250.9l-209.1,151A80,80,0,0,1,256,417.1Z"/>
                        </g>
                    </svg>
                </div>

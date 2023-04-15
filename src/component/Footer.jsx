@@ -154,7 +154,7 @@ const Footer = () => {
         </a>
       </li> */}
 
-      <Link to={"https://www.instagram.com/_thx411/"}>
+      <Link to={"https://youtube.com/@_thx411"}>
       <li>
         <a
           rel="noreferrer"
@@ -224,6 +224,24 @@ const Footer = () => {
               clip-rule="evenodd"
             />
           </svg> */}
+        </a>
+      </li>
+      </Link>
+
+      <Link to="https://www.tiktok.com/@thx411_">
+      <li>
+        <a
+          
+          rel="noreferrer"
+          target="_blank"
+          class="text-gray-100 transition hover:text-blue-800"
+        >
+          <span class="sr-only">GitHub</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="w-6 h-6 text-gray-100">
+              <path d="M21.74,7.25a2.77,2.77,0,0,0-1.94-1.94C18.07,4.92,12,4.92,12,4.92S5.93,4.92,3.2,5.31A2.77,2.77,0,0,0,1.26,7.25C.87,9,.87,12,.87,12s0,2.75.39,4.75a2.77,2.77,0,0,0,1.94,1.94c2.73.39,8.8.39,8.8.39s6.07,0,8.8-.39a2.77,2.77,0,0,0,1.94-1.94c.39-2,0-4.75,0-4.75s.39-2,.39-4.75ZM9.75,15.27V8.73L15.27,12Z"></path>
+              </svg>
+
         </a>
       </li>
       </Link>
