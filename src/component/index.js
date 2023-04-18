@@ -26,6 +26,8 @@ import Podcast from "./Podcast";
 import PodcastContent from "./PodcastContent";
 import Loader from "./Loader";
 import CoolStuff from "./CoolStuff";
+import AdsComponent from "./AdsComponent";
+import Landing from "./Landing";
 
 
 
@@ -60,7 +62,9 @@ export {
     Podcast,
     PodcastContent,
     Loader,
-    CoolStuff
+    CoolStuff,
+    AdsComponent,
+    Landing
     
 
 }

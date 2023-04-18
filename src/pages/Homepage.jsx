@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Footer,  Home} from "../component"
+import { Navbar, Footer,  Home, AdsComponent} from "../component"
 
 const Homepage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
    console.log(allData);
@@ -7,6 +7,7 @@ const Homepage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, a
 
   return (
     <div>
+      {/* <AdsComponent  dataAdSlot='X7XXXXXX5X'/> */}
       <Navbar />
       <Home allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatav={allDatav} allDatapo={allDatapo} allDatac={allDatac}/>
       {/* <Humour/> */}

@@ -10,6 +10,7 @@ import HumourContentPage from "./HumourContentPage";
 import HumourPage from "./HumourPage";
 import ImaginationContentPage from "./ImaginationContentPage";
 import ImaginationPage from "./ImaginationPage";
+import LandingPage from "./LandingPage";
 import PersonalityContentPage from "./PersonalityContentPage";
 import PersonalityPage from "./PersonalityPage";
 
@@ -35,6 +36,7 @@ export{
     ImaginationContentPage,
     PodcastContentPage,
     AboutPage,
-    CoolStuffPage
+    CoolStuffPage,
+    LandingPage
 
 }

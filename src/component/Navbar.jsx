@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Nav from './Nav';
 import "./Nav.css"
 import myImage from "../images/newsletter-bg.jpg"
+import AdsComponent from './AdsComponent';
 
 const Navbar = () => {
     const [toggle,setToggle]=useState(false);
@@ -13,15 +14,20 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='w-full h-[80px] z-10 bg-white fixed drop-shadow-lg mb-1 head'>
+    {/* <AdsComponent/> */}
+    <div className='had'>
+
+    <div className='w-full h-[80px] z-10 bg-white  drop-shadow-lg mb- head '>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
                     <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-2 opacity-[100%] w-full h-[50px]  ml-3' /></Link>
-                    
-                    <h1 className='ml-3 lg:ml-7 text-2xl lg:text-3xl divv'>What is the 411?</h1>
+                    <div className="divv h-10 lg:h-24 w-25 lg:w-full ml-2">
+
+                    <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold'>What is the 411?</h1>
+                    </div>
                 </div>
-          
+            <input type="text" className='w-24'/>
 
                 {/* <div className='flex items-center'>
                     <ul className='hidden md:flex'>
@@ -52,7 +58,7 @@ const Navbar = () => {
 
         </div>
         <ul className={toggle?'absolute bg-white w-64 lg:w-96 h-screen px-8 right-0 text-center ':'hidden'}>
-            <Link to={"/"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
+            <Link to={"/home"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
             <br />
             <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
             <br />
@@ -78,8 +84,8 @@ const Navbar = () => {
         </ul>
 
     </div>
-    <header class="w-full container mx-auto pt-20 lg:pt-20 drop-shadow-2xl bg-blue-800 ">
-      <div class="flex flex-col items-center py-1 lg:py-1 ">
+    <header class="w-full container mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0">
+      {/* <div class="flex flex-col items-center py-1 lg:py-1 "> */}
         {/* <img src={myImage} alt="" className='h-96 w-full'/> */}
             {/* <a class="font-bold text-gray-800 uppercase hover:text-gray-900 text-4xl lg:text-6xl text-white" href="#">
                 Thx 411
@@ -87,25 +93,22 @@ const Navbar = () => {
             <p class="text-lg text-gray-600 text-white hover:text-gray-900">
                 What is the 411?
             </p> */}
-        </div>
+        {/* </div> */}
     </header>
-    <section class="sectt w-full h-[80px] z-10 bg-white drop-shadow-lg">
-      {/* <div class="divv"><h1>j</h1><h1>j</h1></div> */}
+
+    <section class="sectt h-[80px] z-10 bg-white drop-shadow-lg">
   <ul class="uu ">
+    <Link to={"/home"}><li class="ll"><a href="#" class="aba bb">Blogs</a></li></Link>
     <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
     <Link to={"/humour"}><li class="ll"><a href="#" class="aba">Humour</a></li></Link>
    <Link to={"/imagination"}> <li class="ll"><a href="#" class="aba">Imagination</a></li></Link>
-    {/* <li class="ll"><a href="#" class="aba">Products</a></li>
-    <li class="ll"><a href="#" class="aba">Contact</a></li>
-    <li class="ll"><a href="#" class="aba">Blog</a></li>
-    <li class="ll"><a href="#" class="aba">FAQs</a></li> */}
-    <li class="ll"><a href="#" class="aba">Support</a></li>
+    {/* <li class="ll"><a href="#" class="aba">Support</a></li> */}
   </ul>
-  {/* <div class="divv"><h1>j</h1><h1>j</h1></div> */}
     </section>
 
 
-
+      
+    </div>
 
 
     {/* <nav className="w-full py-4 border-t border-b bg-gray-100">
