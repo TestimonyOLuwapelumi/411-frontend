@@ -27,7 +27,7 @@ const Navbar = () => {
                     <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold'>What is the 411?</h1>
                     </div>
                 </div>
-            <input type="text" className='w-24'/>
+            <input type="text" className='w-24 ' />
 
                 {/* <div className='flex items-center'>
                     <ul className='hidden md:flex'>
