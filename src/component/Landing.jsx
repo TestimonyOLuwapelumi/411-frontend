@@ -7,15 +7,17 @@ const Landing = () => {
   
   return (
     <>
-   <div  class="leading-normal tracking-normal text-white gradient" style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
+   <div  class="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">What is the 411?</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-            THX 411! 
+          {/* <p class="uppercase tracking-loose w-full">What is the 411?</p> */}
+          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight">
+            What is the 411?
           </h1>
+          {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
+
           <p class="leading-normal text-2xl mb-8">
             We are a big media brand in Africa!
           </p>

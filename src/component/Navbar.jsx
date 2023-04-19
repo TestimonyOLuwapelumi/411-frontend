@@ -84,7 +84,7 @@ const Navbar = () => {
         </ul>
 
     </div>
-    <header class="w-full container mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0">
+    {/* <header class="w-full container mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0"> */}
       {/* <div class="flex flex-col items-center py-1 lg:py-1 "> */}
         {/* <img src={myImage} alt="" className='h-96 w-full'/> */}
             {/* <a class="font-bold text-gray-800 uppercase hover:text-gray-900 text-4xl lg:text-6xl text-white" href="#">
@@ -94,11 +94,14 @@ const Navbar = () => {
                 What is the 411?
             </p> */}
         {/* </div> */}
-    </header>
+    {/* </header> */}
+    <div class="w-full lg:w-full  mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0">
+
+    </div>
 
     <section class="sectt h-[80px] z-10 bg-white drop-shadow-lg">
   <ul class="uu ">
-    <Link to={"/home"}><li class="ll"><a href="#" class="aba bb">Blogs</a></li></Link>
+    <Link to={"/home"}><li class="ll"><a href="#" class="aba ">Blogs</a></li></Link>
     <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
     <Link to={"/humour"}><li class="ll"><a href="#" class="aba">Humour</a></li></Link>
    <Link to={"/imagination"}> <li class="ll"><a href="#" class="aba">Imagination</a></li></Link>
