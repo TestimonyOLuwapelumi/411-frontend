@@ -183,7 +183,7 @@ export default function App() {
       </section>: */}
     <Routes>
       
-        <Route path="/" element={<LandingPage/>} />
+        <Route path="/" element={<LandingPage allDatab={allDatab} allDatap={allDatap}/>} />
         <Route path="/home" element={<Homepage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
         
         <Route path="/blog" element={<BloggPage allDatab={allDatab}/>} />

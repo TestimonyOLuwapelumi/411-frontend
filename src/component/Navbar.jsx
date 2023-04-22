@@ -5,15 +5,57 @@ import Nav from './Nav';
 import "./Nav.css"
 import myImage from "../images/newsletter-bg.jpg"
 import AdsComponent from './AdsComponent';
+import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
+    const [searchQuery, setSearchQuery] = useState('');
+    
     const [toggle,setToggle]=useState(false);
     const handleClick = ()=>setToggle(!toggle)
     const [open, setOpen] = useState(false);
 
+    const [showInput, setShowInput] = useState(false);
+    const [data1, setData1] = useState(null);
+    const [data2, setData2] = useState(null);
+    
+    
+      
+      const handleInputChange = (event) => setSearchQuery(event.target.value);
+
+    const handleeClick = async ({ allDatap, allDatab }) => {
+      setShowInput(!showInput);
+      // const search = prompt('Enter search term:');
+      if (searchQuery) {
+        const apiUrl1 = 'https://whatisthx411-backrnd.onrender.com/api/blogs?populate=*' + searchQuery;
+        const apiUrl2 = 'https://whatisthx411-backrnd.onrender.com/api/podcasts?populate=*' + searchQuery;
+        const response1 = await fetch(apiUrl1);
+        const response2 = await fetch(apiUrl2);
+        const data1 = await response1.json();
+        const data2 = await response2.json();
+        console.log('Data from API 1:', data1);
+        console.log('Data from API 2:', data2);
+        // process the search results from the APIs
+        setData1(data1);
+        setData2(data2);
+      }
+    };
+    
+
+  
+    const handleSearch = () => {
+      // Perform search based on the searchQuery value
+      handleeClick();
+    }
+  
 
   return (
     <>
+
+<div>
+        {data1 && <pre>{JSON.stringify(data1, null, 2)}</pre>}
+        {data2 && <pre>{JSON.stringify(data2, null, 2)}</pre>}
+      </div>
+    
     {/* <AdsComponent/> */}
     <div className='had'>
 
@@ -27,29 +69,15 @@ const Navbar = () => {
                     <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold'>What is the 411?</h1>
                     </div>
                 </div>
-            <input type="text" className='w-24 ' />
-
-                {/* <div className='flex items-center'>
-                    <ul className='hidden md:flex'>
-                        <Link to={"/"}><li className='border-2 border-blue-500 hover:border-red-500'>Home</li></Link>
-                        <Link to={"/videos"}><li>Videos</li></Link>
-                       <Link to={"/podcasts"}><li>Podcast</li></Link>
-                        <Link to={"/*"}><li>About</li></Link>
-                        <Link to={"/*"}><li>Support</li></Link>
-                    </ul>
-                </div>
+            {/* <input type="text" className='w-24 ' /> */}
 
 
+            <div className=" ml-auto">
+      <FaSearch className="search-icon " onClick={handleeClick} />
+      {showInput && <input type="text" placeholder="Search"  className='' onChange={handleInputChange} value={searchQuery}/>}
+    </div>
+               
 
-                <div className='hidden md:flex sm:mr-10 md:mr-10'>
-                    <Link to={"/animates"}><button className='border-none bg-transparent text-black mr-4 text-black mb-4 py-3 px-8'>Animation Stories</button></Link>
-                  <Link to={`/quizapp`}>  
-                  <button className='px-8 py-3'>Quiz</button>
-                  </Link>
-
-                </div> */}
-
-                {/* <input type="email" class="border-l border-t border-b border-gray-200 rounded-l-md lg:w-64 text-base md:text-lg px-3 py-2 lg:ml-0 mb-20 object-contain mr-5 w-20 " placeholder="Enter Your Email"/> */}
                 <div className=' ' onClick={handleClick}>
                     <img src={!toggle?menu:close} alt="menu" className='w-[28px] h-[28px] object-contain mr-5' />
                 </div>
@@ -72,10 +100,7 @@ const Navbar = () => {
             <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>Support</li></Link>
 
             <div className='flex flex-col my-4 text-center'>
-            {/* <Link to={"/animates"}><button className='bg-transparent text-black mb-4 py-3 px-8 inline-block'>Animation Stories</button></Link> */}
-            {/* <Link to={`/quizapp`}>
-                <button className='px-8 py-3 inline-block'>Quiz</button>
-            </Link> */}
+            
 
             </div>
             <div className="mx-auto">
@@ -84,17 +109,6 @@ const Navbar = () => {
         </ul>
 
     </div>
-    {/* <header class="w-full container mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0"> */}
-      {/* <div class="flex flex-col items-center py-1 lg:py-1 "> */}
-        {/* <img src={myImage} alt="" className='h-96 w-full'/> */}
-            {/* <a class="font-bold text-gray-800 uppercase hover:text-gray-900 text-4xl lg:text-6xl text-white" href="#">
-                Thx 411
-            </a>
-            <p class="text-lg text-gray-600 text-white hover:text-gray-900">
-                What is the 411?
-            </p> */}
-        {/* </div> */}
-    {/* </header> */}
     <div class="w-full lg:w-full  mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0">
 
     </div>
@@ -114,40 +128,7 @@ const Navbar = () => {
     </div>
 
 
-    {/* <nav className="w-full py-4 border-t border-b bg-gray-100">
-      <div className="block sm:hidden">
-        <a
-          href="#"
-          className="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
-          onClick={() => setOpen(!open)}
-        >
-          Topics <i className={`fas ml-2 ${open ? 'fa-chevron-down' : 'fa-chevron-up'}`} />
-        </a>
-      </div>
-      <div className={`w-full flex-grow sm:flex sm:items-center sm:w-auto ${open ? 'block' : 'hidden'}`}>
-        <div className="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
-          <a href="#" className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
-            Technology
-          </a>
-          <a href="#" className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
-            Automotive
-          </a>
-          <a href="#" className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
-            Finance
-          </a>
-          <a href="#" className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
-            Politics
-          </a>
-          <a href="#" className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
-            Culture
-          </a>
-          <a href="#" className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
-            Sports
-          </a>
-        </div>
-      </div>
-    </nav> */}
-    {/* <Nav/> */}
+   
     </>
   )
 }

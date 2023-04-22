@@ -1,10 +1,10 @@
 import React from 'react'
 import { Footer, Landing, Navbar } from '../component'
 
-const LandingPage = () => {
+const LandingPage = ({allDatab, allDatap}) => {
   return (
     <>
-    <Navbar/>
+    <Navbar allDatab={allDatab} allDatap={allDatap}/>
     <Landing/>
     <Footer/>
     
