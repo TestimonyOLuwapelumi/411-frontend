@@ -17,12 +17,12 @@ const Landing = () => {
         {/* <!--Left Col--> */}
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           {/* <p class="uppercase tracking-loose w-full">What is the 411?</p> */}
-          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight mx-auto">
             What is the 411?
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-2xl mb-8">
+          <p class="leading-normal text-2xl mb-8 mx-auto">
             We are a big media brand in Africa!
           </p>
           <button class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -517,7 +517,7 @@ const Landing = () => {
     <section class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-black">
-          WHAT WE OFFERS
+          WHAT WE OFFER
         </h1>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -793,7 +793,7 @@ const Landing = () => {
       </div>
     </section>
     {/* <!-- Change the colour #f8faf/c to match the previous section colour --> */}
-    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    {/* <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
           <g class="wave" fill="#f8fafc">
@@ -813,68 +813,8 @@ const Landing = () => {
           </g>
         </g>
       </g>
-    </svg>
-    <div class="flex flex-wrap items-center mt-32">
-      <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-        {/* <div
-          class="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-800"
-        >
-          <i class="fas fa-user-friends text-xl text-white">     </i>
-        </div> */}
-          <img src={logo} alt=""  className='w-16 h-16 text-center'/>
-        <h3 class="text-3xl mb-2 font-semibold leading-normal text-white">
-          Working with us is a pleasure
-        </h3>
-        <p
-          class="text-lg font-light leading-relaxed mt-4 mb-4 text-white"
-        >
-          We know that when it comes to business, time is of the essence. For this reason, we always strive to complete our work on time. 
-        </p>
-        <p
-          class="text-lg font-light leading-relaxed mt-0 mb-4 text-white"
-        >
-         We track progress and use project management tools to communicate with you every step of the way. You can rely on us to complete your order on time and with high quality.
-        </p>
-        {/* <a
-          href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-          class="font-bold text-white mt-8"
-          >Check Tailwind Starter Kit!</a
-        > */}
-      </div>
-      <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-        <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-400"
-        >
-          <img
-            alt="..."
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-            class="w-full align-middle rounded-t-lg"
-          />
-          <blockquote class="relative p- mb-">
-            <svg
-              preserveAspectRatio="none"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 583 95"
-              class="absolute left-0 w-full block"
-              style={{height: " 95px; top: -94px;"}}
-            >
-              <polygon
-                points="-30,95 583,95 583,65"
-                class="text-blue-600 fill-current"
-              ></polygon>
-            </svg>
-            {/* <!-- <h4 class="text-xl font-bold text-black">
-              Top Notch Services
-            </h4> -->
-            <!-- <p class="text-md font-light mt-2 text-white">
-              The Arctic Ocean freezes every winter and much of the
-              sea-ice then thaws every su lormmer, and that process will
-              continue whatever happens. lorem300
-            </p> --> */}
-          </blockquote>
-        </div>
-      </div>
-    </div>
+    </svg> */}
+    
   
   </div>
     </>
