@@ -1,6 +1,10 @@
 import React from 'react'
 import "./Landing.css"
 import myImage from "../assets/hero.png"
+import{menu, close, logo, logoo} from '../assets';
+import { Link } from 'react-router-dom'
+
+
 
 
 const Landing = () => {
@@ -528,7 +532,7 @@ const Landing = () => {
                 The contents we give are inspiring.
               </div>
               <p class="text-black text-base px-6 mb-5">
-                The THX 411 podcast explores the stories, insights, and ideas that shape our community and brand. We will examine a range of subjects, such as the most recent developments and trends in our industry as well as the unique experiences of our team members and partners.
+                The WHAT IS THE 411? podcast explores the stories, insights, and ideas that shape our community and brand. We will examine a range of subjects, such as the most recent developments and trends in our industry as well as the unique experiences of our team members and partners.
               </p>
             </a>
           </div>
@@ -547,10 +551,10 @@ const Landing = () => {
                 Blogs
               </p>
               <div class="w-full font-bold text-xl text-black px-6">
-                THX 411 classic stories and ideas.
+                WHAT IS THE 411? classic stories and ideas.
               </div>
               <p class="text-black text-base px-6 mb-5">
-                At THX 411, we value personal connections with our readers and the value of effective storytelling. Because of this, we welcome reader feedback and invite them to participate in spirited conversations in the comments section.
+                At WHAT IS THE 411?, we value personal connections with our readers and the value of effective storytelling.We welcome reader feedback and invite them to participate in spirited conversations in the comments section.
               </p>
             </a>
           </div>
@@ -602,10 +606,76 @@ const Landing = () => {
                   <path fill="none" d="M0 0h24v24H0z"/>
                   <path fill="#ffffff" d="M19.72 4.15A1.98 1.98 0 0 0 18.97 4H5.03c-.65 0-1.28.34-1.62.9L1.3 9.23a1.5 1.5 0 0 0-.3.92v5.7c0 .6.33 1.14.85 1.42.2.13.42.22.65.26l7.78 1.96a2 2 0 0 0 1.15 0l7.78-1.96c.23-.04.45-.13.65-.26.52-.28.85-.82.85-1.42v-5.7a1.5 1.5 0 0 0-.3-.92l-2.11-2.62zm-.85 2.9l1.37 1.7-1.37 1.7v-3.4zm-2.77 2.77a1 1 0 1 1 1.41-1.41 1 1 0 0 1-1.41 1.41zm-6.93 0a1 1 0 1 1 1.41-1.41 1 1 0 0 1-1.41 1.41zM4.55 9.4L5.4 8h13.2l.85 1.4L12 13 4.55 9.4zM3.5 15.5v-4.1l2.9 3.62L3.5 15.5zm16 0l-2.9-3.62L20.5 11v4.1z"/>
                 </svg>
-                                </div>
+                </div>
+
                 <h6 class="text-xl font-semibold text-black">Contact us</h6>
                 <p class="mt-2 mb-4 text-black">
-                  The website is devoted to giving you the most recent information, advice, and viewpoints about the topic of the website. Join our group to keep current on the newest trends, meet like-minded people, and participate in stimulating debates. Let us know what you think by using the #_THX411 and follow us for daily inspiration and access to our most recent material.                </p>
+                  The website is devoted to giving you the most recent information, advice, and viewpoints about the topic of the website. Join our group to keep current on the newest trends, meet like-minded people, and participate in stimulating debates. 
+                  {/* <span className='w-20 bg-blue-800'>fjgnf</span> */}
+                  <button className='buttonn mx-auto'>
+                  <div class="letterss">
+                    <div class="cardd">
+                      <div class="card_facee front">M</div>
+                      {/* <div class="card_facee backk"><i class="fab fa-github-square"></i></div> */}
+                    </div>
+                  </div>
+
+                  <div class="letterss">
+                    <div class="cardd">
+                      <div class="card_facee front">E</div>
+                      <div class="card_facee backk">
+                  <Link to="https://www.youtube.com/@_thx411">
+                        <i class="fab fa-youtube"></i>
+                  </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="letterss">
+                    <div class="cardd">
+                      <div class="card_facee front">D</div>
+                      <div class="card_facee backk">
+                  <Link to="https://www.tiktok.com/@thx411_">
+                        <i class="fab fa-tiktok"></i>
+                  </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="letterss">
+                    <div class="cardd">
+                      <div class="card_facee front">I</div>
+                      <div class="card_facee backk">
+                  <Link to={"https://www.instagram.com/_thx411/"}>
+                        <i class="fab fa-instagram-square"></i>
+                  </Link>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="letterss">
+                    <div class="cardd">
+                      <div class="card_facee front">A</div>
+                      <div class="card_facee backk">
+                  <Link to={"https://twitter.com/_thx411"}>
+                        <i class="fab fa-twitter"></i>
+                  </Link>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="letterss">
+                    <div class="cardd">
+                      <div class="card_facee front">S</div>
+                      <div class="card_facee backk">
+                        {/* <i class="fab fa-linkedin"></i> */}
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                Follow us for daily inspiration and access to our most recent material.   
+                   </p>
               </div>
             </div>
           </div>
@@ -626,7 +696,7 @@ const Landing = () => {
                 </div>
                 <h6 class="text-xl font-semibold text-black">Advertise with us</h6>
                 <p class="mt-2 mb-4 text-black">
-                  By placing an ad with the THX 411, you can connect with readers who are specifically interested in your product or service. To ensure that your advertising message is compelling and effective, our team will collaborate with you.
+                  By placing an ad with the WHAT IS THE 411?, you can connect with readers who are specifically interested in your product or service. To ensure that your advertising message is compelling and effective, our team will collaborate with you.
                 </p>
               </div>
             </div>
@@ -654,36 +724,38 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        
         <div class="flex flex-wrap items-center mt-32">
           <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-            <div
+            {/* <div
               class="text-blue-400 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full gradient"
             >
               <i class="fas fa-user-friends text-xl"></i>
-            </div>
+            </div> */}
+            <img src={logo} alt=""  className='w-16 h-16 text-center'/>
+
             <h3 class="text-3xl mb-2 font-semibold leading-normal text-black">
               Working with us is a pleasure
             </h3>
             <p
               class="text-lg font-light leading-relaxed mt-4 mb-4 text-black"
             >
-              Don't let your uses guess by attaching tooltips and popoves to
-              any element. Just make sure you enable them first via
-              JavaScript.
+              We attach great importance to providing a personalized service to our customers. We will work closely with you immediately to understand your needs and goals.
             </p>
             <p
               class="text-lg font-light leading-relaxed mt-0 mb-4 text-black"
             >
-              The kit comes with three pre-built pages to help you get started
-              faster. You can change the text and images and you're good to
-              go. Just make sure you enable them first via JavaScript.
+               We take the time to listen to your ideas, answer your questions and make suggestions based on our experience. You can be assured that you will get exactly what you want and be satisfied with the results.
             </p>
-            <a
+            {/* <a
               href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
               class="font-bold text-black mt-8"
               >Check Tailwind Starter Kit!</a
-            >
+            > */}
           </div>
+
+
+
           <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
             <div
               class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
@@ -744,33 +816,30 @@ const Landing = () => {
     </svg>
     <div class="flex flex-wrap items-center mt-32">
       <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-        <div
-          class="text-black p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-100"
+        {/* <div
+          class="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-800"
         >
-          <i class="fas fa-user-friends text-xl text-black">THX 411</i>
-        </div>
+          <i class="fas fa-user-friends text-xl text-white">     </i>
+        </div> */}
+          <img src={logo} alt=""  className='w-16 h-16 text-center'/>
         <h3 class="text-3xl mb-2 font-semibold leading-normal text-white">
           Working with us is a pleasure
         </h3>
         <p
           class="text-lg font-light leading-relaxed mt-4 mb-4 text-white"
         >
-          Don't let your uses guess by attaching tooltips and popoves to
-          any element. Just make sure you enable them first via
-          JavaScript.
+          We know that when it comes to business, time is of the essence. For this reason, we always strive to complete our work on time. 
         </p>
         <p
           class="text-lg font-light leading-relaxed mt-0 mb-4 text-white"
         >
-          The kit comes with three pre-built pages to help you get started
-          faster. You can change the text and images and you're good to
-          go. Just make sure you enable them first via JavaScript.
+         We track progress and use project management tools to communicate with you every step of the way. You can rely on us to complete your order on time and with high quality.
         </p>
-        <a
+        {/* <a
           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
           class="font-bold text-white mt-8"
           >Check Tailwind Starter Kit!</a
-        >
+        > */}
       </div>
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div

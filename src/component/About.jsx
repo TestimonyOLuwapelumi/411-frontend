@@ -18,7 +18,7 @@ const About = ({allAbout}) => {
    
 
     <main class="mt-2">
-    {allAbout.map((about)=>
+    {/* {allAbout.map((about)=> */}
       <div>
       <div class="mb-0 md:mb-0 w-full mx-auto relative">
 
@@ -32,27 +32,69 @@ const About = ({allAbout}) => {
           </a>
         </div> */}
         {/* style={{height: "18em"}} */}
-        <img src={about.attributes.aboutImg.data.attributes.url} class="lg:w-full mx-auto w-96 object-cover lg:rounded lg:h-72  h-36" />
+        {/* <img src={about.attributes.aboutImg.data.attributes.url} class="lg:w-full mx-auto w-96 object-cover lg:rounded lg:h-72  h-36" /> */}
       </div>
-        <h2 class="lg:text-4xl text-2xl font-semibold text-gray-900 px-4 lg:px-0 py-1">
-            {about.attributes.aboutTitle}
-          </h2>
+        <h1 class="lg:text-4xl text-2xl font-semibold text-gray-900 px-4 lg:px-0 py-1">
+            {/* {about.attributes.aboutTitle} */}
+            WHAT     IS     THE     411? 
+          </h1>
+          {/* <h1 className='mx-auto mt-0 max-w-md text-center text-2xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
+
 
       <div class="flex flex-col lg:flex-row lg:space-x-12 border">
 
         <div class="px-4 lg:px-0 mt-3 text-gray-900 text-lg leading-relaxed w-full lg:w-3/4">
-        <ReactMarkdown className='line-break'>
+{/*   
+        {about.attributes.aboutContent} */}
+        {/* <ReactMarkdown className='line-break'>
+       ABOUT 
+What is the 411? is an entertainment and recreation group that promotes creativity through podcasting, animation videos, interesting and hilarious blog posts that keeps the mind away from worries.
+MISSION
+The 411 Squad is on a peacekeeping mission to eliminate your fears and worries from the turbulent life crises. This is because, everyone deserves to be happy!
+GOAL
+We want to have positive influence on our audience, unlock their creative minds and build a bigger creative industry.
 
-        {about.attributes.aboutContent}
-        </ReactMarkdown>
+        </ReactMarkdown> */}
+       
+        <p class="pb-6">
+        In today's digital and information age, online entertainment has proven beyond doubt, to be the easiest panacea to help the human mind relax and cool off from the hustle and bustle of life.
+Therefore, it goes that, even in the midst of emerging content creators in the industry, there will never be enough contents for the creative industry. Hence, the birth of this amazing and unique brand, What is the 411?
+
+            </p>
+            <h2>ABOUT </h2>
+        <p class="pb-6">
+       
+What is the 411? is an entertainment and recreation group that promotes creativity through podcasting, animation videos, interesting and hilarious blog posts that keeps the mind away from worries.
+
+            </p>
+            <h2>
+
+        MISSION
+            </h2>
+        <p class="pb-6">
+The 411 Squad is on a peacekeeping mission to eliminate your fears and worries from the turbulent life crises. This is because, everyone deserves to be happy!
+
+            </p>
+            <h2>
+
+        GOAL
+            </h2>
+        <p class="pb-6">
+We want to have positive influence on our audience, unlock their creative minds and build a bigger creative industry.
+
+            </p>
 
 
        
           
 
-          <p class="pb-6">{about.attributes.aboutDesc}</p> 
+          {/* <p class="pb-6">{about.attributes.aboutDesc}</p> 
 
-          <p class="pb-6">{about.attributes.motto}</p> 
+          <p class="pb-6">{about.attributes.motto}</p>  */}
+          <p class="pb-6">WHAT IS THE 411?. 2023 ALL RIGHTS RESERVED.
+</p> 
+
+          {/* <p class="pb-6">{about.attributes.motto}</p>  */}
         </div>
 
         <aside class="w-full md:w-1/3 sm:w-24 flex lg:flex-col  flex-col-1 items-center px-3 lg:space-x-0 space-x-3  lg:mx-0">
@@ -141,7 +183,7 @@ const About = ({allAbout}) => {
               </div>
 
         </div>
-        )}
+        {/* )} */}
             </main>
           
 

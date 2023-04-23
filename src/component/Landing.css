@@ -3,3 +3,79 @@
         background: linear-gradient(90deg, #5858e6 0%, #0000FF 100%);
       }
  
+
+    
+
+     
+      .buttonn {
+        width: 210px;
+        height: 60px;
+        border: none;
+        background: #0000FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+       .buttonn::before,
+      .buttonn::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: #000;
+        transition: width 1s ease-in-out;
+      }
+
+      .buttonn:before {
+        
+        top: 0;
+        left: 0;
+      }
+
+      .buttonn:after {
+        
+        bottom: 0;
+        right: 0;
+      }
+
+      .buttonn:hover:before,
+      .buttonn:hover:after {
+        width: 100%;
+      }
+
+      .letterss {
+        width: 40px;
+        height: 50px;
+        perspective: 600px;
+      }
+
+      .cardd {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1s ease-in-out;
+        transform-style: preserve-3d;
+      }
+
+      .card_facee {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .backk {
+        transform: rotateY(180deg);
+      }
+
+      .buttonn:hover .cardd {
+        transform: rotateY(180deg);
+      }

@@ -83,33 +83,33 @@ const Footer = () => {
     <nav aria-label="Footer Nav" class="mt-5">
       <ul class="flex flex-wrap justify-center gap-1 md:gap-8 lg:gap-12">
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs"  >
             Contact us
           </a>
         </li>
 
           <Link to={"/about"}>
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs"  >
             About
           </a>
         </li>
           </Link>
 
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs"  >
             Advertise with us
           </a>
         </li>
 
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs"  >
             Terms & Conditions
           </a>
         </li>
 
         <li>
-          <a class="text-gray-100 transition hover:text-blue-800 text-xs" href="/">
+          <a class="text-gray-100 transition hover:text-blue-800 text-xs"  >
             Privacy Policy
           </a>
         </li>
@@ -117,7 +117,7 @@ const Footer = () => {
        
 
         {/* <li>
-          <a class="text-gray-100 transition hover:text-gray-700/75" href="/">
+          <a class="text-gray-100 transition hover:text-gray-700/75"  >
             Blog
           </a>
         </li> */}
@@ -133,7 +133,7 @@ const Footer = () => {
     <ul class="mt-3 flex justify-center gap-6 md:gap-8">
       {/* <li>
         <a
-          href="/"
+           
           rel="noreferrer"
           target="_blank"
           class="text-gray-100 transition hover:text-gray-700/75"
@@ -154,7 +154,7 @@ const Footer = () => {
         </a>
       </li> */}
 
-      <Link to={"https://youtube.com/@_thx411"}>
+      <Link to={"https://www.instagram.com/_thx411/"}>
       <li>
         <a
           rel="noreferrer"
@@ -208,7 +208,7 @@ const Footer = () => {
           target="_blank"
           class="text-gray-100 transition hover:text-blue-800"
         >
-          <span class="sr-only">GitHub</span>
+          <span class="sr-only">Tiktok</span>
           <svg fill="#ffffff" width="512px" height="512px" class="w-6 h-6 text-gray-100" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
                 <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"/>
                 </svg>
@@ -228,7 +228,7 @@ const Footer = () => {
       </li>
       </Link>
 
-      <Link to="https://www.tiktok.com/@thx411_">
+      <Link to="https://www.youtube.com/@_thx411">
       <li>
         <a
           
@@ -236,7 +236,7 @@ const Footer = () => {
           target="_blank"
           class="text-gray-100 transition hover:text-blue-800"
         >
-          <span class="sr-only">GitHub</span>
+          <span class="sr-only">Youtube</span>
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="w-6 h-6 text-gray-100">
               <path d="M21.74,7.25a2.77,2.77,0,0,0-1.94-1.94C18.07,4.92,12,4.92,12,4.92S5.93,4.92,3.2,5.31A2.77,2.77,0,0,0,1.26,7.25C.87,9,.87,12,.87,12s0,2.75.39,4.75a2.77,2.77,0,0,0,1.94,1.94c2.73.39,8.8.39,8.8.39s6.07,0,8.8-.39a2.77,2.77,0,0,0,1.94-1.94c.39-2,0-4.75,0-4.75s.39-2,.39-4.75ZM9.75,15.27V8.73L15.27,12Z"></path>
@@ -248,7 +248,7 @@ const Footer = () => {
 
       {/* <li>
         <a
-          href="/"
+           
           rel="noreferrer"
           target="_blank"
           class="text-gray-700 transition hover:text-gray-700/75"

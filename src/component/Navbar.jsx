@@ -95,7 +95,8 @@ const Navbar = () => {
             <Link to={"/humour"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Humour</li></Link>
             <Link to={"/Imagination"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Imagination</li></Link> */}
             <br />
-            <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
+            {/* <Link to={""}></Link> */}
+            <Link to={"/about"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
             <br />
             <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>Support</li></Link>
 
