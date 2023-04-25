@@ -23,7 +23,7 @@ const Landing = () => {
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-2xl mb-8 mx-auto animate__animated  animate__flash">
+          <p class="leading-normal text-2xl mb-8 mx-auto animate__animated  animate__zoomIn">
             We are a big media brand in Africa!
           </p>
           <button class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
