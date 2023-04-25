@@ -85,7 +85,25 @@ const Navbar = () => {
                 
 
         </div>
-        <ul className={toggle?'absolute bg-white w-64 lg:w-96 h-screen px-8 right-0 text-center ':'hidden'}>
+        
+    </div>
+    <div class="w-full lg:w-full  mx-auto  drop-shadow-2xl bg-blue-800 h-[6px]">
+
+    </div>
+
+    <section class="sectt lg:h-[80px] h-[50px] z-10 bg-white drop-shadow-lg">
+  <ul class="uu ">
+    <Link to={"/home"}><li class="ll"><a href="#" class="aba ">Blogs</a></li></Link>
+    <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
+    <Link to={"/humour"}><li class="ll"><a href="#" class="aba">Humour</a></li></Link>
+   <Link to={"/imagination"}> <li class="ll"><a href="#" class="aba">Imagination</a></li></Link>
+    {/* <li class="ll"><a href="#" class="aba">Support</a></li> */}
+  </ul>
+    </section>
+
+
+
+    <ul className={toggle?'absolute bg-white w-64 lg:w-96 h-screen px-8 right-0 text-center ':'hidden'}>
             <Link to={"/home"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
             <br />
             <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
@@ -108,21 +126,6 @@ const Navbar = () => {
       {/* <p>Some content here</p> */}
     </div>
         </ul>
-
-    </div>
-    <div class="w-full lg:w-full  mx-auto  drop-shadow-2xl bg-blue-800 h-[6px]">
-
-    </div>
-
-    <section class="sectt lg:h-[80px] h-[50px] z-10 bg-white drop-shadow-lg">
-  <ul class="uu ">
-    <Link to={"/home"}><li class="ll"><a href="#" class="aba ">Blogs</a></li></Link>
-    <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
-    <Link to={"/humour"}><li class="ll"><a href="#" class="aba">Humour</a></li></Link>
-   <Link to={"/imagination"}> <li class="ll"><a href="#" class="aba">Imagination</a></li></Link>
-    {/* <li class="ll"><a href="#" class="aba">Support</a></li> */}
-  </ul>
-    </section>
 
 
       
