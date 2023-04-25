@@ -4,10 +4,11 @@ import axios from 'axios'
 
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage} from "./pages";
+import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage, NewsletPage} from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 import myImage from "./Asset 1.png"
 import { About, Animate, AnimateContent, Loader } from "./component";
+import CategoryPage from './pages/CategoryPage';
 // import { Loader } from './component';
 // import AboutPage from "./pages/AboutPage";
 // import { Routes, Route } from "react-router-dom";
@@ -219,7 +220,10 @@ export default function App() {
         <Route path="/cool-stuff" element={<CoolStuffPage  allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
 
         
-        
+
+        <Route path="/category" element={<CategoryPage/>}/>
+        <Route path="/newsletter" element={<NewsletPage/>}/>
+
 
 
         <Route path="/*" element={<NotFoundpage/>}/>

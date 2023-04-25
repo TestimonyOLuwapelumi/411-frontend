@@ -1,5 +1,5 @@
 import React from 'react'
-import { BloggContent, Blogj, Footer, Navbar } from '../component'
+import { BloggContent, Blogj, BottomNav, Footer, Navbar } from '../component'
 
 const BloggContentPage = ({allDatab}) => {
   return (
@@ -9,6 +9,7 @@ const BloggContentPage = ({allDatab}) => {
         <BloggContent allDatab={allDatab}/>
         <Blogj  allDatab={allDatab}/>
         <Footer/>
+        <BottomNav/>
 
     </>
   )

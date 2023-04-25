@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blogj, Footer, Navbar } from '../component'
+import { Blogj, BottomNav, Footer, Navbar } from '../component'
 
 const BloggPage = ({allDatab}) => {
   return (
@@ -8,6 +8,7 @@ const BloggPage = ({allDatab}) => {
     <Navbar/>
     <Blogj allDatab={allDatab}/>
     <Footer/>
+    <BottomNav/>
     
     </>
   )

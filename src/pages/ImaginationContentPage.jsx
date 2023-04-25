@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Imagination, ImaginationContent, Navbar } from '../component'
+import { BottomNav, Footer, Imagination, ImaginationContent, Navbar } from '../component'
 
 const ImaginationContentPage = ({allDatai}) => {
   return (
@@ -9,6 +9,7 @@ const ImaginationContentPage = ({allDatai}) => {
         <ImaginationContent allDatai={allDatai}/>
         <Imagination allDatai={allDatai}/>
         <Footer/>
+        <BottomNav/>
     
     </>
   )

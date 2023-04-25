@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar, Video, VideoContent } from '../component'
+import { BottomNav, Footer, Navbar, Video, VideoContent } from '../component'
 
 const VideoPage = ({allDatav}) => {
   return (
@@ -8,6 +8,7 @@ const VideoPage = ({allDatav}) => {
     {/* <VideoContent/> */}
     <Video allDatav={allDatav}/>
     <Footer/>
+    <BottomNav/>
     </>
   )
 }

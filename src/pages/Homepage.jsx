@@ -1,12 +1,12 @@
 import React from 'react';
-import { Navbar, Footer,  Home, AdsComponent} from "../component"
+import { Navbar, Footer,  Home, AdsComponent, BottomNav} from "../component"
 
 const Homepage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
    console.log(allData);
 
 
   return (
-    <div>
+    <>
       {/* <AdsComponent  dataAdSlot='X7XXXXXX5X'/> */}
       <Navbar />
       <Home allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatav={allDatav} allDatapo={allDatapo} allDatac={allDatac}/>
@@ -16,7 +16,9 @@ const Homepage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, a
       {/* <Podcastp podcasts={podcastData?podcastData : ""}/>       */}
       {/* <Podcastp podcasts={podcasts?podcasts:""}/> */}
       <Footer />
-    </div>
+      <BottomNav/>
+    </>
+
   )
 }
 

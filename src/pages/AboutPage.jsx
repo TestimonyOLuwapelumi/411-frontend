@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Footer, Navbar } from '../component'
+import { About, BottomNav, Footer, Navbar } from '../component'
 import { all } from 'axios';
 
 const AboutPage = ({allAbout}) => {
@@ -9,6 +9,7 @@ const AboutPage = ({allAbout}) => {
         <Navbar/>
         <About allAbout={allAbout}/>
         <Footer/>
+        <BottomNav/>
     
     </>
   )

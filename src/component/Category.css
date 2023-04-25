@@ -1,0 +1,9 @@
+.secc::-webkit-scrollbar{
+    /* background: #fff; */
+    width: 0;
+  }
+
+  .sectt ::-webkit-scrollbar-thumb{
+    /* background: #fff; */
+    width: 0;
+  }

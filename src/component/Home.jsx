@@ -926,7 +926,7 @@ export default Home
 
 
 
-
+{/* 
 
 // <section className="py-6 sm:py-12   dark:text-gray-100">
 // <div className="container p-6 mx-auto ">
@@ -955,4 +955,4 @@ export default Home
 		
 // 	</div>
 // </div>
-// </section>
+// </section> */}

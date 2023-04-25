@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar, Video, VideoContent } from '../component'
+import { BottomNav, Footer, Navbar, Video, VideoContent } from '../component'
 
 const VideoContentPage = ({allDatav}) => {
     // console.log(videos);
@@ -10,6 +10,7 @@ const VideoContentPage = ({allDatav}) => {
     <VideoContent allDatav={allDatav}/>
     <Video allDatav={allDatav}/>
     <Footer/>
+    <BottomNav/>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Landing, Navbar } from '../component'
+import { BottomNav, Footer, Landing, Navbar } from '../component'
 
 const LandingPage = ({allDatab, allDatap}) => {
   return (
@@ -7,6 +7,8 @@ const LandingPage = ({allDatab, allDatap}) => {
     <Navbar allDatab={allDatab} allDatap={allDatap}/>
     <Landing/>
     <Footer/>
+    <BottomNav/>
+    
     
     </>
   )

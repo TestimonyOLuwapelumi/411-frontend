@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar, Personality, PersonalityContent,} from '../component'
+import { BottomNav, Footer, Navbar, Personality, PersonalityContent,} from '../component'
 
 const PersonalityContentPage = ({allDatap}) => {
   return (
@@ -9,6 +9,7 @@ const PersonalityContentPage = ({allDatap}) => {
         <PersonalityContent allDatap={allDatap}/>
         <Personality allDatap={allDatap}/>
         <Footer/>
+        <BottomNav/>
     
     </>
   )

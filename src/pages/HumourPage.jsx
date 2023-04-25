@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Humour, Navbar } from '../component'
+import { BottomNav, Footer, Humour, Navbar } from '../component'
 
 const HumourPage = ({allData}) => {
   return (
@@ -7,6 +7,7 @@ const HumourPage = ({allData}) => {
     <Navbar/>
     <Humour allData={allData}/>
     <Footer/>
+    <BottomNav/>
 
     </>
   )

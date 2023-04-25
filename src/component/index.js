@@ -28,6 +28,9 @@ import Loader from "./Loader";
 import CoolStuff from "./CoolStuff";
 import AdsComponent from "./AdsComponent";
 import Landing from "./Landing";
+import BottomNav from "./BottomNav";
+import Category from "./Category";
+import NewsLetter from "./NewsLetter";
 
 
 
@@ -64,7 +67,10 @@ export {
     Loader,
     CoolStuff,
     AdsComponent,
-    Landing
+    Landing,
+    BottomNav,
+    Category,
+    NewsLetter
     
 
 }

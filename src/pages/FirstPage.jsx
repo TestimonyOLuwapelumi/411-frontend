@@ -1,5 +1,5 @@
 import React from 'react'
-import { Firstblog, Footer, Navbar } from '../component'
+import { BottomNav, Firstblog, Footer, Navbar } from '../component'
 
 const FirstPage = ({firstblogs}) => {
   return (
@@ -7,6 +7,7 @@ const FirstPage = ({firstblogs}) => {
         <Navbar/>
         <Firstblog firstblogs={firstblogs?firstblogs :""}/>
         <Footer/>
+        <BottomNav/>
     </>
   )
 }

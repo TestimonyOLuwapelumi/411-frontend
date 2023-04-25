@@ -1,0 +1,31 @@
+.bottom{
+    bottom: 0;
+    position: fixed;
+    background-color: blue;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-bottom: 50px;
+
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5o0px;
+    margin-bottom: 2o0px;
+}
+li{
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+li svg{
+    margin: auto;
+    color: #fff;
+}
+li span{
+    margin: auto;
+    color: aliceblue;
+    font-size: x-small;
+}

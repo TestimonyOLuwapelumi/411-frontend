@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar, Podcast, PodcastContent } from '../component'
+import { BottomNav, Footer, Navbar, Podcast, PodcastContent } from '../component'
 
 const PodcastContentPage = ({allDatapo}) => {
   return (
@@ -9,6 +9,7 @@ const PodcastContentPage = ({allDatapo}) => {
         <PodcastContent allDatapo={allDatapo}/>
         <Podcast allDatapo={allDatapo}/>
         <Footer/>
+        <BottomNav/>
         </>
 
   )
