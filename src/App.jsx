@@ -37,7 +37,7 @@ export default function App() {
 
 
     // const url = 'http://localhost:1337/api/humours?populate=*';
-    const url = 'https://whatisthx411-backrnd.onrender.com/api/humours?populate=*';
+    const url = 'https://whatisthe411-backend.onrender.com/api/humours?populate=*';
 
     useEffect(() => {
 
@@ -52,7 +52,7 @@ export default function App() {
 
     
     // const url1 = 'http://localhost:1337/api/imaginations?populate=*';
-    const url1 = 'https://whatisthx411-backrnd.onrender.com/api/imaginations?populate=*';
+    const url1 = 'https://whatisthe411-backend.onrender.com/api/imaginations?populate=*';
 
     useEffect(() => {
       getDat()
@@ -63,7 +63,7 @@ export default function App() {
     console.log(allDatai);
 
     // const url2 = 'http://localhost:1337/api/personalities?populate=*';
-    const url2 = 'https://whatisthx411-backrnd.onrender.com/api/personalities?populate=*';
+    const url2 = 'https://whatisthe411-backend.onrender.com/api/personalities?populate=*';
 
     useEffect(() => {
       getDatp()
@@ -75,7 +75,7 @@ export default function App() {
 
 
     // const url3 = 'http://localhost:1337/api/blogs?populate=*';
-    const url3 = 'https://whatisthx411-backrnd.onrender.com/api/blogs?populate=*';
+    const url3 = 'https://whatisthe411-backend.onrender.com/api/blogs?populate=*';
 
     useEffect(() => {
       getDatb()
@@ -86,7 +86,7 @@ export default function App() {
     console.log(allDatab);
 
     // const url4 = 'http://localhost:1337/api/videos?populate=*';
-    const url4 = 'https://whatisthx411-backrnd.onrender.com/api/videos?populate=*';
+    const url4 = 'https://whatisthe411-backend.onrender.com/api/videos?populate=*';
 
     useEffect(() => {
       getDatv()
@@ -98,7 +98,7 @@ export default function App() {
 
 
     // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
-    const url5 = 'https://whatisthx411-backrnd.onrender.com/api/podcasts?populate=*';
+    const url5 = 'https://whatisthe411-backend.onrender.com/api/podcasts?populate=*';
 
     useEffect(() => {
       getDatpo()
@@ -109,7 +109,7 @@ export default function App() {
     console.log(allDatapo);
 
     // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
-    const url6 = 'https://whatisthx411-backrnd.onrender.com/api/carousels?populate=*';
+    const url6 = 'https://whatisthe411-backend.onrender.com/api/carousels?populate=*';
 
     useEffect(() => {
       getDatc()
@@ -121,7 +121,7 @@ export default function App() {
 
 
     // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
-    const url7 = 'https://whatisthx411-backrnd.onrender.com/api/abouts?populate=*';
+    const url7 = 'https://whatisthe411-backend.onrender.com/api/abouts?populate=*';
 
     useEffect(() => {
       getAbout()
