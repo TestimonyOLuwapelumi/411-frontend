@@ -7,7 +7,7 @@ const BottomNav = () => {
 
     useEffect(() => {
       const handleResize = () => {
-        setIsSmallScreen(window.innerWidth < 768); // set breakpoint to 768px or any value suitable for your use case
+        setIsSmallScreen(window.innerWidth < 1100); // set breakpoint to 768px or any value suitable for your use case
       };
       window.addEventListener('resize', handleResize);
       handleResize();
