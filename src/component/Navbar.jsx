@@ -59,7 +59,7 @@ const Navbar = () => {
     {/* <AdsComponent/> */}
     <div className='had'>
 
-    <div className='w-full h-[80px] z-10 bg-white  drop-shadow-lg mb- head '>
+    <div className='w-full lg:h-[80px] h-[55px] z-10 bg-white  drop-shadow-lg mb- head '>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
@@ -110,11 +110,11 @@ const Navbar = () => {
         </ul>
 
     </div>
-    <div class="w-full lg:w-full  mx-auto pt-5 lg:pt-5 drop-shadow-2xl bg-blue-800 h-0">
+    <div class="w-full lg:w-full  mx-auto  drop-shadow-2xl bg-blue-800 h-[6px]">
 
     </div>
 
-    <section class="sectt h-[80px] z-10 bg-white drop-shadow-lg">
+    <section class="sectt lg:h-[80px] h-[50px] z-10 bg-white drop-shadow-lg">
   <ul class="uu ">
     <Link to={"/home"}><li class="ll"><a href="#" class="aba ">Blogs</a></li></Link>
     <Link to={"/personality"}><li class="ll"><a href="#" class="aba bb">Personality Test</a></li></Link>
