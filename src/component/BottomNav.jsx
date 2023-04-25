@@ -6,7 +6,7 @@ const BottomNav = () => {
   return (
     <>
 
-        <div className="bottom hidden sm:block ">
+        <div className="bottom lg:hidden md:hidden sm:block ">
             <ul className="ul sm:space-x-24  space-x-2 ">
                 <li>
                 <Link to={"/home"}>

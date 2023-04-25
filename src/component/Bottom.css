@@ -29,3 +29,16 @@ li span{
     color: aliceblue;
     font-size: x-small;
 }
+
+@media (max-width: 1200px){
+    .bottom{
+      display: block;
+    }
+    
+  }
+@media (max-width: 20000px){
+    .bottom{
+      display: none;
+    }
+    
+  }
