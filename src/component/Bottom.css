@@ -12,8 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5o0px;
-    margin-bottom: 2o0px;
+    /* padding-bottom: 5px; */
+    /* margin-bottom: 2px; */
 }
 li{
     justify-content: center;
