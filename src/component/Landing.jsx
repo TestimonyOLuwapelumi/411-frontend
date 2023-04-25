@@ -3,6 +3,7 @@ import "./Landing.css"
 import myImage from "../assets/hero.png"
 import{menu, close, logo, logoo} from '../assets';
 import { Link } from 'react-router-dom'
+// import { AnimationEvent } from 'react';
 
 
 
@@ -17,15 +18,15 @@ const Landing = () => {
         {/* <!--Left Col--> */}
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           {/* <p class="uppercase tracking-loose w-full">What is the 411?</p> */}
-          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight mx-auto">
+          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight mx-auto animate__animated animate__bounce">
             What is the 411?
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-2xl mb-8 mx-auto">
+          <p class="leading-normal text-2xl mb-8 mx-auto animate__animated  animate__flash">
             We are a big media brand in Africa!
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <button class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
             Blogs
           </button>
         </div>
