@@ -1,7 +1,7 @@
 .bottom{
     bottom: 0;
     position: fixed;
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     height: 70px;
     display: flex;
@@ -30,7 +30,7 @@ li span{
     font-size: x-small;
 }
 
-@media (max-width: 1200px){
+/* @media (max-width: 1200px){
     .bottom{
       display: block;
     }
@@ -41,4 +41,4 @@ li span{
       display: none;
     }
     
-  }
+  } */

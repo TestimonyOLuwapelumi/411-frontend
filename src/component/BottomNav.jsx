@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom'
 const BottomNav = () => {
   return (
     <>
+        <div className="">
 
-        <div className="bottom lg:hidden md:hidden sm:block ">
+        <div className="bottom lg:hidden bg-blue-800">
             <ul className="ul sm:space-x-24  space-x-2 ">
                 <li>
                 <Link to={"/home"}>
@@ -59,6 +60,12 @@ const BottomNav = () => {
                     </Link>
                     </li>
             </ul>
+        </div>
+
+
+        <div className="bottom hidden lg:block bg-blue-0">
+          <div className=""></div>
+        </div>
         </div>
 
     </>
