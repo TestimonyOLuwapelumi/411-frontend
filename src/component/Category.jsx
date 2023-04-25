@@ -43,7 +43,7 @@ const Category = () => {
 
 
 
-<div className="container p-2 mx-auto sm:p-4 dark:text-gray-100">
+<div className="container p-2 mx-auto sm:p-4 text-gray-700">
 	<h2 className=" ml-16 lg:ml-64 mb-4 text-2xl font-semibold leading-tight mx-auto">Categories</h2>
 	<div className="flex flex-col overflow-x-auto text-xs h-[200px] lg:h-[300px] secc ml-auto">
 		{/* <div className="flex text-left dark:bg-gray-700 ">
@@ -51,20 +51,20 @@ const Category = () => {
 		</div> */}
 		
         
-		<div className="flex border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 py-4">
+		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2  className='px-16 lg:px-64'>Humour</h2>
 		</div>
 		
-		<div className="flex border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 py-4">
+		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2 className='px-16 lg:px-64'>Imagination</h2>
 		</div>
-        <div className="flex border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 py-4">
+        <div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
@@ -76,13 +76,13 @@ const Category = () => {
 			</div> */}
 			{/* <h2  className='px-16 lg:px-64'>Lorem ipsum dolor sit amet consectetur.</h2>
 		</div> */}
-		<div className="flex border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 py-4">
+		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2  className='px-16 lg:px-64'>Podcast.</h2>
 		</div>
-		<div className="flex border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 py-4">
+		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}

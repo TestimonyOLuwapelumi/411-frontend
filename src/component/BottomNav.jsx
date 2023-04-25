@@ -3,6 +3,20 @@ import "./Bottom.css"
 import { Link } from 'react-router-dom'
 
 const BottomNav = () => {
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth < 768); // set breakpoint to 768px or any value suitable for your use case
+      };
+      window.addEventListener('resize', handleResize);
+      handleResize();
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    if (!isSmallScreen) {
+      return null; // do not render anything when screen size is not small
+    }
   return (
     <>
         <div className="">
@@ -63,9 +77,7 @@ const BottomNav = () => {
         </div>
 
 
-        <div className="bottom hidden lg:block bg-blue-0">
-          <div className=""></div>
-        </div>
+        
         </div>
 
     </>
