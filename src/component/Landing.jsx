@@ -26,9 +26,11 @@ const Landing = () => {
           <p class="leading-normal text-2xl mb-8 mx-auto animate__animated  animate__zoomIn">
             We are a big media brand in Africa!
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
+          <Link to={"/home"}>
+          <button class="mx-auto ml-28 lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
             Blogs
           </button>
+          </Link>
         </div>
         {/* <!--Right Col--> */}
         <div class="w-full md:w-3/5 py-6 text-center">
@@ -539,9 +541,11 @@ const Landing = () => {
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-start">
+              <Link to={"/podcast"}>
               <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Check 
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -561,9 +565,11 @@ const Landing = () => {
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-center">
+              <Link to={"/home"}>
               <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Check
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -582,9 +588,11 @@ const Landing = () => {
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-end">
+              <Link to={"/video"}>
               <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Check
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -603,10 +611,13 @@ const Landing = () => {
                 <div
                   class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full gradient"
                 >
+                  <Link to={"/about"}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path fill="none" d="M0 0h24v24H0z"/>
                   <path fill="#ffffff" d="M19.72 4.15A1.98 1.98 0 0 0 18.97 4H5.03c-.65 0-1.28.34-1.62.9L1.3 9.23a1.5 1.5 0 0 0-.3.92v5.7c0 .6.33 1.14.85 1.42.2.13.42.22.65.26l7.78 1.96a2 2 0 0 0 1.15 0l7.78-1.96c.23-.04.45-.13.65-.26.52-.28.85-.82.85-1.42v-5.7a1.5 1.5 0 0 0-.3-.92l-2.11-2.62zm-.85 2.9l1.37 1.7-1.37 1.7v-3.4zm-2.77 2.77a1 1 0 1 1 1.41-1.41 1 1 0 0 1-1.41 1.41zm-6.93 0a1 1 0 1 1 1.41-1.41 1 1 0 0 1-1.41 1.41zM4.55 9.4L5.4 8h13.2l.85 1.4L12 13 4.55 9.4zM3.5 15.5v-4.1l2.9 3.62L3.5 15.5zm16 0l-2.9-3.62L20.5 11v4.1z"/>
                 </svg>
+                  </Link>
+
                 </div>
 
                 <h6 class="text-xl font-semibold text-black">Contact us</h6>
@@ -688,10 +699,13 @@ const Landing = () => {
                 <div
                   class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full gradient"
                 >
+                   <Link to={"/about"}>
+                    
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path fill="none" d="M0 0h24v24H0z"/>
                   <path fill="#ffffff" d="M15.5 14c-.4 0-.7.1-1 .3V8.6c.3.2.6.3 1 .3 1.4 0 2.5 1.1 2.5 2.5S16.9 14 15.5 14zM8 16c-.5 0-.9-.2-1.2-.5-.3-.3-.5-.7-.5-1.2s.2-.9.5-1.2c.3-.3.7-.5 1.2-.5s.9.2 1.2.5c.3.3.5.7.5 1.2s-.2.9-.5 1.2C8.9 15.8 8.5 16 8 16zM21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM3 5h18v5H3V5zm0 14v-7h18v7H3z"/>
                 </svg>
+                   </Link>
                 
                 
                 </div>
@@ -710,10 +724,13 @@ const Landing = () => {
                 <div
                   class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full gradient"
                 >
+                   <Link to={"/about"}>
+
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path fill="none" d="M0 0h24v24H0z"/>
                   <path fill="#ffffff" d="M9 16v-1.5a3.5 3.5 0 1 1 7 0V16h2V8H9v8h2zm2-6.5a1.5 1.5 0 1 0 3 0V13h-3v-3.5z"/>
                 </svg>
+                   </Link>
                 
                 
                 </div>

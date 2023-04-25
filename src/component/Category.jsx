@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Category.css"
+import { Link } from 'react-router-dom'
 
 const Category = () => {
   return (
@@ -50,44 +51,53 @@ const Category = () => {
 			<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti praesentium quod repudiandae nulla cupiditate quos nam ut recusandae labore veritatis!</h2>
 		</div> */}
 		
-        
+		<Link to={"/humour"}>
+
 		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2  className='px-16 lg:px-64'>Humour</h2>
 		</div>
-		
+			</Link>
+		<Link to={"/imagination"}>
 		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2 className='px-16 lg:px-64'>Imagination</h2>
 		</div>
+			</Link>
+			<Link to={"/personality"}>
         <div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2  className='px-16 lg:px-64'>Personality Test.</h2>
 		</div>
+			</Link>
 		{/* <div className="flex border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900 py-4"> */}
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			{/* <h2  className='px-16 lg:px-64'>Lorem ipsum dolor sit amet consectetur.</h2>
 		</div> */}
+		<Link to={"/podcast"}>
 		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2  className='px-16 lg:px-64'>Podcast.</h2>
 		</div>
+			</Link>
+			<Link to={"/video"}>
 		<div className="flex border-b border-opacity-20  py-4">
 			{/* <div className="flex items-center justify-center w-8 px-2 py-3 sm:p-3">
 				<input type="checkbox" className="w-3 h-3 rounded-sm accent-violet-400" name="Box1" />
 			</div> */}
 			<h2  className='px-16 lg:px-64'>Video.</h2>
 		</div>
+			</Link>
 		
 
 	</div>

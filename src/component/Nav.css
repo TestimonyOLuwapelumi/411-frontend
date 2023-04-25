@@ -141,8 +141,9 @@ body{
   
 
 
-
-
+  .gradient {
+    background: linear-gradient(90deg, #5858e6 0%, #0000FF 100%);
+  }
 
 
 
