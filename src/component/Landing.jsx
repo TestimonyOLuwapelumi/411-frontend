@@ -13,7 +13,7 @@ const Landing = () => {
   return (
     <>
    <div  class="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
-    <div class="pt-12">
+    <div class="pt-5">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -23,7 +23,7 @@ const Landing = () => {
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-2xl mb-4 mx-auto animate__animated  animate__zoomIn">
+          <p class="leading-normal text-1xl lg:text-2xl mb-2 mx-auto animate__animated  animate__zoomIn">
             We are a big media brand in Africa!
           </p>
           <Link to={"/home"}>
@@ -38,7 +38,7 @@ const Landing = () => {
         </div>
       </div>
     </div>
-    <div class="relative -mt-12 lg:-mt-24">
+    <div class="relative -mt-16 lg:-mt-28">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
