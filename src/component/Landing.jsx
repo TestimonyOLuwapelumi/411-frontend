@@ -18,22 +18,22 @@ const Landing = () => {
         {/* <!--Left Col--> */}
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           {/* <p class="uppercase tracking-loose w-full">What is the 411?</p> */}
-          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight mx-auto animate__animated animate__bounce">
+          <h1 class="my-2 text-5xl lg:text-6xl font-bold leading-tight mx-auto animate__animated animate__bounce">
             What is the 411?
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-1xl lg:text-2xl mb-2 mx-auto animate__animated  animate__zoomIn">
+          <p class="leading-normal text-1xl lg:text-2xl mb-1 mx-auto animate__animated  animate__zoomIn">
             We are a big media brand in Africa!
           </p>
           <Link to={"/home"}>
-          <button class="mx-auto ml-28 lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
+          <button class="mx-auto ml-28 lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-2 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
             Blogs
           </button>
           </Link>
         </div>
         {/* <!--Right Col--> */}
-        <div class="w-full md:w-3/5 py-6 text-center">
+        <div class="w-full md:w-3/5 py-5 text-center">
           <img class=" md:w-4/5 w-4/5 z-50" src={myImage} />
         </div>
       </div>
