@@ -13,7 +13,7 @@ const Landing = () => {
   return (
     <>
    <div  class="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
-    <div class="pt-24">
+    <div class="pt-12">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -23,7 +23,7 @@ const Landing = () => {
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-2xl mb-8 mx-auto animate__animated  animate__zoomIn">
+          <p class="leading-normal text-2xl mb-4 mx-auto animate__animated  animate__zoomIn">
             We are a big media brand in Africa!
           </p>
           <Link to={"/home"}>
@@ -34,7 +34,7 @@ const Landing = () => {
         </div>
         {/* <!--Right Col--> */}
         <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src={myImage} />
+          <img class=" md:w-4/5 w-4/5 z-50" src={myImage} />
         </div>
       </div>
     </div>
