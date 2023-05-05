@@ -36,7 +36,7 @@ const PodcastContent = ({allDatapo}) => {
 
                             <div class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full" dangerouslySetInnerHTML={{ __html: podcast.attributes.podcastYoutube}} />
                         </div>
-                            <h1 className="text-4xl font-bold mb-2">{podcast.attributes.podcastTitle}</h1>
+                            <h1 className="text-xl font-bold mb-2">{podcast.attributes.podcastTitle}</h1>
                                 <p className="text-lg mb-8">{podcast.attributes.podcastContent}</p>
                             </div>
                         </div>

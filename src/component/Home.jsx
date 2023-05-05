@@ -134,7 +134,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -175,7 +175,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full border-b-2">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -215,7 +215,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -255,7 +255,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -298,7 +298,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -411,7 +411,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -497,7 +497,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -536,7 +536,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 <div class="bg-white h-full w-full border-b-2">
                   <div>
                     <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                        <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                        <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
             backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -595,7 +595,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 <div class="bg-white h-full w-full ">
                   <div>
                     <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                        <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                        <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
             backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -635,7 +635,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 <div class="bg-white h-full w-full ">
                   <div>
                     <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                        <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                        <div class="block h-20 w-2/5 rounded overflow-hidden"     style={{
             backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

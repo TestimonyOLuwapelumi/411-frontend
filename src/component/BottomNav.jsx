@@ -22,7 +22,7 @@ const BottomNav = () => {
         <div className="">
 
         <div className="bottom lg:hidden bg-blue-800">
-            <ul className="ul sm:space-x-24  space-x-2 ">
+            <ul className="ul sm:space-x-24  space-x-2 mx-auto">
                 <li>
                 <Link to={"/home"}>
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

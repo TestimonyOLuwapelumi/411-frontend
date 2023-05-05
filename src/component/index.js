@@ -31,6 +31,7 @@ import Landing from "./Landing";
 import BottomNav from "./BottomNav";
 import Category from "./Category";
 import NewsLetter from "./NewsLetter";
+import Search from "./Search";
 
 
 
@@ -70,7 +71,8 @@ export {
     Landing,
     BottomNav,
     Category,
-    NewsLetter
+    NewsLetter,
+    Search
     
 
 }

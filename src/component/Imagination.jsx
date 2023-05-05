@@ -15,7 +15,7 @@ const Imagination = ({allDatai}) => {
           <Link to={`/imagination/${imagination.id}`}>
             	{/* {bloggg.map((blog)=>
         <Link to={`/blog/${blog.id}`}> */}
-      <div class="lg:hidden border-b-2">
+      {/* <div class="lg:hidden border-b-2">
               <div class="bg-white h-full w-full ">
                 <div>
                   <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
@@ -35,12 +35,14 @@ const Imagination = ({allDatai}) => {
                   </a>
               </div>
             </div>
-            </div>
-        <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline     hidden lg:block cardd">
-          <img role="presentation" className="object-cover w-full rounded h-44   " src={imagination.attributes.imaginationImg.data.attributes.url} />
-          <div className="p-6 space-y-2">
+            </div> */}
+             <div className='py-7'>
+
+        <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline      lg:block cardd">
+          <img role="presentation" className="object-cover w-full rounded h-64   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+          <div className="p- space-y-">
           <h6 className='text-blue-800'>#Imagination</h6>
-            <h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
+            <h3 className="lg:text-2xl text-base font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
             <span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
             <p></p>
           </div>
@@ -48,7 +50,8 @@ const Imagination = ({allDatai}) => {
         <span class="spann rightt"></span>
         <span class="spann bottomm"></span>
         <span class="spann leftt"></span>
-        </a> 
+        </div> 
+        </div>
          </Link>
          )}
       

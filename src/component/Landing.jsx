@@ -8,11 +8,21 @@ import { Link } from 'react-router-dom'
 
 
 
-const Landing = () => {
-  
+const Landing = ({allData, searchTerm }) => {
+    // const filteredData = allData.filter(item =>
+    //   item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    // );
+
+    // const filteredData = allData.filter(humour =>
+    //   humour.data && item.attributes.humourTitle.toLowerCase().includes(searchTerm && searchTerm.toLowerCase())
+    // );
+    
+      const filteredData = allData.filter(item =>
+        item.attributes.humourTitle.toLowerCase().includes(searchTerm.toLowerCase())
+      );
   return (
     <>
-   <div  class="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
+    <div  class="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
     <div class="pt-5">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
@@ -57,6 +67,7 @@ const Landing = () => {
         </g>
       </svg>
     </div>
+
     <section class="bg-white border-b py-8">
       <div class="container max-w-5xl mx-auto m-8">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-black">

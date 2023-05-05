@@ -14,6 +14,8 @@ import CategoryPage from './pages/CategoryPage';
 // import { Routes, Route } from "react-router-dom";
 
 export default function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
   const [loading, setLoading] = useState(true);
 
       useEffect(() => {
@@ -32,7 +34,7 @@ export default function App() {
   const [allDatapo, setallDatapo] = useState([])
   const [allDatac, setallDatac] = useState([])
   const [allAbout, setallAbout] = useState([])
-
+  
 
 
 
@@ -45,7 +47,7 @@ export default function App() {
       getData()
     }, [])
     const getData = () =>{
-        axios.get(url).then(res =>setallData(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url).then(res =>setallData(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allData);
 
@@ -58,7 +60,7 @@ export default function App() {
       getDat()
     }, [])
     const getDat = () =>{
-        axios.get(url1).then(res =>setallDatai(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url1).then(res =>setallDatai(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allDatai);
 
@@ -69,7 +71,7 @@ export default function App() {
       getDatp()
     }, [])
     const getDatp = () =>{
-        axios.get(url2).then(res =>setallDatap(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url2).then(res =>setallDatap(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allDatap);
 
@@ -81,7 +83,7 @@ export default function App() {
       getDatb()
     }, [])
     const getDatb = () =>{
-        axios.get(url3).then(res =>setallDatab(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url3).then(res =>setallDatab(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allDatab);
 
@@ -92,7 +94,7 @@ export default function App() {
       getDatv()
     }, [])
     const getDatv = () =>{
-        axios.get(url4).then(res =>setallDatav(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url4).then(res =>setallDatav(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allDatav);
 
@@ -104,7 +106,7 @@ export default function App() {
       getDatpo()
     }, [])
     const getDatpo = () =>{
-        axios.get(url5).then(res =>setallDatapo(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url5).then(res =>setallDatapo(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allDatapo);
 
@@ -115,7 +117,7 @@ export default function App() {
       getDatc()
     }, [])
     const getDatc = () =>{
-        axios.get(url6).then(res =>setallDatac(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url6).then(res =>setallDatac(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allDatac);
 
@@ -127,11 +129,13 @@ export default function App() {
       getAbout()
     }, [])
     const getAbout = () =>{
-        axios.get(url7).then(res =>setallAbout(res.data.data)).catch(err =>{console.log(er);})
+        axios.get(url7).then(res =>setallAbout(res.data.data)).catch(err =>{console.log(err);})
     }
     console.log(allAbout);
 
-
+    const handleSearch = (term) => {
+      setSearchTerm(term);
+    };
 
   // const { loading: blogLoading, data: blogData, error: blogError } = useFetch(
   //   "https://four11admin.onrender.com/api/blogs?populate=*",
@@ -167,6 +171,7 @@ export default function App() {
   //     console.log(blogData);
   return (
     <>
+    
      {loading ?  <Loader/> : <h1></h1>}
     
      
@@ -184,7 +189,7 @@ export default function App() {
       </section>: */}
     <Routes>
       
-        <Route path="/" element={<LandingPage allDatab={allDatab} allDatap={allDatap}/>} />
+        <Route path="/" element={<LandingPage allData={allData}/>} />
         <Route path="/home" element={<Homepage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
         
         <Route path="/blog" element={<BloggPage allDatab={allDatab}/>} />
