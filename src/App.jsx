@@ -14,6 +14,65 @@ import CategoryPage from './pages/CategoryPage';
 // import { Routes, Route } from "react-router-dom";
 
 export default function App() {
+  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
+
+  // Add the beforeinstallprompt event listener
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (event) => {
+      // Prevent the default prompt from showing
+      event.preventDefault();
+
+      // Show the custom install prompt
+      setShowInstallPrompt(true);
+
+      // Save the event for later use
+      window.deferredPrompt = event;
+    };
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    };
+  }, []);
+
+  // Show the install prompt when the state variable changes
+  useEffect(() => {
+    if (showInstallPrompt) {
+      // Show the custom install prompt
+      const installPrompt = window.deferredPrompt;
+
+      if (installPrompt) {
+        installPrompt.prompt();
+
+        // Wait for the user to respond
+        installPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User installed the app');
+          } else {
+            console.log('User declined the app installation');
+          }
+
+          // Reset the install prompt state
+          setShowInstallPrompt(false);
+        });
+      }
+    }
+  }, [showInstallPrompt]);
+
+
+
+
+
+
+
+
+
+
+
+
+  
   const [searchTerm, setSearchTerm] = useState('');
 
   const [loading, setLoading] = useState(true);
@@ -137,6 +196,8 @@ export default function App() {
       setSearchTerm(term);
     };
 
+
+    
   // const { loading: blogLoading, data: blogData, error: blogError } = useFetch(
   //   "https://four11admin.onrender.com/api/blogs?populate=*",
   //   {},
