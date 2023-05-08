@@ -50,7 +50,7 @@ const Video = ({allDatav}) => {
         <div>
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
-              className="object-cover w-full h-64 md:h-64 xl:h-80"
+              className="object-cover w-full h-72 md:h-72 xl:h-80"
               src={video.attributes.videoImg.data.attributes.url}
               alt=""
             />

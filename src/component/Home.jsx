@@ -53,15 +53,15 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
     <>
 		<section className="  ">
-     <h1 className='text-2xl mx-auto ml-auto p-6'> Cool Stuff</h1>
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
+     <h1 className='text-3xl mx-auto ml-auto '> Cool Stuff</h1>
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {personality.map((personality)=>
     <Link to={`/personality/${personality.id}`}>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md cardd">
-				<img role="presentation" className="object-cover w-full rounded h-96   rounded-2xl" src={personality.attributes.personalityImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-96     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
+				<div className="p-6 space-y-2 ">
           <h6 className='text-blue-800'>#Personality Test</h6>
           {/* <span>#Personality Test</span> */}
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -73,15 +73,15 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</div>
+      <hr className='w-80 h-[5px] mx-auto bg-black text-black'/>
       </Link>
     )}
 
 
-
     {humour.map((humour)=>
      <Link to={`/humour/${humour.id}`}>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   cardd">
-				<img role="presentation" className="object-cover w-full rounded h-96   rounded-2xl" src={humour.attributes.humourImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-96     rounded-t-lg  " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -93,6 +93,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</div>
+      <hr className='w-80 h-[5px] mx-auto bg-black text-black'/>
+
        </Link>
        )}
 
@@ -100,8 +102,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
        {imagination.map((imagination)=>
      <Link to={`/imagination/${imagination.id}`}>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md  cardd">
-				<img role="presentation" className="object-cover w-full rounded h-96  rounded-2xl " src={imagination.attributes.imaginationImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md  cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-96    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -113,6 +115,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</div>
+      <hr className='w-80 h-[5px] mx-auto bg-black text-black'/>
+
       </Link>
        )}
 		</div>
@@ -135,7 +139,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalityImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -152,8 +156,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             </div>
           </div>
           </div>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={personality.attributes.personalityImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={personality.attributes.personalityImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -176,7 +180,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full border-b-2">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -193,8 +197,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             </div>
           </div>
           </div>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={humour.attributes.humourImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -216,7 +220,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -233,8 +237,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             </div>
           </div>
           </div>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={imagination.attributes.imaginationImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -256,7 +260,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalityImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -273,8 +277,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             </div>
           </div>
           </div>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72   rounded-2xl" src={personality.attributes.personalityImg.data.attributes.url}  />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url}  />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -299,7 +303,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${"https://source.unsplash.com/200x200/?fashion?1"})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -326,8 +330,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {humour3.map((humour)=>
      <Link to={`/humour/${humour.id}`}>
-    <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={humour.attributes.humourImg.data.attributes.url} />
+    <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -343,8 +347,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
        )}
         {imagination3.map((imagination)=>
      <Link to={`/imagination/${imagination.id}`}>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={imagination.attributes.imaginationImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -360,8 +364,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
        )}
         {personality4.map((personality)=>
      <Link to={`/personality/${personality.id}`}>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md  cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72   rounded-2xl" src={personality.attributes.personalityImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md  cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
           <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -412,7 +416,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -429,8 +433,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             </div>
           </div>
           </div>
-          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={blog.attributes.blogImg.data.attributes.url} />
+          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={blog.attributes.blogImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Newupdate</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
@@ -498,7 +502,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalityImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -515,8 +519,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
             </div>
           </div>
           </div>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
-				<img role="presentation" className="object-cover w-full rounded h-72   rounded-2xl" src={personality.attributes.personalityImg.data.attributes.url} />
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
+				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
@@ -537,7 +541,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 <div class="bg-white h-full w-full border-b-2">
                   <div>
                     <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                        <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                         <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
             backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -554,8 +558,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 </div>
               </div>
               </div>
-          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
-            <img role="presentation" className="object-cover w-full rounded h-72 rounded-2xl  " src={humour.attributes.humourImg.data.attributes.url} />
+          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
+            <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72   rounded-t-lg    " src={humour.attributes.humourImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Humour</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
@@ -596,7 +600,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 <div class="bg-white h-full w-full ">
                   <div>
                     <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                        <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                         <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
             backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -613,8 +617,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 </div>
               </div>
               </div>
-          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
-            <img role="presentation" className="object-cover w-full rounded h-72  rounded-2xl " src={imagination.attributes.imaginationImg.data.attributes.url} />
+          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
+            <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Imagination</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
@@ -636,7 +640,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 <div class="bg-white h-full w-full ">
                   <div>
                     <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                        <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
+                         <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
             backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -653,8 +657,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 </div>
               </div>
               </div>
-          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]  rounded-2xl bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
-            <img role="presentation" className="object-cover w-full rounded h-72 rounded-2xl  " src={blog.attributes.blogImg.data.attributes.url} />
+          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
+            <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72   rounded-t-lg    " src={blog.attributes.blogImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Newupdate</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
@@ -775,9 +779,9 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       {allDatapoo.map((podcast)=>
           <Link to={`/podcast/${podcast.id}`}>
         <div >
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <div className="relative overflow-hidden transition duration-200 transform  rounded-t-lg  shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
-              className="object-cover w-full h-64 md:h-64 xl:h-80"
+              className="object-cover w-full h-72  md:h-72 xl:h-80"
               src={podcast.attributes.podcastImg.data.attributes.url}
               alt="podcast"
             />
@@ -820,9 +824,9 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       {allDatavv.map((video)=>
           <Link to={`/video/${video.id}`}>
         <div   aria-label="View Item">
-          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+          <div className="relative overflow-hidden transition duration-200 transform  rounded-t-lg  shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
-              className="object-cover w-full h-64 md:h-64 xl:h-80"
+              className="object-cover w-full h-72 md:h-72 xl:h-80"
               src={video.attributes.videoImg.data.attributes.url}
               alt="video"
             />
