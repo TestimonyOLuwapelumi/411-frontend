@@ -5,10 +5,10 @@ const Imagination = ({allDatai}) => {
   return (
     <>
       {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facere! */}
-      <section className="   ">
-    <div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
-      
-      <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <section className=" bg-[#f9f9f9]  ">
+	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
+		
+		<div className="grid justify-center  gap-6 grid-cols-2 lg:grid-cols-4">
       {/* {firstThre.map((firstblog)=> */}
   
       {allDatai.map((imagination)=>
@@ -36,22 +36,29 @@ const Imagination = ({allDatai}) => {
               </div>
             </div>
             </div> */}
-             <div className='py-7'>
+         
+        
 
-        <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline      lg:block cardd">
-          <img role="presentation" className="object-cover w-full rounded h-64   " src={imagination.attributes.imaginationImg.data.attributes.url} />
-          <div className="p- space-y-">
-          <h6 className='text-blue-800'>#Imagination</h6>
-            <h3 className="lg:text-2xl text-base font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
-            <span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
-            <p></p>
-          </div>
-          <span class="spann topp"></span>
-        <span class="spann rightt"></span>
-        <span class="spann bottomm"></span>
-        <span class="spann leftt"></span>
-        </div> 
-        </div>
+
+
+        <div className='py-7'>
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline      lg:block cardd">
+				<img role="presentation" className="object-cover w-full rounded h-64   " src={imagination.attributes.imaginationImg.data.attributes.url} />
+				<div className="p- space-y-">
+        <h6 className='text-blue-800'>#Imagination</h6>
+					<h3 className="lg:text-2xl text-base  font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
+					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
+					<p></p>
+				</div>
+        <span class="spann topp"></span>
+      <span class="spann rightt"></span>
+      <span class="spann bottomm"></span>
+      <span class="spann leftt"></span>
+			</div> 
+     
+
+      </div>
+
          </Link>
          )}
       

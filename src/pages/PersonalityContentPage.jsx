@@ -7,7 +7,7 @@ const PersonalityContentPage = ({allDatap}) => {
     
         <Navbar/>
         <PersonalityContent allDatap={allDatap}/>
-        <Personality allDatap={allDatap}/>
+        {/* <Personality allDatap={allDatap}/> */}
         <Footer/>
         <BottomNav/>
     

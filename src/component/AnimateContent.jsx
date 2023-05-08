@@ -43,6 +43,8 @@ const AnimateContent = ({animates}) => {
                     <SocialMedia/>
                 </main>
             </div>
+            <hr className='h-1 mx-auto bg-black text-black'/>
+
             <Animate animates={animates?animates:""}/>
     </>
   )

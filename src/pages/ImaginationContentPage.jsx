@@ -7,7 +7,7 @@ const ImaginationContentPage = ({allDatai}) => {
     
         <Navbar/>
         <ImaginationContent allDatai={allDatai}/>
-        <Imagination allDatai={allDatai}/>
+        {/* <Imagination allDatai={allDatai}/> */}
         <Footer/>
         <BottomNav/>
     

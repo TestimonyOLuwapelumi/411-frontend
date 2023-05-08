@@ -5,7 +5,7 @@ const Personality = ({allDatap}) => {
   return (
     <>
 
-    <section className="   ">
+    <section className=" bg-[#f9f9f9]  ">
     <div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
       
       <div className="grid justify-center  gap-6 grid-cols-2 lg:grid-cols-4">
@@ -40,7 +40,7 @@ const Personality = ({allDatap}) => {
 
             
         <div  className="max-w-sm mx-auto group hover:no-underline focus:no-underline      lg:block cardd">
-          <img role="presentation" className="object-cover w-full rounded h-64   " src={personality.attributes.personalImg.data.attributes.url} />
+          <img role="presentation" className="object-cover w-full rounded h-64   " src={personality.attributes.personalityImg.data.attributes.url} />
           <div className="p- space-y-">
           <h6 className='text-blue-800'>#personality</h6>
             <h3 className="lg:text-2xl text-base font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>

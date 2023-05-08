@@ -24,7 +24,7 @@ const Humour = ({allData}) => {
 
     <>
     
-    <section className="   ">
+    <section className=" bg-[#f9f9f9]  ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center  gap-6 grid-cols-2 lg:grid-cols-4">
@@ -52,7 +52,8 @@ const Humour = ({allData}) => {
                 </a>
             </div>
           </div>
-          </div> */} <div className='py-7'>
+          </div> */} 
+          <div className='py-7'>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline      lg:block cardd">
 				<img role="presentation" className="object-cover w-full rounded h-64   " src={humour.attributes.humourImg.data.attributes.url} />
 				<div className="p- space-y-">

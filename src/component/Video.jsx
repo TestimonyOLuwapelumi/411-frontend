@@ -47,23 +47,25 @@ const Video = ({allDatav}) => {
       <div className="grid gap-6 row-gap-5 mb-3 lg:grid-cols-4 sm:grid-cols-2 sm:row-gap-2 grid-cols-2">
       {allDatav.map((video)=>
           <Link to={`/video/${video.id}`}>
-        <a href aria-label="View Item">
+        <div>
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              className="object-cover w-full h-64 md:h-64 xl:h-80"
               src={video.attributes.videoImg.data.attributes.url}
               alt=""
             />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+            <div className="absolute inset-x-0 bottom-0 px-3 -py-2 bg-black bg-opacity-75">
               <p className="text-sm font-medium tracking-wide text-white">
                 {video.attributes.videoTitle}
               </p>
             </div>
           </div>
           
-        </a>
+        </div>
          </Link>
          )}
+
+
 
       
       </div>

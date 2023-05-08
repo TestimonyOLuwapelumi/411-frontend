@@ -18,7 +18,7 @@
     "react-icons": "^4.8.0",
     "react-image": "^4.0.3",
     "react-markdown": "^8.0.5",
-    "react-router-dom": "^6.8.1",
+    "react-router-dom": "^6.11.1",
     "swiper": "^9.1.1"
   },
   "devDependencies": {

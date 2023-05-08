@@ -7,7 +7,7 @@ const Blogj = ({allDatab}) => {
   return (
     <>
     
-    <section className="   ">
+    <section className=" bg-[#f9f9f9]  ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -15,11 +15,11 @@ const Blogj = ({allDatab}) => {
 
     {allDatab.map((blog)=>
         <Link to={`/blog/${blog.id}`}>
-    <div class="lg:hidden border-b-2">
+        <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <a href="#" class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                    <div class="block h-30 w-2/5 rounded overflow-hidden"     style={{
+                    <div class="block h-24 w-2/5 rounded overflow-hidden"     style={{
         backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",

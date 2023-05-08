@@ -21,24 +21,30 @@ const Podcast = ({allDatapo}) => {
           perspiciatis unde omnis iste."
         </p>
       </div> */}
-      <div className="grid gap-6 row-gap-5 mb-3 lg:grid-cols-4 sm:grid-cols-2 sm:row-gap-2 sm:grid-cols-2">
+      <div className="grid gap-6 row-gap-5 mb-3 lg:grid-cols-4 grid-cols-2 sm:row-gap-2 sm:grid-cols-2">
       {allDatapo.map((podcast)=>
           <Link to={`/podcast/${podcast.id}`}>
-        <a href aria-label="View Item">
+        <div>
           <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
             <img
-              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              className="object-cover w-full h-64 md:h-64 xl:h-80"
               src={podcast.attributes.podcastImg.data.attributes.url}
               alt=""
             />
-            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+            <div className="absolute inset-x-0 bottom-0 px-3 -py-2 bg-black bg-opacity-75">
               <p className="text-sm font-medium tracking-wide text-white">
                 {podcast.attributes.podcastTitle}
               </p>
             </div>
+            {/* <div className='bg-black px-2 py-2 '>
+
+<p className="text-sm font-medium tracking-wide text-white ">
+  {podcast.attributes.podcastTitle}
+</p>
+</div> */}
           </div>
           
-        </a>
+        </div>
          </Link>
          )}
 
