@@ -3,53 +3,40 @@ import{menu, close, logo, logoo} from '../assets';
 import { Link } from 'react-router-dom'
 import { Routes, Route } from "react-router-dom";
 import { useNavigate, Router,   } from 'react-router-dom';
-
-import Nav from './Nav';
+import { NavLink, useParams } from 'react-router-dom';
+// import { Navbar, Searchh, SearchI, Searchp, Searchv, Searchpo, Landing } from '../component';
 import "./Nav.css"
-import myImage from "../images/newsletter-bg.jpg"
-import AdsComponent from './AdsComponent';
 import { FaSearch } from "react-icons/fa";
-import Blogj from './Blogj';
-import Searcha from './Searcha';
-import "./Search.css"
-import Searchh from './Searchh';
-import SearchI from './SearchI';
-import Searchp from './Searchp';
-import Searchv from './Searchv';
-import Searchpo from './Searchpo';
-import Landing from './Landing';
+import { BottomNav, SearchI, Searcha, Searchh, Searchp, Searchpo, Searchv } from '../component';
 
-const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) => {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [searchTerm, setSearchTerm] = useState("");
 
+
+const Search = ({allData,allDatai,allDatap,allDatab,allDatapo,allDatav,allDatac}) => {
+    // const { blogTitle } = useParams();
     const navigate = useNavigate();
 
+
+    const [searchQuery, setSearchQuery] = useState('');
+    const [searchTerm, setSearchTerm] = useState("");
     const [toggle,setToggle]=useState(false);
     const handleClick = ()=>setToggle(!toggle)
     const [open, setOpen] = useState(false);
-
-    const [showInput, setShowInput] = useState(false);
+    const [showInput, setShowInput] = useState(true);
     const [data1, setData1] = useState(null);
     const [data2, setData2] = useState(null);
-    
-    
-      
-      const handleInputChange = (event) => setSearchQuery(event.target.value);
-
+    const handleInputChange = (event) => setSearchQuery(event.target.value);
     const handleeClick = async () => {
-      // setShowInput(!showInput);
-      navigate(`/search`);
-
+        navigate(`/home`);
+      setShowInput(!showInput);
     
     };
-    
+ 
 
-  
+
 
   return (
     <>
-
+    
 <div>
         {data1 && <pre>{JSON.stringify(data1, null, 2)}</pre>}
         {data2 && <pre>{JSON.stringify(data2, null, 2)}</pre>}
@@ -75,7 +62,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
       <FaSearch className="search-icon " onClick={handleeClick} />
       {/* {showInput && <input type="text" placeholder="Search"  className=''   onChange={(event) => {setSearchTerm(event.target.value);
           }}/>} */}
-      {showInput && <input type="text" placeholder="Search"  className=''   id="searchInput"
+       {showInput && <input type="text" placeholder="Search"  className=''   id="searchInput"
             onChange={(event) => {
               setSearchTerm(event.target.value);
             }}/>}
@@ -140,7 +127,31 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
     <div className="template_Container">
           {/*  */}
 
-{searchTerm &&
+          {
+            allDatab 
+              .filter((val) => {
+                if(searchTerm === ""){
+                  return val;
+                }else if(val.attributes.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()) || val.attributes.blogDesc.toLowerCase().includes(searchTerm.toLowerCase())){
+                  return val;
+                }
+              })
+
+              .map((val) => {
+                // navigate (`/search/${val.attributes.blogTitle}`);
+
+                return(
+                  <>
+                    <Searcha val={val}/>                  
+                  </>
+
+                )
+              })
+          }
+
+
+
+{/* {searchTerm &&
             allDatab
               .filter((val) => {
                 if (val.attributes.blogTitle.toLowerCase().includes(searchTerm.toLowerCase()) || val.attributes.blogDesc.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -148,21 +159,25 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
                 }
               })
               .map((val) => {
-                navigate (`/search`);
+                navigate (`/search/${val.attributes.blogTitle}`);
                 return (
                   <>
                     <Searcha val={val}/>
+                    
                   
                   </>
                 );
-              })}
+              })} */}
 
-{searchTerm &&
+{
             allData
               .filter((hum) => {
-                if (hum.attributes.humourTitle.toLowerCase().includes(searchTerm.toLowerCase())|| hum.attributes.humourDesc.toLowerCase().includes(searchTerm.toLowerCase())) {
-                  return hum;
-                }
+                 if(searchTerm === ""){
+                    return hum;
+                  }else if(hum.attributes.humourTitle.toLowerCase().includes(searchTerm.toLowerCase())|| hum.attributes.humourDesc.toLowerCase().includes(searchTerm.toLowerCase())){
+                    return hum;
+                  }
+               
               })
               .map((hum) => {
                 return (
@@ -171,10 +186,10 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
                     
                   </>
                 );
-              })} 
+              })}
 
 
-{searchTerm &&
+{
             allDatai
               .filter((imag) => {
                 if (imag.attributes.imaginationTitle.toLowerCase().includes(searchTerm.toLowerCase())|| imag.attributes.imaginationDesc.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -184,6 +199,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
               .map((imag) => {
                 return (
                   <>
+                    {/* <SearchI imag={imag}/> */}
                     <SearchI imag={imag}/>
                     
                   </>
@@ -192,7 +208,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
 
 
-{searchTerm &&
+{
             allDatap
               .filter((pers) => {
                 if (pers.attributes.personalityTitle.toLowerCase().includes(searchTerm.toLowerCase())|| pers.attributes.personalityDesc.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -202,7 +218,8 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
               .map((pers) => {
                 return (
                   <>
-                   <Searchp pers={pers}/>
+              
+                   <Searchp  pers={pers}/>
                     
                   </>
                 );
@@ -210,7 +227,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
 
 
-{searchTerm &&
+{
             allDatapo
               .filter((pod) => {
                 if (pod.attributes.podcastTitle.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -229,7 +246,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
 
 
-{searchTerm &&
+{
             allDatav
               .filter((vid) => {
                 if (vid.attributes.videoTitle.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -239,19 +256,36 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
               .map((vid) => {
                 return (
                   <>
-                   <Searchv vid={vid}/>
+                   <Searchv  vid={vid}/>
                    
                     
                   </>
                 );
-              })} 
+              })}
 
         </div>
+<BottomNav/>
 
 
-   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     </>
   )
 }
 
-export default Navbar
+export default Search

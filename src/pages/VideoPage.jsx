@@ -1,10 +1,10 @@
 import React from 'react'
 import { BottomNav, Footer, Navbar, Video, VideoContent } from '../component'
 
-const VideoPage = ({allDatav}) => {
+const VideoPage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
   return (
     <>
-    <Navbar/>
+    <Navbar allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>
     {/* <VideoContent/> */}
     <Video allDatav={allDatav}/>
     <Footer/>

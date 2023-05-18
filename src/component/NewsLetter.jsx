@@ -4,18 +4,18 @@ const NewsLetter = () => {
   return (
     <>
        
-    <div class="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
+    <div className="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
    
  
-   <div class="container px-4 sm:px-8 mx-auto max-w-lg">
+   <div className="container px-4 sm:px-8 mx-auto max-w-lg">
 
       
-       <div class="wrapper bg-white rounded-sm shadow-lg">
+       <div className="wrapper bg-white rounded-sm shadow-lg">
 
-           <div class="card px-8 py-4">
-               <div class="card-image mt-10 mb-6">
+           <div className="card px-8 py-4">
+               <div className="card-image mt-10 mb-6">
                    <svg 
-                       class="w-10 h-10 text-blue-800 fill-current"
+                       className="w-10 h-10 text-blue-800 fill-current"
                        xmlns="http://www.w3.org/2000/svg" 
                        width="512" height="512.002" 
                        viewBox="0 0 512 512.002">
@@ -25,14 +25,14 @@ const NewsLetter = () => {
                    </svg>
                </div>
 
-               <div class="card-text">
-                   <h1 class="text-xl md:text-2xl font-bold leading-tight text-gray-900">Get the latest content update right into your inbox!</h1>
-                   <p class="text-base md:text-lg text-gray-700 mt-3 ">Join 4k+ happy subscribers!</p>
+               <div className="card-text">
+                   <h1 className="text-xl md:text-2xl font-bold leading-tight text-gray-900">Get the latest content update right into your inbox!</h1>
+                   <p className="text-base md:text-lg text-gray-700 mt-3 ">Join 4k+ happy subscribers!</p>
                </div>
 
-               <div class="card-mail flex items-center my-10">
-                   <input type="email" class="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base md:text-lg px-3 py-2 " placeholder="Enter Your Email"/>
-                   <button class="bg-blue-800 hover:bg-gray-100 hover:border-gray-100 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-blue-800 ml-3">subscribe</button>
+               <div className="card-mail flex items-center my-10">
+                   <input type="email" className="border-l border-t border-b border-gray-200 rounded-l-md w-full text-base md:text-lg px-3 py-2 " placeholder="Enter Your Email"/>
+                   <button className="bg-blue-800 hover:bg-gray-100 hover:border-gray-100 text-white font-bold capitalize px-3 py-2 text-base md:text-lg rounded-r-md border-t border-r border-b border-blue-800 ml-3">subscribe</button>
                </div>
            </div>
        </div>

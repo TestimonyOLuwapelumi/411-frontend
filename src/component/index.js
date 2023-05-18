@@ -31,7 +31,13 @@ import Landing from "./Landing";
 import BottomNav from "./BottomNav";
 import Category from "./Category";
 import NewsLetter from "./NewsLetter";
-import Search from "./Search";
+import Searcha from "./Searcha";
+import MailChimp from "./MailChimp";
+import Searchh from "./Searchh";
+import SearchI from "./SearchI";
+import Searchp from "./Searchp";
+import Searchpo from "./Searchpo";
+import Searchv from "./Searchv";
 
 
 
@@ -72,7 +78,12 @@ export {
     BottomNav,
     Category,
     NewsLetter,
-    Search
-    
+    Searcha,
+    MailChimp,
+    Searchh,
+    SearchI,
+    Searchp,
+    Searchpo,
+    Searchv
 
 }

@@ -4,10 +4,10 @@ import axios from 'axios'
 
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
-import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage, NewsletPage} from "./pages";
+import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage, NewsletPage, Search} from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 import myImage from "./Asset 1.png"
-import { About, Animate, AnimateContent, Loader } from "./component";
+import { About, Animate, AnimateContent, Loader, MailChimp } from "./component";
 import CategoryPage from './pages/CategoryPage';
 // import { Loader } from './component';
 // import AboutPage from "./pages/AboutPage";
@@ -188,35 +188,37 @@ export default function App() {
         
       </section>: */}
     <Routes>
-      
-        <Route path="/" element={<LandingPage allData={allData}/>} />
+  
+        <Route path="/search" element={<Search allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
+
+        <Route path="/" element={<LandingPage allData={allData} allDatab={allDatab}/>} />
         <Route path="/home" element={<Homepage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
         
-        <Route path="/blog" element={<BloggPage allDatab={allDatab}/>} />
+        <Route path="/blog" element={<BloggPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
         
-        <Route path="/blog/:id" element={<BloggContentPage allDatab={allDatab}/>} />
+        <Route path="/blog/:id" element={<BloggContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
 
 
-        <Route path="/humour" element={<HumourPage allData={allData}/>}/>
-        <Route path="/humour/:id" element={<HumourContentPage allData={allData}/>}/>
+        <Route path="/humour" element={<HumourPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
+        <Route path="/humour/:id" element={<HumourContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
 
 
-        <Route path="/personality" element={<PersonalityPage allDatap={allDatap}/>}/>
-        <Route path="/personality/:id" element={<PersonalityContentPage allDatap={allDatap}/>}/>
+        <Route path="/personality" element={<PersonalityPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
+        <Route path="/personality/:id" element={<PersonalityContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
         
 
 
-        <Route path="/imagination" element={<ImaginationPage allDatai={allDatai}/>}/>
-        <Route path="/imagination/:id" element={<ImaginationContentPage allDatai={allDatai}/>}/>
+        <Route path="/imagination" element={<ImaginationPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
+        <Route path="/imagination/:id" element={<ImaginationContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
 
 
 
-        <Route path="/video" element={<VideoPage allDatav={allDatav}/>}/>
-        <Route path="/video/:id" element={<VideoContentPage allDatav={allDatav}/>}/>
+        <Route path="/video" element={<VideoPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
+        <Route path="/video/:id" element={<VideoContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
 
 
-        <Route path="/podcast" element={<PodcastPage allDatapo={allDatapo}/>}/>
-        <Route path="/podcast/:id" element={<PodcastContentPage allDatapo={allDatapo}/>}/>
+        <Route path="/podcast" element={<PodcastPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
+        <Route path="/podcast/:id" element={<PodcastContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
 
 
         <Route path="/about" element={<AboutPage allAbout={allAbout}/>}/>
@@ -232,6 +234,7 @@ export default function App() {
 
 
         <Route path="/*" element={<NotFoundpage/>}/>
+        <Route path="/mail" element={<MailChimp/>}/>
         
         
         

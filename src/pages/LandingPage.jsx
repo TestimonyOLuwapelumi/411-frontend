@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import { BottomNav, Footer, Landing, Navbar } from '../component'
 
-const LandingPage = ({allData}) => {
+const LandingPage = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <>
-    <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} allData={allData}/>
+    <Navbar searchTerm={searchTerm} allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>
     <Landing searchTerm={searchTerm} setSearchTerm={setSearchTerm} allData={allData}/>
     <Footer/>
     <BottomNav/>

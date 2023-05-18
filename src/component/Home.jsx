@@ -73,7 +73,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</div>
-      <hr className='w-80 h-[5px] mx-auto bg-black text-black'/>
+      <hr className='w-full h-[5px] mx-auto bg-black text-black'/>
       </Link>
     )}
 
@@ -93,7 +93,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</div>
-      <hr className='w-80 h-[5px] mx-auto bg-black text-black'/>
+      <hr className='w-full h-[5px] mx-auto bg-black text-black'/>
 
        </Link>
        )}
@@ -115,7 +115,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       <span class="spann bottomm"></span>
       <span class="spann leftt"></span>
 			</div>
-      <hr className='w-80 h-[5px] mx-auto bg-black text-black'/>
+      <hr className='w-full h-[5px] mx-auto bg-black text-black'/>
 
       </Link>
        )}

@@ -17,6 +17,7 @@ import PersonalityPage from "./PersonalityPage";
 
 import PodcastContentPage from "./PodcastContentPage";
 import PodcastPage from "./PodcastPage";
+import Search from "./Search";
 import VideoContentPage from "./VideoContentPage";
 import VideoPage from "./VideoPage";
 
@@ -39,7 +40,8 @@ export{
     AboutPage,
     CoolStuffPage,
     LandingPage,
-    NewsletPage
+    NewsletPage,
+    Search
     
 
 }

@@ -4,49 +4,49 @@ import "./Nav.css"
 const Nav = () => {
   return (
     <>
-             <section class="sectt">
-      {/* <div class="divv"><h1>j</h1><h1>j</h1></div> */}
-  <ul class="uu">
-    <li class="ll"><a href="#" class="aba bb">Personality Test</a></li>
-    <li class="ll"><a href="#" class="aba">Humour</a></li>
-    <li class="ll"><a href="#" class="aba">Imagination</a></li>
-    {/* <li class="ll"><a href="#" class="aba">Products</a></li>
-    <li class="ll"><a href="#" class="aba">Contact</a></li>
-    <li class="ll"><a href="#" class="aba">Blog</a></li>
-    <li class="ll"><a href="#" class="aba">FAQs</a></li> */}
-    <li class="ll"><a href="#" class="aba">Support</a></li>
+             <section className="sectt">
+      {/* <div className="divv"><h1>j</h1><h1>j</h1></div> */}
+  <ul className="uu">
+    <li className="ll"><a href="#" className="aba bb">Personality Test</a></li>
+    <li className="ll"><a href="#" className="aba">Humour</a></li>
+    <li className="ll"><a href="#" className="aba">Imagination</a></li>
+    {/* <li className="ll"><a href="#" className="aba">Products</a></li>
+    <li className="ll"><a href="#" className="aba">Contact</a></li>
+    <li className="ll"><a href="#" className="aba">Blog</a></li>
+    <li className="ll"><a href="#" className="aba">FAQs</a></li> */}
+    <li className="ll"><a href="#" className="aba">Support</a></li>
   </ul>
-  {/* <div class="divv"><h1>j</h1><h1>j</h1></div> */}
+  {/* <div className="divv"><h1>j</h1><h1>j</h1></div> */}
     </section>
 
 
-    <div  class="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
-    <div class="pt-5">
-      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <div  className="leading-normal tracking-normal text-white gradient " style={{fontFamily: "'Source Sans Pro', sans-serif"}}>
+    <div className="pt-5">
+      <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          {/* <p class="uppercase tracking-loose w-full">What is the 411?</p> */}
-          <h1 class="my-4 text-5xl lg:text-6xl font-bold leading-tight mx-auto animate__animated animate__bounce">
+        <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          {/* <p className="uppercase tracking-loose w-full">What is the 411?</p> */}
+          <h1 className="my-4 text-5xl lg:text-6xl font-bold leading-tight mx-auto animate__animated animate__bounce">
             What is the 411?
           </h1>
           {/* <h1 className='mx-auto mt-0 max-w-md text-center text-5xl lg:text-1xl text-gray-100 '>What is the 411?</h1> */}
 
-          <p class="leading-normal text-2xl lg:text-2xl mb-4 mx-auto animate__animated  animate__zoomIn">
+          <p className="leading-normal text-2xl lg:text-2xl mb-4 mx-auto animate__animated  animate__zoomIn">
             We are a big media brand in Africa!
           </p>
           <Link to={"/home"}>
-          <button class="mx-auto ml-28 lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
+          <button className="mx-auto ml-28 lg:mx-0 hover:underline bg-white text-black font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out animate__animated animate__shakeX">
             Blogs
           </button>
           </Link>
         </div>
         {/* <!--Right Col--> */}
-        <div class="w-full md:w-3/5 py-6 text-center">
-          <img class=" md:w-4/5 w-4/5 z-50" src={myImage} />
+        <div className="w-full md:w-3/5 py-6 text-center">
+          <img className=" md:w-4/5 w-4/5 z-50" src={myImage} />
         </div>
       </div>
     </div>
-    <div class="relative -mt-12 lg:-mt-24">
+    <div className="relative -mt-12 lg:-mt-24">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">

@@ -43,10 +43,10 @@ const VideoContent = ({allDatav}) => {
                 <main className="container mx-auto px-4 py-8">
                     <center>
                     {/* <div
-                        class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
+                        className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
                         style={{paddingTop: "56.25%"}}>
                         
-                            <div  class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full" dangerouslySetInnerHTML={{ __html: video.attributes.videoYoutube}} />
+                            <div  className="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full" dangerouslySetInnerHTML={{ __html: video.attributes.videoYoutube}} />
 
                         </div> */}
                  
@@ -57,10 +57,10 @@ const VideoContent = ({allDatav}) => {
                             
                             <div className="w-full md:w-2/3 px-4">
                             <div
-                        class="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
+                        className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
                         style={{paddingTop: "56.25%"}}>
                    
-                            <div  class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full" dangerouslySetInnerHTML={{ __html: video.attributes.videoYoutube}} />
+                            <div  className="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 h-full w-full" dangerouslySetInnerHTML={{ __html: video.attributes.videoYoutube}} />
 
                         </div>
                             {/* <div dangerouslySetInnerHTML={{ __html: video.attributes.videoYoutube}} /> */}

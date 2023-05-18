@@ -6,7 +6,7 @@ const AboutPage = ({allAbout}) => {
     // console.log(allDa);
   return (
     <>
-        <Navbar/>
+        <Navbar />
         <About allAbout={allAbout}/>
         <Footer/>
         <BottomNav/>
