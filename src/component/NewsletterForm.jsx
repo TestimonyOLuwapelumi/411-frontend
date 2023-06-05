@@ -66,7 +66,7 @@ const NewsletterForm = ( { status, message, onValidated }) => {
   return (
     <>
 
-    <div className="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
+    <div className="antialiased font-nunito bg-blue-800 flex items-center justify-center lg:h-screen h-[370px]">
    
  
    <div className="container px-4 sm:px-8 mx-auto max-w-lg">
@@ -77,7 +77,7 @@ const NewsletterForm = ( { status, message, onValidated }) => {
            <div className="card px-8 py-4">
                <div className="card-image mt-10 mb-6">
                    <svg 
-                       className="w-10 h-10 text-blue-800 fill-current"
+                       className="w-10 h-10 text-blue-800 fill-current mx-auto"
                        xmlns="http://www.w3.org/2000/svg" 
                        width="512" height="512.002" 
                        viewBox="0 0 512 512.002">
