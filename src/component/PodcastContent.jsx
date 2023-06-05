@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import SocialMedia from './UI/SocialMedia'
+import NewsLetter from './NewsLetter'
 
 const PodcastContent = ({allDatapo}) => {
     const {id} = useParams()
@@ -46,7 +47,7 @@ const PodcastContent = ({allDatapo}) => {
                 </main>
             </div>
             <hr className='h-1 mx-auto bg-black text-black'/>
-
+            <NewsLetter/>
     
     </>
   )

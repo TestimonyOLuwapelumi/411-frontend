@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import Imagination from './Imagination'
+import NewsLetter from './NewsLetter'
 
 
 const ImaginationContent = ({allDatai}) => {
@@ -51,7 +52,7 @@ const ImaginationContent = ({allDatai}) => {
         </div>
     </div> 
     <hr className='h-1 mx-auto bg-black text-black'/>
-
+    <NewsLetter/>
     <Imagination allDatai={allDatai}/>         
 
     

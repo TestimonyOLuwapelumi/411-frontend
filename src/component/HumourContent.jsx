@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import NewsLetter from './NewsLetter'
 
 
 
@@ -53,7 +54,7 @@ const HumourContent = ({allData}) => {
         </div>
     </div> 
     <hr className='h-1 mx-auto bg-black text-black'/>
-
+    <NewsLetter/>
     
     </>
   )

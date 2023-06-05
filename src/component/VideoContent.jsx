@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 import SocialMedia from './UI/SocialMedia'
+import NewsLetter from './NewsLetter'
 
 
 const VideoContent = ({allDatav}) => {
@@ -75,6 +76,7 @@ const VideoContent = ({allDatav}) => {
             </div>
                     {/* <Video /> */}
                     <hr className='h-1 mx-auto bg-black text-black'/>
+                    <NewsLetter/>
 
                    
     </>

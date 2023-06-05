@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import Personality from './Personality'
+import NewsLetter from './NewsLetter'
 
 
 
@@ -54,6 +55,7 @@ const PersonalityContent = ({allDatap}) => {
         </div>
     </div>
     <hr className='h-1 mx-auto bg-black text-black'/>
+    <NewsLetter/>
     <Personality allDatap={allDatap}/>
     </>
   )

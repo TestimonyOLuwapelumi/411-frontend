@@ -58,14 +58,14 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
     {/* <AdsComponent/> */}
     <div className='had'>
 
-    <div className='w-full lg:h-[80px] h-[55px] z-10 bg-white  drop-shadow-lg mb- head '>
+    <div className='w-full lg:h-[80px] h-[40px] z-10 bg-white  drop-shadow-lg mb- head '>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
-                    <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-2 opacity-[100%] w-full h-[50px]  ml-3' /></Link>
+                    <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-2 opacity-[100%] w-full h-[40px]  ml-3' /></Link>
                     <div className="divv h-10 lg:h-24 w-25 lg:w-full ml-2">
 
-                    <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold textt'>What is the 411?</h1>
+                    <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold textt drop-shadow-lg'>What is the 411?</h1>
                     </div>
                 </div>
             {/* <input type="text" className='w-24 ' /> */}
@@ -98,7 +98,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
     </div>
 
-    <section className="sectt lg:h-[80px] sm:h-[80px] sm:h-[57px] z-10 bg-white drop-shadow-lg">
+    <section className="sectt lg:h-[80px] h-[40px] sm:h-[57px] z-10 bg-white drop-shadow-lg">
   <ul className="uu ">
     <Link to={"/home"}><li className="ll"><div className="aba ">Blogs</div></li></Link>
     <Link to={"/personality"}><li className="ll"><div className="aba bb">Personality Test</div></li></Link>

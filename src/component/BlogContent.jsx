@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import NewsLetter from './NewsLetter'
 
 const BlogContent = ({blogs}) => {
  
@@ -58,6 +59,7 @@ const BlogContent = ({blogs}) => {
 
 
   return (
+    <>
          <div className='w-full pb-10 bg-[#f9f9f9]'>
         <div className='max-w-[1240px] mx-auto'>
             <div className='grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 ss:grid-cols-1
@@ -85,8 +87,10 @@ const BlogContent = ({blogs}) => {
         </div>
         <hr className='h-1 mx-auto bg-black text-black'/>
     </div>
+    <NewsLetter/>
 
 
+    </>
 
 
 
