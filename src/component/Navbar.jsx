@@ -65,7 +65,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
                     <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-2 opacity-[100%] w-full h-[40px]  ml-3' /></Link>
                     <div className="divv h-10 lg:h-24 w-25 lg:w-full ml-2">
 
-                    <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold textt drop-shadow-lg'>What is the 411?</h1>
+                    <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold textt drop-shadow-lg decoration-[200px]'>What is the 411?</h1>
                     </div>
                 </div>
             {/* <input type="text" className='w-24 ' /> */}

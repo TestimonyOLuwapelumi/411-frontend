@@ -87,9 +87,9 @@ const NewsletterForm = ( { status, message, onValidated }) => {
                    </svg>
                </div>
 
-               <div className="card-text">
-                   <h1 className="text-xl md:text-2xl font-bold leading-tight text-gray-900">Get the latest content update right into your inbox!</h1>
-                   <p className="text-base md:text-lg text-gray-700 mt-3 ">Join 4k+ happy subscribers!</p>
+               <div className="card-text ">
+                   <h1 className="text-xl md:text-2xl font-bold leading-tight text-gray-900 text-center ">Get the latest content update right into your inbox!</h1>
+                   <p className="text-base md:text-lg text-gray-700 mt-3 text-center">Join 4k+ happy subscribers!</p>
                </div>
 
                <div className="card-mail flex items-center my-10">
