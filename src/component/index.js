@@ -38,6 +38,8 @@ import SearchI from "./SearchI";
 import Searchp from "./Searchp";
 import Searchpo from "./Searchpo";
 import Searchv from "./Searchv";
+import Loading from "./Loading";
+import NewsletterForm from "./NewsletterForm";
 
 
 
@@ -84,6 +86,8 @@ export {
     SearchI,
     Searchp,
     Searchpo,
-    Searchv
+    Searchv,
+    Loading,
+    NewsletterForm
 
 }

@@ -100,11 +100,11 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
     <section className="sectt lg:h-[80px] sm:h-[80px] sm:h-[57px] z-10 bg-white drop-shadow-lg">
   <ul className="uu ">
-    <Link to={"/home"}><li className="ll"><a href="#" className="aba ">Blogs</a></li></Link>
-    <Link to={"/personality"}><li className="ll"><a href="#" className="aba bb">Personality Test</a></li></Link>
-    <Link to={"/humour"}><li className="ll"><a href="#" className="aba">Humour</a></li></Link>
-   <Link to={"/imagination"}> <li className="ll"><a href="#" className="aba">Imagination</a></li></Link>
-    {/* <li className="ll"><a href="#" className="aba">Support</a></li> */}
+    <Link to={"/home"}><li className="ll"><div className="aba ">Blogs</div></li></Link>
+    <Link to={"/personality"}><li className="ll"><div className="aba bb">Personality Test</div></li></Link>
+    <Link to={"/humour"}><li className="ll"><div className="aba">Humour</div></li></Link>
+   <Link to={"/imagination"}> <li className="ll"><div className="aba">Imagination</div></li></Link>
+    {/* <li className="ll"><div className="aba">Support</div></li> */}
   </ul>
     </section>
 
@@ -123,7 +123,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
             {/* <Link to={""}></Link> */}
             <Link to={"/about"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
             <br />
-            <Link to={"/*"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>Support</li></Link>
+            <Link to={"/newsletter"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>NewsLetter</li></Link>
 
             <div className='flex flex-col my-4 text-center'>
             
@@ -157,6 +157,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
                 );
               })}
 
+{/* 
 {searchTerm &&
             allData
               .filter((hum) => {
@@ -171,9 +172,9 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
                     
                   </>
                 );
-              })} 
+              })} */}
 
-
+{/* 
 {searchTerm &&
             allDatai
               .filter((imag) => {
@@ -244,7 +245,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
                     
                   </>
                 );
-              })} 
+              })} */}
 
         </div>
 

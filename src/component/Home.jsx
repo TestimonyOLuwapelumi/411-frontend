@@ -6,6 +6,7 @@ import Carousel from './Carousel';
 import "./Hum.css"
 import Carousell from './Carousell';
 import { Link } from 'react-router-dom'
+import NewsLetter from './NewsLetter';
 
 const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
   const humour = allData.slice(0, 1);
@@ -52,7 +53,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
   return (
 
     <>
-		<section className="  ">
+		<section>
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
      <h1 className='text-3xl mx-auto ml-auto '> Cool Stuff</h1>
 		
@@ -690,9 +691,9 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
 
 
+<NewsLetter/>
 
-
-<div class="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
+{/* <div class="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
    
  
     <div class="container px-4 sm:px-8 mx-auto max-w-lg">
@@ -727,7 +728,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     </div>
 
 
-</div>
+</div> */}
 
 {/*  */}
 
@@ -863,9 +864,11 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
       </div>
         </Link>
     </div>
-    <div class="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
-   
- 
+
+
+
+
+{/* <div class="antialiased font-nunito bg-blue-800 flex items-center justify-center h-screen">
    <div class="container px-4 sm:px-8 mx-auto max-w-lg">
 
       
@@ -896,10 +899,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
            </div>
        </div>
    </div>
-
-
-</div>
-
+</div> */}
+<NewsLetter/>
 
 
 
