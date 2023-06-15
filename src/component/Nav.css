@@ -162,7 +162,7 @@ body{
 
 
   
-  @media (max-width: 550px) {
+  /* @media (max-width: 550px) {
     .sectt{
       width: 100%;
     }
@@ -173,21 +173,16 @@ body{
     .uu .ll .aba {
         color: #000;
         display: flex;
-       
-        /* margin-left: 200px; */
-        /* display: flex; */
+     
         display: inline-flex;
       }
       .bb{
          width: 115px;
       }
-      /* .divv{
-        width: 180px;
-        height: 80px;
-      } */
-  }
+    
+  } */
 
-  @media (max-width: 768px){
+  /* @media (max-width: 768px){
     .sectt{
       width: 100%;
     }
@@ -197,16 +192,12 @@ body{
     .uu .ll .aba {
         color: #000;
         display: flex;
-        /* width: 115px; */
       }
-      /* .divv{
-        width: 180px;
-        height: 80px;
-      } */
-  }
+     
+  } */
 
   
-@media (max-width: 1024px){
+/* @media (max-width: 1024px){
   .sectt{
     width: 100%;
   }
@@ -216,15 +207,11 @@ body{
     .uu .ll .aba {
         color: #000;
         display: flex;
-        /* width: 115px; */
       }
-      /* .divv{
-        width: 180px;
-        height: 80px;
-      } */
-}
+    
+} */
 
-@media (max-width: 900px){
+/* @media (max-width: 900px){
   .sectt{
     width: 100%;
   }
@@ -234,14 +221,10 @@ body{
     .uu .ll .aba {
         color: #000;
         display: flex;
-        /* width: 115px; */
       }
-      /* .divv{
-        width: 180px;
-        height: 80px;
-      } */
-}
-@media (max-width: 1200px){
+    
+} */
+/* @media (max-width: 1200px){
   .sectt{
     width: 100%;
   }
@@ -251,14 +234,10 @@ body{
     .uu .ll .aba {
         color: #000;
         display: flex;
-        /* width: 115px; */
       }
-      /* .divv{
-        width: 180px;
-        height: 80px;
-      } */
-}
-@media (min-width: 1200px){
+     
+} */
+/* @media (min-width: 1200px){
   .sectt{
     width: 100%;
   }
@@ -267,4 +246,4 @@ body{
   }
     
    
-}
+} */

@@ -62,7 +62,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
 
                 <div className='flex items-center'>
-                    <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 md:ml-2 opacity-[100%] w-full lg:h-[50px] h-[40px] ml-3' /></Link>
+                    <Link to={'/'}><img src={logoo} alt="logo" className='sm:ml-1 ss:ml-1 lg:ml-2 opacity-[100%] w-full lg:h-[50px] h-[40px] ml-3' /></Link>
                     <div className="divv h-10 lg:h-24 w-25 lg:w-full ml-2">
 
                     <h1 className='ml-1 lg:ml-2 text-1xl lg:text-3xl w-34 lg:w-full font-bold textt drop-shadow-lg decoration-[200px]'>What is the 411?</h1>
@@ -101,7 +101,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
     <section className="sectt lg:h-[80px] h-[40px] sm:h-[57px] z-10 bg-white drop-shadow-lg">
   <ul className="uu ">
     <Link to={"/home"}><li className="ll"><div className="aba ">Blogs</div></li></Link>
-    <Link to={"/personality"}><li className="ll"><div className="aba bb">Personality Test</div></li></Link>
+    <Link to={"/personality"}><li className="ll"><div className="aba bb w-28">Personality Test</div></li></Link>
     <Link to={"/humour"}><li className="ll"><div className="aba">Humour</div></li></Link>
    <Link to={"/imagination"}> <li className="ll"><div className="aba">Imagination</div></li></Link>
     {/* <li className="ll"><div className="aba">Support</div></li> */}
