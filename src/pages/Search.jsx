@@ -26,7 +26,8 @@ const Search = ({allData,allDatai,allDatap,allDatab,allDatapo,allDatav,allDatac}
     const [data2, setData2] = useState(null);
     const handleInputChange = (event) => setSearchQuery(event.target.value);
     const handleeClick = async () => {
-        navigate(`/home`);
+        // navigate(`/home`);
+        window.history.back();    
       setShowInput(!showInput);
     
     };
