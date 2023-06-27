@@ -496,10 +496,10 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
   <section className="   ">
 	<div className="container p-6 mx-auto space-y-6 sm:space-y-12 ">
 		
-		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+		<div className="grid justify-center  gap-6 grid-cols-2 lg:grid-cols-4">
     {personality5.map((personality)=>
      <Link to={`/personality/${personality.id}`}>
-    <div class="lg:hidden border-b-2">
+    {/* <div class="lg:hidden border-b-2">
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
@@ -519,8 +519,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                 </div>
             </div>
           </div>
-          </div>
-			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
+          </div> */}
+			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md     lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
 				<div className="p-6 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
@@ -538,7 +538,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
     {humour4.map((humour)=>
         <Link to={`/humour/${humour.id}`}>
-          <div class="lg:hidden ">
+          {/* <div class="lg:hidden ">
                 <div class="bg-white h-full w-full border-b-2">
                   <div>
                     <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
@@ -558,8 +558,8 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
                     </div>
                 </div>
               </div>
-              </div>
-          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
+              </div> */}
+          <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    lg:block cardd">
             <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72   rounded-t-lg    " src={humour.attributes.humourImg.data.attributes.url} />
             <div className="p-6 space-y-2">
             <h6 className='text-blue-800'>#Humour</h6>
@@ -576,13 +576,13 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           )}
 
           <Link to={"/humour"}>
-    	<div className="flex justify-center lg:hidden">
+    	{/* <div className="flex justify-center lg:hidden">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
-		</div>
+		</div> */}
     </Link>
 		</div>
     <Link to={"/humour"}>
-    <div className="flex justify-center hidden lg:block">
+    <div className="flex justify-center  lg:block">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
     </Link>
