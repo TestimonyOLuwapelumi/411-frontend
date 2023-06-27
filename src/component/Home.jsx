@@ -62,12 +62,40 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     <Link to={`/personality/${personality.id}`}>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-96     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
-				<div className="p-6 space-y-2 ">
+				<div className="p-3 space-y-2 ">
           <h6 className='text-blue-800'>#Personality Test</h6>
           {/* <span>#Personality Test</span> */}
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
-					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
+					{/* <span className="text-xs ">{personality.attributes.personalityDesc}</span> */}
+          
 					<p></p>
+          <div className='flex '>
+
+          <p className="text-base"> <span className='font-medium'> {personality.attributes.authorNamep} </span> <span className='ml-8 text-xs mt-4'>
+
+          {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            daySuffix: function(days) {
+              if (days === 1 || days === 21 || days === 31) {
+                return 'st';
+              } else if (days === 2 || days === 22) {
+                return 'nd';
+              } else if (days === 3 || days === 23) {
+                return 'rd';
+              } else {
+                return 'th';
+              }
+            },
+          })}
+
+          </span></p>
+          
+         
+          {/* <img role="presentation" className="rounded-full object-cover w-5  rounded-t-lg  h-5       " src={personality.attributes.personalityImg.data.attributes.url} /> */}
+          </div>
+
 				</div>
         <span class="spann topp"></span>
       <span class="spann rightt"></span>
@@ -83,10 +111,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
      <Link to={`/humour/${humour.id}`}>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-96     rounded-t-lg  " src={humour.attributes.humourImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
-					<span className="text-xs ">{humour.attributes.humourDesc}</span>
+					{/* <span className="text-xs ">{humour.attributes.humourDesc}</span> */}
+         
+
+          <div className='flex '>
+
+            <p className="text-base"> <span className='font-medium'> {humour.attributes.authorNameh} </span> <span className='ml-8 text-xs mt-4'>
+
+            {new Date(humour.attributes.publishedAt).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            daySuffix: function(days) {
+            if (days === 1 || days === 21 || days === 31) {
+            return 'st';
+            } else if (days === 2 || days === 22) {
+            return 'nd';
+            } else if (days === 3 || days === 23) {
+            return 'rd';
+            } else {
+            return 'th';
+            }
+            },
+            })}
+
+            </span></p>
+
+          </div>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -105,10 +159,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
      <Link to={`/imagination/${imagination.id}`}>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md  cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-96    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
-					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
+					{/* <span className="text-xs ">{imagination.attributes.imaginationDesc}</span> */}
+         
+
+            <div className='flex '>
+
+              <p className="text-base"> <span className='font-medium'> {imagination.attributes.authorNamei} </span> <span className='ml-8 text-xs mt-4'>
+
+              {new Date(imagination.attributes.publishedAt).toLocaleString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+              daySuffix: function(days) {
+              if (days === 1 || days === 21 || days === 31) {
+              return 'st';
+              } else if (days === 2 || days === 22) {
+              return 'nd';
+              } else if (days === 3 || days === 23) {
+              return 'rd';
+              } else {
+              return 'th';
+              }
+              },
+              })}
+
+              </span></p>
+
+              </div>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -136,22 +216,46 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
     {personality2.map((personality)=>
      <Link to={`/personality/${personality.id}`}>
-    <div class="lg:hidden border-b-2">
+    <div class="lg:hidden ">
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalityImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
-                    <div class="pl-3 w-3/5">
+                    <div class="pl-3 pt-2 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
+                        <h3 class="text-md font-medium leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>{personality.attributes.personalityDesc}</div>
+                            {/* <div>{personality.attributes.personalityDesc}</div> */}
                         </div>
+                            <div className='flex '>
+
+                                <p className="text-base"> <span className='text-sm'> {personality.attributes.authorNamep} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                                {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                                }
+                                },
+                                })}
+
+                                </span></p>
+
+                                </div>
                     </div>
                 </div>
             </div>
@@ -159,10 +263,30 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={personality.attributes.personalityImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
 					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
+          <p>
+
+            {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+              daySuffix: function(days) {
+                if (days === 1 || days === 21 || days === 31) {
+                  return 'st';
+                } else if (days === 2 || days === 22) {
+                  return 'nd';
+                } else if (days === 3 || days === 23) {
+                  return 'rd';
+                } else {
+                  return 'th';
+                }
+              },
+            })}
+
+            </p>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -178,20 +302,44 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
        {humour2.map((humour)=>
      <Link to={`/humour/${humour.id}`}>
       <div class="lg:hidden ">
-            <div class="bg-white h-full w-full border-b-2">
+            <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
         backgroundImage: `url(${humour.attributes.humourImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
-                    <div class="pl-3 w-3/5">
+                    <div class="pl-3 pt-2 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Humour</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">{humour.attributes.humourTitle}</h3>
+                        <h3 class="text-md font-medium leading-tight mb-3">{humour.attributes.humourTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>{humour.attributes.humourDesc}</div>
+                            {/* <div>{humour.attributes.humourDesc}</div> */}
+                        </div>
+                        <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {humour.attributes.authorNameh} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(humour.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span></p>
+
                         </div>
                     </div>
                 </div>
@@ -200,10 +348,30 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={humour.attributes.humourImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
 					<span className="text-xs ">{humour.attributes.humourDesc}</span>
+          <p>
+
+            {new Date(humour.attributes.publishedAt).toLocaleString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+              daySuffix: function(days) {
+                if (days === 1 || days === 21 || days === 31) {
+                  return 'st';
+                } else if (days === 2 || days === 22) {
+                  return 'nd';
+                } else if (days === 3 || days === 23) {
+                  return 'rd';
+                } else {
+                  return 'th';
+                }
+              },
+            })}
+
+            </p>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -217,21 +385,45 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
       {imagination2.map((imagination)=>
      <Link to={`/imagination/${imagination.id}`}>
-      <div class="lg:hidden border-b-2">
+      <div class="lg:hidden ">
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
         backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
-                    <div class="pl-3 w-3/5">
+                    <div class="pl-3 pt-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Imagination</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">{imagination.attributes.imaginationTitle}</h3>
+                        <h3 class="text-md font-medium leading-tight mb-3">{imagination.attributes.imaginationTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>{imagination.attributes.imaginationDesc}</div>
+                            {/* <div>{imagination.attributes.imaginationDesc}</div> */}
+                        </div>
+                        <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {imagination.attributes.authorNamei} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(imagination.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span></p>
+
                         </div>
                     </div>
                 </div>
@@ -240,10 +432,30 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
 					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
+          <p>
+
+            {new Date(imagination.attributes.publishedAt).toLocaleString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+              daySuffix: function(days) {
+                if (days === 1 || days === 21 || days === 31) {
+                  return 'st';
+                } else if (days === 2 || days === 22) {
+                  return 'nd';
+                } else if (days === 3 || days === 23) {
+                  return 'rd';
+                } else {
+                  return 'th';
+                }
+              },
+            })}
+
+            </p>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -257,21 +469,45 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
       {personality3.map((personality)=>
      <Link to={`/personality/${personality.id}`}>
-      <div class="lg:hidden border-b-2">
+      <div class="lg:hidden ">
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
         backgroundImage: `url(${personality.attributes.personalityImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
-                    <div class="pl-3 w-3/5">
+                    <div class="pl-3 pt-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Personality Test</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
+                        <h3 class="text-md font-medium leading-tight mb-3">{personality.attributes.personalityTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>{personality.attributes.personalityDesc}</div>
+                            {/* <div>{personality.attributes.personalityDesc}</div> */}
+                        </div>
+                         <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {personality.attributes.authorNamep} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span></p>
+
                         </div>
                     </div>
                 </div>
@@ -280,10 +516,30 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url}  />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
 					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
+          <p>
+
+            {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric',
+              daySuffix: function(days) {
+                if (days === 1 || days === 21 || days === 31) {
+                  return 'st';
+                } else if (days === 2 || days === 22) {
+                  return 'nd';
+                } else if (days === 3 || days === 23) {
+                  return 'rd';
+                } else {
+                  return 'th';
+                }
+              },
+            })}
+
+            </p>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -333,11 +589,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
      <Link to={`/humour/${humour.id}`}>
     <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={humour.attributes.humourImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Humour</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
-					<span className="text-xs ">{humour.attributes.humourDesc}</span>
+					{/* <span className="text-xs ">{humour.attributes.humourDesc}</span> */}
 					<p></p>
+           <div className='flex '>
+
+          <p className="text-base"> <span className='font-medium'> {humour.attributes.authorNameh} </span> <span className='ml-8 text-xs mt-4'>
+
+          {new Date(humour.attributes.publishedAt).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            daySuffix: function(days) {
+              if (days === 1 || days === 21 || days === 31) {
+                return 'st';
+              } else if (days === 2 || days === 22) {
+                return 'nd';
+              } else if (days === 3 || days === 23) {
+                return 'rd';
+              } else {
+                return 'th';
+              }
+            },
+          })}
+
+          </span></p>
+          
+         
+          </div>
 				</div>
         <span class="spann topp"></span>
       <span class="spann rightt"></span>
@@ -350,11 +631,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
      <Link to={`/imagination/${imagination.id}`}>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Imagination</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
-					<span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
+					{/* <span className="text-xs ">{imagination.attributes.imaginationDesc}</span>  */}
 					<p></p>
+         <div className='flex '>
+
+          <p className="text-base"> <span className='font-medium'> {imagination.attributes.authorNamei} </span> <span className='ml-8 text-xs mt-4'>
+
+          {new Date(imagination.attributes.publishedAt).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            daySuffix: function(days) {
+              if (days === 1 || days === 21 || days === 31) {
+                return 'st';
+              } else if (days === 2 || days === 22) {
+                return 'nd';
+              } else if (days === 3 || days === 23) {
+                return 'rd';
+              } else {
+                return 'th';
+              }
+            },
+          })}
+
+          </span></p>
+          
+         
+          </div>
 				</div>
         <span class="spann topp"></span>
       <span class="spann rightt"></span>
@@ -367,11 +673,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
      <Link to={`/personality/${personality.id}`}>
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md  cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
           <h6 className='text-blue-800'>#Personality Test</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
-					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
-					<p></p>
+					{/* <span className="text-xs ">{personality.attributes.personalityDesc}</span> */}
+         	<p></p>
+            <div className='flex '>
+
+          <p className="text-base"> <span className='font-medium'> {personality.attributes.authorNamep} </span> <span className='ml-8 text-xs mt-4'>
+
+          {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
+            daySuffix: function(days) {
+              if (days === 1 || days === 21 || days === 31) {
+                return 'st';
+              } else if (days === 2 || days === 22) {
+                return 'nd';
+              } else if (days === 3 || days === 23) {
+                return 'rd';
+              } else {
+                return 'th';
+              }
+            },
+          })}
+
+          </span></p>
+          
+         
+          </div>
 				</div>
         <span class="spann topp"></span>
       <span class="spann rightt"></span>
@@ -413,21 +744,45 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
     {blog.map((blog)=>
      <Link to={`/blog/${blog.id}`}>
-    <div class="lg:hidden border-b-2">
+    <div class="lg:hidden ">
             <div class="bg-white h-full w-full ">
               <div>
                 <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                     <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                     <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
         backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}></div>
-                    <div class="pl-3 w-3/5">
+                    <div class="pl-3 pt-3 w-3/5">
                         <p class="text-xs text-gray-500 uppercase">#Newupdate</p>
-                        <h3 class="text-md font-semibold leading-tight mb-3">{blog.attributes.blogTitle}</h3>
+                        <h3 class="text-md font-medium leading-tight mb-3">{blog.attributes.blogTitle}</h3>
                         <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                            <div>{blog.attributes.blogDesc}</div>
+                            {/* <div>{blog.attributes.blogDesc}</div> */}
+                        </div>
+                         <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {blog.attributes.authorName} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(blog.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span></p>
+
                         </div>
                     </div>
                 </div>
@@ -436,30 +791,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div>
           <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={blog.attributes.blogImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="p-3 space-y-2">
         <h6 className='text-blue-800'>#Newupdate</h6>
 					<h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
-					<span className="text-xs ">{blog.attributes.blogDesc}</span>
-          <p>
+					{/* <span className="text-xs ">{blog.attributes.blogDesc}</span> */}
+            <div className='flex '>
+
+          <p className="text-base"> <span className='font-medium'> {blog.attributes.authorName} </span> <span className='ml-8 text-xs mt-4'>
 
           {new Date(blog.attributes.publishedAt).toLocaleString('en-US', {
             month: 'long',
             day: 'numeric',
             year: 'numeric',
-            daySuffix: function(day) {
-              if (day === 1 || day === 21 || day === 31) {
+            daySuffix: function(days) {
+              if (days === 1 || days === 21 || days === 31) {
                 return 'st';
-              } else if (day === 2 || day === 22) {
+              } else if (days === 2 || days === 22) {
                 return 'nd';
-              } else if (day === 3 || day === 23) {
+              } else if (days === 3 || days === 23) {
                 return 'rd';
               } else {
                 return 'th';
               }
             },
-          })};
+          })}
 
-          </p>
+          </span></p>
+          
+         
+          {/* <img role="presentation" className="rounded-full object-cover w-5  rounded-t-lg  h-5       " src={personality.attributes.personalityImg.data.attributes.url} /> */}
+          </div>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -522,10 +883,35 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
           </div> */}
 			<div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md     lg:block cardd">
 				<img role="presentation" className="object-cover w-full  rounded-t-lg  h-72     rounded-t-lg  " src={personality.attributes.personalityImg.data.attributes.url} />
-				<div className="p-6 space-y-2">
+				<div className="">
         <h6 className='text-blue-800'>#Personality Test</h6>
-					<h3 className="text-2xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
-					<span className="text-xs ">{personality.attributes.personalityDesc}</span>
+					<h3 className="text-xl font-semibold   group-focus:underline">{personality.attributes.personalityTitle}</h3>
+					{/* <span className="text-xs ">{personality.attributes.personalityDesc}</span> */}
+          <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {personality.attributes.authorNamep} </span> <span className='ml-1  lg:ml-8 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(personality.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span>
+                         </p>
+
+                </div>
 					<p></p>
 				</div>
         <span class="spann topp"></span>
@@ -561,11 +947,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
               </div> */}
           <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    lg:block cardd">
             <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72   rounded-t-lg    " src={humour.attributes.humourImg.data.attributes.url} />
-            <div className="p-6 space-y-2">
+            <div className="">
             <h6 className='text-blue-800'>#Humour</h6>
-              <h3 className="text-2xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
-              <span className="text-xs ">{humour.attributes.humourDesc}</span>
+              <h3 className="text-xl font-semibold   group-focus:underline">{humour.attributes.humourTitle}</h3>
+              {/* <span className="text-xs ">{humour.attributes.humourDesc}</span> */}
               <p></p>
+              <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {humour.attributes.authorNameh} </span> <span className='ml-1  lg:ml-8 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(humour.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span>
+                         </p>
+
+                </div>
             </div>
             <span class="spann topp"></span>
           <span class="spann rightt"></span>
@@ -582,7 +993,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     </Link>
 		</div>
     <Link to={"/humour"}>
-    <div className="flex justify-center  lg:block">
+    <div className="flex justify-center  mt-8">
 			<button type="button" className="px-9 lg:w-full py-3 text-sm rounded-md hover:underline hover:bg-blue-300 bg-blue-800">Load more posts...</button>
 		</div>
     </Link>
@@ -597,22 +1008,46 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
     {imagination4.map((imagination)=>
         <Link to={`/imagination/${imagination.id}`}>
-          <div class="lg:hidden border-b-2">
+          <div class="lg:hidden ">
                 <div class="bg-white h-full w-full ">
                   <div>
                     <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                         <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                         <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
             backgroundImage: `url(${imagination.attributes.imaginationImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}></div>
-                        <div class="pl-3 w-3/5">
+                        <div class="pl-3 pt-3 w-3/5">
                             <p class="text-xs text-gray-500 uppercase">#Imagination</p>
-                            <h3 class="text-md font-semibold leading-tight mb-3">{imagination.attributes.imaginationTitle}</h3>
+                            <h3 class="text-md font-medium leading-tight mb-3">{imagination.attributes.imaginationTitle}</h3>
                             <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                                <div>{imagination.attributes.imaginationDesc}</div>
+                                {/* <div>{imagination.attributes.imaginationDesc}</div> */}
                             </div>
+                            <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {imagination.attributes.authorNamei} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(imagination.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span></p>
+
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -620,11 +1055,37 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
               </div>
           <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline  bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md    hidden lg:block cardd">
             <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72    rounded-t-lg   " src={imagination.attributes.imaginationImg.data.attributes.url} />
-            <div className="p-6 space-y-2">
+            <div className="p-3 space-y-2">
             <h6 className='text-blue-800'>#Imagination</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{imagination.attributes.imaginationTitle}</h3>
-              <span className="text-xs ">{imagination.attributes.imaginationDesc}</span>
+              {/* <span className="text-xs ">{imagination.attributes.imaginationDesc}</span> */}
               <p></p>
+
+              <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {imagination.attributes.authorNamei} </span> <span className='ml-8 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(imagination.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span>
+                         </p>
+
+                </div>
             </div>
             <span class="spann topp"></span>
           <span class="spann rightt"></span>
@@ -637,22 +1098,46 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
     {blog1.map((blog)=>
      <Link to={`/blog/${blog.id}`}>
-          <div class="lg:hidden border-b-2">
+          <div class="lg:hidden ">
                 <div class="bg-white h-full w-full ">
                   <div>
                     <div   class="flex w-full transform transition-all duration-300 scale-100 hover:scale-95">
-                         <div class="block h-28 w-2/5  rounded-t-lg  overflow-hidden"     style={{
+                         <div class="block h-28 w-2/5  rounded-l-lg  overflow-hidden"     style={{
             backgroundImage: `url(${blog.attributes.blogImg.data.attributes.url})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}></div>
-                        <div class="pl-3 w-3/5">
+                        <div class="pl-3 pt-3 w-3/5">
                             <p class="text-xs text-gray-500 uppercase">#Newupdate</p>
-                            <h3 class="text-md font-semibold leading-tight mb-3">{blog.attributes.blogTitle}</h3>
+                            <h3 class="text-md font-medium leading-tight mb-3">{blog.attributes.blogTitle}</h3>
                             <div class="flex w-full items-center text-xs text-gray-500 font-medium">
-                                <div>{blog.attributes.blogDesc}</div>
+                                {/* <div>{blog.attributes.blogDesc}</div> */}
                             </div>
+                            <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {blog.attributes.authorName} </span> <span className='ml-6 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(blog.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span></p>
+
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -660,11 +1145,36 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
               </div>
           <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline   bg-[#FDFBFF]    rounded-t-lg   bg-opacity-5 drop-shadow-md   hidden lg:block cardd">
             <img role="presentation" className="object-cover w-full  rounded-t-lg  h-72   rounded-t-lg    " src={blog.attributes.blogImg.data.attributes.url} />
-            <div className="p-6 space-y-2">
+            <div className="p-3 space-y-2">
             <h6 className='text-blue-800'>#Newupdate</h6>
               <h3 className="text-2xl font-semibold   group-focus:underline">{blog.attributes.blogTitle}</h3>
-              <span className="text-xs ">{blog.attributes.blogDesc}</span>
+              {/* <span className="text-xs ">{blog.attributes.blogDesc}</span> */}
               <p></p>
+              <div className='flex '>
+
+                          <p className="text-base"> <span className='text-sm'> {blog.attributes.authorName} </span> <span className='ml-8 text-gray-600 text-xs mt-4 font-thin'>
+
+                              {new Date(blog.attributes.publishedAt).toLocaleString('en-US', {
+                                month: 'long',
+                                day: 'numeric',
+                                year: 'numeric',
+                                daySuffix: function(days) {
+                                if (days === 1 || days === 21 || days === 31) {
+                                return 'st';
+                                } else if (days === 2 || days === 22) {
+                                return 'nd';
+                                } else if (days === 3 || days === 23) {
+                                return 'rd';
+                                } else {
+                                return 'th';
+                               }
+                              },
+                             })}
+
+                         </span>
+                         </p>
+
+                </div>
             </div>
             <span class="spann topp"></span>
           <span class="spann rightt"></span>
