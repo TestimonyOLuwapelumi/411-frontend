@@ -111,19 +111,19 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
 
     <ul className={toggle?'absolute bg-white w-64 lg:w-96 h-screen px-8 right-0 text-center ':'hidden'}>
-            <Link to={"/home"}><li className='  hover:border-red-500 w-20 inline-block'>Home</li></Link>
+            <Link to={"/home"}><li className='  hover:border-red-500 w-20 inline-block pt-7 '>Home</li></Link>
             <br />
-            <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Videos</li></Link>
+            <Link to={"/video"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block pt-10'>Videos</li></Link>
             <br />
-            <Link to={"/podcast"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Podcast</li></Link>
+            <Link to={"/podcast"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block pt-10'>Podcast</li></Link>
             {/* <Link to={"/personality"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Personality Test</li></Link>
             <Link to={"/humour"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Humour</li></Link>
             <Link to={"/Imagination"}><li className=' hover:border-red-500 space-y-16 w-20 inline-block'>Imagination</li></Link> */}
             <br />
             {/* <Link to={""}></Link> */}
-            <Link to={"/about"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>About</li></Link>
+            <Link to={"/about"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block pt-10'>About</li></Link>
             <br />
-            <Link to={"/newsletter"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block'>NewsLetter</li></Link>
+            <Link to={"/newsletter"}><li className='  hover:border-red-500 space-y-16 w-20 inline-block pt-10'>NewsLetter</li></Link>
 
             <div className='flex flex-col my-4 text-center'>
             

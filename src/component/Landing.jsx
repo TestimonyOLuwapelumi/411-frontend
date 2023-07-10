@@ -26,7 +26,7 @@ const Landing = ({allData, searchTerm }) => {
     <div className="pt-5">
       <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
-        <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+        <div className="flex flex-col w-full md:w-2/5 justify-center items-start lg:items-center text-center md:text-left  ">
           {/* <p className="uppercase tracking-loose w-full">What is the 411?</p> */}
           <h1 className="my-2 text-5xl lg:text-6xl font-bold leading-tight mx-auto animate__animated animate__bounce">
             What is the 411?
@@ -551,7 +551,7 @@ const Landing = ({allData, searchTerm }) => {
             </a>
           </div>
           <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div className="flex items-center justify-start">
+            <div className="flex items-center justify-center">
               <Link to={"/podcast"}>
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Check 
@@ -598,7 +598,7 @@ const Landing = ({allData, searchTerm }) => {
             </a>
           </div>
           <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-center">
               <Link to={"/video"}>
               <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Check

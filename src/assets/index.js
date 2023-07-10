@@ -3,6 +3,7 @@ import close from "./close.svg";
 import logo from "./logo.png";
 import logoo from "./logoo.svg";
 import search from "./search.svg";
+import telegram from "./telegram.svg";
 import { FaSearch } from "react-icons/fa";
 
 
@@ -12,7 +13,8 @@ export {
   close,
   logo,
   logoo,
-  search
+  search,
+  telegram
   // <FaSearch
 
 

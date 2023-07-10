@@ -40,6 +40,7 @@ import Searchpo from "./Searchpo";
 import Searchv from "./Searchv";
 import Loading from "./Loading";
 import NewsletterForm from "./NewsletterForm";
+import Modal from "./Modal";
 
 
 
@@ -88,6 +89,6 @@ export {
     Searchpo,
     Searchv,
     Loading,
-    NewsletterForm
-
+    NewsletterForm,
+    Modal
 }
