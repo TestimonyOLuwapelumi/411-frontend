@@ -7,7 +7,7 @@ import useFetch from "./hooks/useFetch";
 import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage, NewsletPage, Search} from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 import myImage from "./Asset 1.png"
-import { About, Animate, AnimateContent, Loader, MailChimp } from "./component";
+import { About, Animate, AnimateContent, Loader, MailChimp, Modal } from "./component";
 import CategoryPage from './pages/CategoryPage';
 // import { Loader } from './component';
 // import AboutPage from "./pages/AboutPage";
@@ -244,7 +244,7 @@ export default function App() {
         
         
         </Routes>
-   
+   <Modal/>
       
     </>
   );
