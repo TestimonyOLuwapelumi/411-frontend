@@ -4,10 +4,21 @@ import { Link } from 'react-router-dom'
 import myImg from "../images/1553127832.svg"
 import{menu, close, logo, logoo} from '../assets';
 import myImage from "../assets/logoo.svg"
-
+ 
 
 
 const Footer = () => {
+  const recipientEmail = 'whatsthx411@gmail.com'; // Replace with the desired email address
+  // const subject = 'Hello from React!';
+  // const body = 'This is the body of the email.';
+  const generateMailToLink = () => {
+    const mailtoLink = `mailto:${recipientEmail}`;
+
+    // {?subject=${encodeURIComponent(
+    //   subject
+    // )}&body=${encodeURIComponent(body)}}
+    return mailtoLink;
+  };
   return (
 
 <>
@@ -82,12 +93,15 @@ const Footer = () => {
 
     <nav aria-label="Footer Nav" className="mt-5">
       <ul className="flex flex-wrap justify-center gap-1 md:gap-8 lg:gap-12">
+
+      <a href={generateMailToLink()}>
         <li>
           <div className="text-gray-100 transition hover:text-blue-800 text-xs"  >
             Contact us
           </div>
         </li>
-
+        </a>
+      
           <Link to={"/about"}>
         <li>
           <div className="text-gray-100 transition hover:text-blue-800 text-xs"  >

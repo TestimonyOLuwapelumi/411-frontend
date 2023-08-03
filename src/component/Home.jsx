@@ -7,6 +7,8 @@ import "./Hum.css"
 import Carousell from './Carousell';
 import { Link } from 'react-router-dom'
 import NewsLetter from './NewsLetter';
+// import { useHistory } from 'react-router-dom';
+
 
 const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDatac}) => {
   const humour = allData.slice(0, 1);
@@ -49,6 +51,17 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
     // }
     console.log(allData);
     console.log(allDatac);
+
+    // const history = useHistory();
+
+  // React.useEffect(() => {
+  //   const unlisten = history.listen(() => {
+  //     window.scrollTo(0, 0);
+  //   });
+  //   return () => {
+  //     unlisten();
+  //   };
+  // }, [history]);
 
   return (
 

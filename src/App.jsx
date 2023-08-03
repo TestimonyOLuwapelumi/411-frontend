@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation  } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
 import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage, NewsletPage, Search} from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
@@ -169,6 +169,11 @@ export default function App() {
   //   );
   // if (blogError  || firstblogError) return <p>Error</p>;
   //     console.log(blogData);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <>
     
@@ -187,7 +192,10 @@ export default function App() {
 
         
       </section>: */}
+        
     <Routes>
+
+        
   
         <Route path="/search" element={<Search allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>} />
 
