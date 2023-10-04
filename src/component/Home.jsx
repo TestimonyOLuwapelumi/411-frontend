@@ -33,7 +33,7 @@ const Home = ({allData, allDatai, allDatap, allDatab, allDatapo, allDatav, allDa
 
 
 
-  const allDatavv = allDatav.slice(0,3)
+  const allDatavv = allDatav.slice(0,4)
   const allDatapoo = allDatapo.slice(0,4)
 
 

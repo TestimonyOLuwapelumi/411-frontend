@@ -125,7 +125,7 @@ const Search = ({allData,allDatai,allDatap,allDatab,allDatapo,allDatav,allDatac}
 
       
     </div>
-    <div className="template_Container">
+    <div className="template_Container mb-24">
           {/*  */}
 
           {

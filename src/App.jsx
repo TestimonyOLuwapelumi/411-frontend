@@ -2,12 +2,12 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
-import { Routes, Route, useLocation  } from "react-router-dom";
+import { Routes, Route,  useLocation} from "react-router-dom";
 import useFetch from "./hooks/useFetch";
 import {   Homepage, HumourPage, PersonalityPage, ImaginationPage, HumourContentPage, PersonalityContentPage, BloggPage, BloggContentPage, ImaginationContentPage, VideoContentPage, VideoPage, PodcastPage, PodcastContentPage, AboutPage, CoolStuffPage, LandingPage, NewsletPage, Search} from "./pages";
 import NotFoundpage from "./pages/NotFoundpage";
 import myImage from "./Asset 1.png"
-import { About, Animate, AnimateContent, Loader, MailChimp, Modal } from "./component";
+import { About, Animate, AnimateContent, Loader, MailChimp, Modal, Questionnaire } from "./component";
 import CategoryPage from './pages/CategoryPage';
 // import { Loader } from './component';
 // import AboutPage from "./pages/AboutPage";
@@ -25,15 +25,15 @@ export default function App() {
         }, 2000);
       }, []);
       
-  const [allData, setallData] = useState([])
+  const [reallData, setreallData] = useState([])
 
-  const [allDatai, setallDatai] = useState([])
-  const [allDatap, setallDatap] = useState([])
-  const [allDatab, setallDatab] = useState([])
-  const [allDatav, setallDatav] = useState([])
-  const [allDatapo, setallDatapo] = useState([])
-  const [allDatac, setallDatac] = useState([])
-  const [allAbout, setallAbout] = useState([])
+  const [reallDatai, setreallDatai] = useState([])
+  const [reallDatap, setreallDatap] = useState([])
+  const [reallDatab, setreallDatab] = useState([])
+  const [reallDatav, setreallDatav] = useState([])
+  const [reallDatapo, setreallDatapo] = useState([])
+  const [reallDatac, setreallDatac] = useState([])
+  const [reallAbout, setreallAbout] = useState([])
   
 
 
@@ -47,9 +47,9 @@ export default function App() {
       getData()
     }, [])
     const getData = () =>{
-        axios.get(url).then(res =>setallData(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url).then(res =>setreallData(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allData);
+    console.log(reallData);
 
 
     
@@ -60,9 +60,9 @@ export default function App() {
       getDat()
     }, [])
     const getDat = () =>{
-        axios.get(url1).then(res =>setallDatai(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url1).then(res =>setreallDatai(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allDatai);
+    console.log(reallDatai);
 
     // const url2 = 'http://localhost:1337/api/personalities?populate=*';
     const url2 = 'https://whatisthe411-backend.onrender.com/api/personalities?populate=*';
@@ -71,9 +71,9 @@ export default function App() {
       getDatp()
     }, [])
     const getDatp = () =>{
-        axios.get(url2).then(res =>setallDatap(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url2).then(res =>setreallDatap(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allDatap);
+    console.log(reallDatap);
 
 
     // const url3 = 'http://localhost:1337/api/blogs?populate=*';
@@ -83,9 +83,9 @@ export default function App() {
       getDatb()
     }, [])
     const getDatb = () =>{
-        axios.get(url3).then(res =>setallDatab(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url3).then(res =>setreallDatab(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allDatab);
+    console.log(reallDatab);
 
     // const url4 = 'http://localhost:1337/api/videos?populate=*';
     const url4 = 'https://whatisthe411-backend.onrender.com/api/videos?populate=*';
@@ -94,9 +94,9 @@ export default function App() {
       getDatv()
     }, [])
     const getDatv = () =>{
-        axios.get(url4).then(res =>setallDatav(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url4).then(res =>setreallDatav(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allDatav);
+    console.log(reallDatav);
 
 
     // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
@@ -106,9 +106,9 @@ export default function App() {
       getDatpo()
     }, [])
     const getDatpo = () =>{
-        axios.get(url5).then(res =>setallDatapo(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url5).then(res =>setreallDatapo(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allDatapo);
+    console.log(reallDatapo);
 
     // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
     const url6 = 'https://whatisthe411-backend.onrender.com/api/carousels?populate=*';
@@ -117,9 +117,9 @@ export default function App() {
       getDatc()
     }, [])
     const getDatc = () =>{
-        axios.get(url6).then(res =>setallDatac(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url6).then(res =>setreallDatac(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allDatac);
+    console.log(reallDatac);
 
 
     // const url5 = 'http://localhost:1337/api/podcasts?populate=*';
@@ -129,9 +129,9 @@ export default function App() {
       getAbout()
     }, [])
     const getAbout = () =>{
-        axios.get(url7).then(res =>setallAbout(res.data.data)).catch(err =>{console.log(err);})
+        axios.get(url7).then(res =>setreallAbout(res.data.data)).catch(err =>{console.log(err);})
     }
-    console.log(allAbout);
+    console.log(reallAbout);
 
     const handleSearch = (term) => {
       setSearchTerm(term);
@@ -149,8 +149,16 @@ export default function App() {
   //   []
   // );
 
+  const allData = [...reallData].reverse();
+  const allDatai = [...reallDatai].reverse();
+  const allDatap = [...reallDatap].reverse();
+  const allDatab = [...reallDatab].reverse();
+  const allDatav = [...reallDatav].reverse();
+  const allDatapo = [...reallDatapo].reverse();
+  const allDatac = [...reallDatac].reverse();
+  const allAbout = [...reallAbout].reverse();
 
-
+  
 
   // if (blogLoading || firstblogLoading )
   //   return (
@@ -209,6 +217,7 @@ export default function App() {
 
         <Route path="/humour" element={<HumourPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
         <Route path="/humour/:id" element={<HumourContentPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>
+        <Route path="/questionnaire" element={<Questionnaire/>} />
 
 
         <Route path="/personality" element={<PersonalityPage allData={allData} allDatai={allDatai} allDatap={allDatap} allDatab={allDatab} allDatapo={allDatapo} allDatav={allDatav} allDatac={allDatac}/>}/>

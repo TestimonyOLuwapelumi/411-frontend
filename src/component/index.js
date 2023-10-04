@@ -41,6 +41,8 @@ import Searchv from "./Searchv";
 import Loading from "./Loading";
 import NewsletterForm from "./NewsletterForm";
 import Modal from "./Modal";
+import Questionnaire from "./Questionnaire";
+import Api from "./Api";
 
 
 
@@ -90,5 +92,7 @@ export {
     Searchv,
     Loading,
     NewsletterForm,
-    Modal
+    Modal,
+    Questionnaire,
+    Api
 }

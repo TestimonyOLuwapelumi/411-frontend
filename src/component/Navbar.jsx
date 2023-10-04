@@ -56,7 +56,7 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
       </div>
     
     {/* <AdsComponent/> */}
-    <div className='had'>
+    <div className='had mb-1'>
 
     <div className='w-full lg:h-[80px] h-[45px] z-10 bg-white  drop-shadow-lg mb- head '>
         <div className='flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto'>
@@ -100,9 +100,9 @@ const Navbar = ({allDatab, allData, allDatap, allDatai, allDatav, allDatapo}) =>
 
     <section className="sectt lg:h-[80px] h-[40px] sm:h-[57px] z-10 bg-white drop-shadow-lg">
   <ul className="uu ">
-    <Link to={"/home"}><li className="ll"><div className="aba ">Blogs</div></li></Link>
-    <Link to={"/personality"}><li className="ll"><div className="aba bb w-28">Personality Test</div></li></Link>
+    <Link to={"/blog"}><li className="ll"><div className="aba ">Blogs</div></li></Link>
     <Link to={"/humour"}><li className="ll"><div className="aba">Humour</div></li></Link>
+    <Link to={"/personality"}><li className="ll"><div className="aba bb w-28">Personality Test</div></li></Link>
    <Link to={"/imagination"}> <li className="ll"><div className="aba">Imagination</div></li></Link>
     {/* <li className="ll"><div className="aba">Support</div></li> */}
   </ul>
